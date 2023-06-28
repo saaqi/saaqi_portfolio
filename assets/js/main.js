@@ -256,6 +256,13 @@ countWhenVisible(document.querySelector(".statcounter.certificate"), 8, 2000);
 
 
 
+/* ## Current Year
+--------------------------------------------- */
+const yearSelector = document.querySelector('.footer-year');
+if ( yearSelector ) {
+  yearSelector.innerHTML = new Date().getFullYear();
+}
+
 
 
 /**

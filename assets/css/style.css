@@ -4,7 +4,7 @@
   --accent: #F45050;
   --light-text: #ffffff;
   --dark-text: #222333;
-  --background-even: #fcfcfc;
+  --background-even: #fafafa;
   --background-odd: #fefefe;
 }
 
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 991px) {
   #main {
-    margin-left: 100px;
+    padding-left: 90px;
   }
 }
 
