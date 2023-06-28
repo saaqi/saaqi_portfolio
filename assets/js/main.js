@@ -91,7 +91,7 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -152,41 +152,6 @@
     selector: '.portfolio-details-lightbox',
     width: '90%',
     height: '90vh'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
   });
 
 
@@ -283,10 +248,10 @@ function countWhenVisible(element, targetCount, speed) {
   });
   observer.observe(element);
 }
-countWhenVisible(document.querySelector(".purecounter.happy"), 22, 2000);
-countWhenVisible(document.querySelector(".purecounter.project"), 59, 2000);
-countWhenVisible(document.querySelector(".purecounter.support"), 1463, 2000);
-countWhenVisible(document.querySelector(".purecounter.certificate"), 8, 2000);
+countWhenVisible(document.querySelector(".statcounter.happy"), 22, 2000);
+countWhenVisible(document.querySelector(".statcounter.project"), 59, 2000);
+countWhenVisible(document.querySelector(".statcounter.support"), 1463, 2000);
+countWhenVisible(document.querySelector(".statcounter.certificate"), 8, 2000);
 
 
 
@@ -296,7 +261,7 @@ countWhenVisible(document.querySelector(".purecounter.certificate"), 8, 2000);
 /**
  * Hide Preloader
  */
-let preloader = document.getElementById('preloader');
+const preloader = document.getElementById('preloader');
 if (preloader) {
   window.addEventListener('load', () => {
     preloader.remove();
