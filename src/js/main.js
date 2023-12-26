@@ -68,7 +68,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select(".top-link");
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -123,119 +123,9 @@
 })()
 
 
-// JavaScript form submission
-const form = document.getElementById("php-email-form");
-
-form.addEventListener("submit", function(event) {
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const messageInput = document.getElementById("message");
-    let isValid = true;
-
-    // Validate name input
-    if (nameInput.value === "") {
-      isValid = false;
-      nameInput.setCustomValidity("Please enter your name.");
-    } else {
-      nameInput.setCustomValidity("");
-    }
-
-    // Validate email input
-    if (emailInput.value === "") {
-      isValid = false;
-      emailInput.setCustomValidity("Please enter your email address.");
-    } else if (!emailInput.checkValidity()) {
-      isValid = false;
-      emailInput.setCustomValidity("Please enter a valid email address.");
-    } else {
-      emailInput.setCustomValidity("");
-    }
-
-    // Validate message input
-    if (messageInput.value === "") {
-      isValid = false;
-      messageInput.setCustomValidity("Please enter a message.");
-    } else {
-      messageInput.setCustomValidity("");
-    }
-
-    // Submit form if all inputs are valid
-    if (!isValid) {
-      event.preventDefault();
-    }
-});
-
-
-form.addEventListener("submit", function(event) {
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const subjectInput = document.getElementById("subject");
-    const messageInput = document.getElementById("message");
-    const receiveEmail = "saaqi.grw@gmail.com"
-    const emailButton = document.querySelector('button.bttn');
-
-    // Compose email message
-    const subject = `${subjectInput.value} from ${nameInput.value}`;
-    const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`;
-
-    // Open default email app and fill in appropriate fields
-    const mailtoUrl = `mailto:${encodeURIComponent(receiveEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    // Open Email client on click
-    window.open(mailtoUrl);
-
-    // Prevent default form submission
-    event.preventDefault();
-});
-
-
-// animate counters
-function countWhenVisible(element, targetCount, speed) {
-  let hasCounted = false;
-  let startTime = null;
-  let observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting && !hasCounted) {
-      hasCounted = true;
-      startTime = performance.now();
-      let count = 0;
-      let duration = speed;
-      let interval = setInterval(() => {
-        let elapsedTime = performance.now() - startTime;
-        let progress = elapsedTime / duration;
-        if (progress >= 1) {
-          clearInterval(interval);
-          element.innerHTML = targetCount;
-        } else {
-          count = Math.floor(progress * targetCount);
-          element.innerHTML = count;
-        }
-      }, 20);
-    }
-  });
-  observer.observe(element);
-}
-countWhenVisible(document.querySelector(".statcounter.happy"), 22, 2000);
-countWhenVisible(document.querySelector(".statcounter.project"), 59, 2000);
-countWhenVisible(document.querySelector(".statcounter.support"), 1463, 2000);
-countWhenVisible(document.querySelector(".statcounter.certificate"), 8, 2000);
-
-
-
-
 /* ## Current Year
 --------------------------------------------- */
 const yearSelector = document.querySelector('.footer-year');
 if ( yearSelector ) {
   yearSelector.innerHTML = new Date().getFullYear();
-}
-
-
-
-/**
- * Hide Preloader
- */
-const preloader = document.getElementById('preloader');
-if (preloader) {
-  window.addEventListener('load', () => {
-    preloader.remove();
-  });
 }
