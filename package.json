@@ -1,0 +1,49 @@
+{
+  "name": "saaqi-portfolio-website",
+  "version": "1.0.0",
+  "description": "Saqib Islam's portfolio website, a showcase of my work, projects, and achievements. Explore my expertise and passion in web development and design. Join me on this creative journey. #portfolio #webdevelopment #design",
+  "private": true,
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "test": "vite preview",
+    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saaqi/saaqi.github.io.git"
+  },
+  "keywords": [
+    "saaqi",
+    "webdevelopment",
+    "portfolio",
+    "resume",
+    "bootstrap",
+    "vite",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Saqib Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saaqi/saaqi.github.io/issues"
+  },
+  "homepage": "https://github.com/saaqi/saaqi.github.io#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "vite": "^5.0.0",
+    "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-webfont-dl": "^3.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "boxicons": "^2.1.4"
+  }
+}
