@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "test": "vite preview",
-    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push",
+    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push"
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "boxicons": "^2.1.4"
+    "boxicons": "^2.1.4",
+    "glightbox": "^3.2.0",
+    "waypoints": "^4.0.1"
   }
 }

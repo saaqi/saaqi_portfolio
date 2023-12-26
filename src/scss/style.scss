@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// import partials ---
+@use "./variables" as v;
+
+// defaults
+@import "./base";
+@import "./components";
+@import "./main";
+// @import "./navigation";
+// sections
+// @import "./hero";
+// @import "./deals";
+// @import "./whyus";
+// @import "./testimonials";
+// @import "./contactus";
+// @import "./footer";

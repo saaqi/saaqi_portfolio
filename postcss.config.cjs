@@ -1,5 +1,5 @@
 const IN_PRODUCTION = process.env.NODE_ENV === "production";
-const bootstrap = "node_modules/bootstrap"
+// const bootstrap = "node_modules/bootstrap"
 
 module.exports = {
   plugins: [
@@ -27,8 +27,8 @@ module.exports = {
         // `${bootstrap}/js/dist/collapse.js`,
         // `${bootstrap}/js/dist/dropdown.js`,
         // `${bootstrap}/js/dist/modal.js`,
-        `${bootstrap}/js/dist/offcanvas.js`,
-        `${bootstrap}/js/dist/popover.js`,
+        // `${bootstrap}/js/dist/offcanvas.js`,
+        // `${bootstrap}/js/dist/popover.js`,
         // `${bootstrap}/js/dist/scrollspy.js`,
         // `${bootstrap}/js/sdist/tab.js`,
         // `${bootstrap}/js/dist/toast.js`,
