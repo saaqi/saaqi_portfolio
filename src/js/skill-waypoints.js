@@ -3,26 +3,26 @@
  */
 
 
+
 import "waypoints/lib/noframework.waypoints";
 
 (function () {
   "use strict";
-
   /**
    * Skills animation
    */
-
-  let skilsContent = select('.skills-content');
+  let skilsContent = select(".skills-content");
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: '80%',
+      offset: "80%",
       handler: function (direction) {
-        let progress = select('.progress .progress-bar', true);
+        let progress = select(".progress .progress-bar", true);
         progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
+          el.style.width = el.getAttribute("aria-valuenow") + "%";
         });
-      }
-    })
+      },
+    });
   }
-});
+
+})();
