@@ -353,9 +353,6 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-}
 
 .contact .info i {
   font-size: 20px;
@@ -381,11 +378,6 @@
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
 }
 
 .contact .info .email:hover i,
@@ -479,57 +471,3 @@
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  color: #45505b;
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
-}
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  position: relative;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-#footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: v.$info;
-  color: v.$light;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset 0 -2px 0 rgba(0, 0, 0, 0.25);
-  line-height: 0;
-  padding: 10px;
-  margin-right: 4px;
-  border-radius: 50%;
-  transition: all ease-in-out 0.3s;
-}
-
-#footer .social-links a:hover {
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-}
-
-#footer .social-links a:active {
-  box-shadow: none;
-}
-
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
