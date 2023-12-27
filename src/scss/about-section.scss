@@ -15,18 +15,11 @@
 }
 
 .skills {
-  
-  .progress {
-    height: auto;
-    display: block;
-    background: none;
-  }
   .progress-bar {
     width: 1px;
-    height: 0.875rem;
+    height: 0.625rem;
     transition: width ease-in 1s;
   }
-
 }
 
 
