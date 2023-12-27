@@ -1,18 +1,24 @@
 /**
  * Skills animation
  */
-import "waypoints/lib/noframework.waypoints";
+// Get all progress bar elements
+const progressBars = document.querySelectorAll('.progress-bar');
 
-let skilsContent = document.querySelector(".skills");
-if (skilsContent) {
-  new Waypoint({
-    element: skilsContent,
-    offset: "80%",
-    handler: function (direction) {
-      let progress = document.querySelectorAll(".progress .progress-bar", true);
-      progress.forEach((el) => {
-        el.style.width = el.getAttribute("aria-valuenow") + "%";
-      });
-    },
-  });
-}
+// Set up the Intersection Observer for each progress bar
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Element is in view, update width based on aria-valuenow
+            const ariaValueNow = entry.target.getAttribute('aria-valuenow');
+            entry.target.style.width = `${ariaValueNow}%`;
+
+            // Unobserve the target after updating
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 }); // Adjust the threshold as needed
+
+// Start observing each progress bar
+progressBars.forEach(progressBar => {
+    observer.observe(progressBar);
+});

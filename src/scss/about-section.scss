@@ -16,24 +16,17 @@
 
 .skills {
   
-  .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: v.$primary;
-  }
-
   .progress {
-    height: 60px;
+    height: auto;
     display: block;
     background: none;
-    // border-radius: 0;
-    
-    .skill {
-      padding: 10px 0;
-      display: block;
-    }
   }
+  .progress-bar {
+    width: 1px;
+    height: 0.875rem;
+    transition: width ease-in 1s;
+  }
+
 }
 
 
