@@ -1,28 +1,19 @@
-html {
-  scroll-padding-top: 68px;
-  /* scroll-snap-type: y proximity; */
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-///////////////////////
-// Section defaults ---
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+/* ## Section default
+--------------------------------------------- */
+section {
+  display: grid;
   place-content: center;
   padding: 2rem 0;
-  /* scroll-snap-align: start; */
 }
-.section:nth-child(even) {
+section:nth-child(even) {
   background-color: v.$even-bg;
 }
-.section:nth-child(odd) {
+section:nth-child(odd) {
   background-color: v.$odd-bg;
 }
 

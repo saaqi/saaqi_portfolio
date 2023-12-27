@@ -8,9 +8,6 @@ module.exports = {
         "index.html",
         "./src/**/*.js",
 
-        // Exclude Glightbox JS file
-        "node_modules/glightbox/dist/js/glightbox.js"
-
         /* 
           To optimize your final build size, PurgeCSS is configured to remove all unused styles. 
           

@@ -12,8 +12,7 @@ import "boxicons/css/boxicons.css"
 
 /* ## Import JS
 --------------------------------------------- */
-import "./main"
-import "./glightbox"
+import "./interact"
 import "./skill-waypoints"
 import "./contact-form"
 import "./animate-counter"

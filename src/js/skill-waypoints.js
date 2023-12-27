@@ -3,7 +3,7 @@
  */
 import "waypoints/lib/noframework.waypoints";
 
-let skilsContent = document.querySelector(".skills-content");
+let skilsContent = document.querySelector(".skills");
 if (skilsContent) {
   new Waypoint({
     element: skilsContent,

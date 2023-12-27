@@ -6,6 +6,10 @@
   text-transform: uppercase;
   transition: all ease-in-out 0.1s;
   letter-spacing: 1px;
+  
+  &.bx {
+    letter-spacing: normal;
+  }
 
   &:hover {
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);

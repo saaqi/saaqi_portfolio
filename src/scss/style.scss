@@ -6,11 +6,12 @@
 // defaults
 @import "./base";
 @import "./components";
+@import "./navigation";
 @import "./main";
-// @import "./navigation";
+
 // sections
-// @import "./hero";
-// @import "./deals";
+@import "./hero-section";
+@import "./about-section";
 // @import "./whyus";
 // @import "./testimonials";
 // @import "./contactus";
