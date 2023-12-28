@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.5 }); // Adjust the threshold as needed
+}, { threshold: 1.0 }); // Adjust the threshold as needed
 
 // Start observing each progress bar
 progressBars.forEach(progressBar => {

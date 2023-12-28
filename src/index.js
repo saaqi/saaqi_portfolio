@@ -15,6 +15,8 @@ import "boxicons/css/boxicons.css"
 
 /* ## Import JS
 --------------------------------------------- */
+const IN_PRODUCTION = process.env.NODE_ENV === "production";
+
 import "./js/interact"
 import "./js/animate-counter"
 import "./js/skill-waypoints"

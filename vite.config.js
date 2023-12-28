@@ -6,24 +6,24 @@ const IN_PRODUCTION = process.env.NODE_ENV === "production";
 const IN_DEVELOPMENT = process.env.NODE_ENV === "development";
 
 // Hide Preloader while in development.
-// const hidePreloader = () => {
-//   return {
-//     name: "hide-preloader",
-//     transformIndexHtml(html) {
-//       return html.replace(
-//         `<link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css" media="screen">`,
-//         `<!-- <link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css" media="screen"> -->`
-//       );
-//     }
-//   }
-// }
+const hidePreloader = () => {
+  return {
+    name: "hide-preloader",
+    transformIndexHtml(html) {
+      return html.replace(
+        `<link rel="stylesheet" href="./src/css/preloader.css" type="text/css" media="screen">`,
+        `<!-- <link rel="stylesheet" href="./src/css/preloader.css" type="text/css" media="screen"> -->`
+      );
+    }
+  }
+}
 
 export default defineConfig({
   plugins: [
 
     /* ## Hide Preloader while in Development
     --------------------------------------------- */
-    // IN_DEVELOPMENT && hidePreloader(),
+    IN_DEVELOPMENT && hidePreloader(),
 
     /* ## Download Google Fonts and attach them with production build for offline use
     --------------------------------------------- */

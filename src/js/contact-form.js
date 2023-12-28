@@ -1,5 +1,5 @@
 // JavaScript form submission
-const form = document.getElementById("php-email-form");
+const form = document.getElementById("contact-email-form");
 
 form.addEventListener("submit", function (event) {
   const nameInput = document.getElementById("name");
@@ -46,7 +46,7 @@ form.addEventListener("submit", function (event) {
   const subjectInput = document.getElementById("subject");
   const messageInput = document.getElementById("message");
   const receiveEmail = "saaqi.grw@gmail.com";
-  const emailButton = document.querySelector("button.bttn");
+  const emailButton = document.querySelector("button.btn");
 
   // Compose email message
   const subject = `${subjectInput.value} from ${nameInput.value}`;
