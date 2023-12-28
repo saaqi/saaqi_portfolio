@@ -5,7 +5,7 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    // el = el.trim()
+    el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)];
     } else {
@@ -58,18 +58,6 @@
   onscroll(document, navbarlinksActive);
 
   /**
-   * Scrolls to an element with header offset
-   */
-  // const scrollto = (el) => {
-  //   let elementPos = select(el).offsetTop;
-  //   window.scrollTo({
-  //     top: elementPos,
-  //     behavior: "smooth",
-  //   });
-  // };
-
-
-  /**
    * Mobile nav toggle
    */
   on(
@@ -81,22 +69,8 @@
     this.classList.toggle("bx-x");
   });
 
-  /**
-   * Scroll with ofset on links with a class name .scrollto
-   */
-  // on(
-  //   "click",
-  //   ".scrollto",
-  //   function (e) {
-  //     if (select(this.hash)) {
-  //       e.preventDefault();
-  //       scrollto(this.hash);
-  //     }
-  //   },
-  //   true
-  // );
 
-  // Hide navigation on clicking outside the barr
+  // Hide navigation on clicking outside the bar
   on(
     "click",
     "main, .scrollto",
@@ -112,21 +86,4 @@
     true
   );
 
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  // window.addEventListener("load", () => {
-  //   if (window.location.hash) {
-  //     if (select(window.location.hash)) {
-  //       scrollto(window.location.hash);
-  //     }
-  //   }
-  // });
-
-  /* ## Current Year
-  --------------------------------------------- */
-  const yearSelector = select(".footer-year");
-  if (yearSelector) {
-    yearSelector.innerHTML = new Date().getFullYear();
-  }
 })();
