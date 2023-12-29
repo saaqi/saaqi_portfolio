@@ -24,7 +24,7 @@ import "./js/date"
 import "./js/hide-preloader"
 
 // Import Lightbox
-// import "./js/lightbox"
+import "./js/lightbox"
 
 
 // --- Import only the required components.

@@ -45,7 +45,6 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "boxicons": "^2.1.4",
-    "micromodal": "^0.4.10",
-    "spotlight.js": "^0.7.8"
+    "tingle.js": "^0.16.0"
   }
 }
