@@ -7,8 +7,8 @@ a {
 --------------------------------------------- */
 section {
   display: grid;
-  // place-content: center;
-  padding: 4rem 0;
+  place-items: center;
+  padding: 5rem 0;
 }
 section:nth-child(even) {
   background-color: v.$even-bg;
@@ -18,7 +18,7 @@ section:nth-child(odd) {
 }
 
 .heading-container {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section-heading {

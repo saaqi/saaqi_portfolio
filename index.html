@@ -138,11 +138,23 @@
 
           <div class="row justify-content-center">
             <div class="col-2 col-lg-2">
-              <a href="./img/profile.webp" title="Saqib Islam Profile Photo" class="profile-image">
+              <a type="button" class="profile-image" data-bs-toggle="modal" data-bs-target="#profile-picture" title="Saqib Islam: Profile Photo">
                 <img src="./img/profile-thumb.webp" 
                 class="img-fluid profile rounded-3 shadow" 
                 alt="Saqib Islam, Profile Photo">
               </a>
+              <div class="modal fade modal-lg" id="profile-picture" tabindex="-1" aria-labelledby="profile-picture-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./img/profile.webp" class="img-fluid" alt="Lightbox Image">
+                    </div>
+                  </div>  
+                </div>
+              </div>
             </div>
             <div class="col-10 col-lg-7">
               <p class="mb-0">
@@ -388,8 +400,8 @@
                   </button>                  
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="cc-case-study" tabindex="-1" aria-labelledby="Portfolio Project: Case Study" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal fade modal-xl" id="cc-case-study" tabindex="-1" aria-labelledby="Portfolio Project: Case Study" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <div class="modal-title fs-5" id="cc-case-study-label">Portfolio Project: Case Study</div>
@@ -540,7 +552,7 @@
           </p>
 
           <div class="row mt-4">
-            <div class="col-lg-4 col-12 info d-flex flex-column gap-3 gap-lg-5">
+            <div class="col-lg-3 col-12 info d-flex flex-column gap-3 gap-lg-5">
               <a href="mailto:saaqi.grw@gmail.com?subject=Hi,&nbsp;Saqib&nbsp;Let's&nbsp;talk!">
                 <div class="email">
                   <i class="bx bx-envelope"></i>
@@ -569,7 +581,7 @@
               </div>
             </div>
 
-            <div class="col-lg-8 col-12 mt-5 mt-lg-0">
+            <div class="col-lg-9 col-12 mt-5 mt-lg-0">
               <form id="contact-email-form" class="contact-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
