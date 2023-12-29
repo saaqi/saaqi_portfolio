@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.profile {
+  &:hover {
+    transform: scale(1.05);
+    transition: v.$transition;
+  }
+}
 .stats {
   .count-box {
     position: relative;

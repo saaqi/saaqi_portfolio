@@ -7,8 +7,17 @@
   transition: all ease-in-out 0.1s;
   letter-spacing: 1px;
   
-  &.bx {
+  .bx {
     letter-spacing: normal;
+  }
+  
+  &.icon-btn {
+    line-height: 0;
+    padding: 0.5rem 0.8rem;
+    
+    // &:hover {      
+    //   transform: none;
+    // }
   }
 
   &:hover {
@@ -41,5 +50,4 @@
 
 .social-button {
   letter-spacing: 0;
-
 }
