@@ -11,8 +11,6 @@ import "./style.scss"
 import "boxicons/css/boxicons.css"
 
 
-
-
 /* ## Import JS
 --------------------------------------------- */
 import "./js/navigation"
@@ -23,5 +21,11 @@ import "./js/top-link"
 import "./js/date"
 import "./js/hide-preloader"
 
-// Import Lightbox
+
+
+// Import Bootstrap Modal
 import "./js/lightbox"
+
+
+// Import Project Case Studies
+// import 
