@@ -17,10 +17,16 @@
   
   &.btn-icon {
     line-height: 0; 
-    padding: 0.5rem;   
-    // &:hover {      
-    //   transform: none;
-    // }
+    padding: 0.5rem;
+    letter-spacing: 0; 
+
+    &:hover {      
+      transform: none;
+    }
+
+    i {
+      line-height: normal;
+    }
   }
 
   &:hover {

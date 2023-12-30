@@ -65,6 +65,12 @@
     ".mobile-nav-toggle",
     function (e) {
     select("body").classList.toggle("mobile-nav-active");
+    });
+  
+  on(
+    "click",
+    ".mobile-nav-toggle i",
+    function (e) {
     this.classList.toggle("bx-menu");
     this.classList.toggle("bx-x");
   });
@@ -78,7 +84,8 @@
       const body = select("body");
       if (body.classList.contains("mobile-nav-active")) {
         body.classList.remove("mobile-nav-active");
-        const navbarToggle = select(".mobile-nav-toggle");
+
+        const navbarToggle = select(".mobile-nav-toggle i");
         navbarToggle.classList.toggle("bx-menu");
         navbarToggle.classList.toggle("bx-x");
       }

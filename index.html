@@ -16,41 +16,43 @@
 
     <!-- Header Start -->
     <header id="header" class="d-flex flex-column justify-content-center">
-      <button class="bx bx-menu-alt-left mobile-nav-toggle p-1 rounded-circle fs-2 btn btn-outline-primary d-lg-none" title="Navigation Menu"></button>
+      <button class="mobile-nav-toggle rounded-circle fs-2 p-1 btn btn-outline-primary btn-icon d-lg-none" title="Navigation Menu">
+        <i class="bx bx-menu-alt-left"></i>
+      </button>
       <nav id="navbar" class="navbar nav-menu">
-        <ul>
+        <ul class="list-unstyled">
           <li>
-            <a href="#hero" class="nav-link scrollto active">
+            <a href="#hero" class="nav-link scrollto btn btn-outline-primary active">
               <i class="bx bx-home"></i> <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#about" class="nav-link scrollto">
+            <a href="#about" class="nav-link btn btn-outline-primary shadow-sm scrollto">
               <i class="bx bx-user"></i> <span>About</span>
               </a>
           </li>
           <!-- <li>
-            <a href="#resume" class="nav-link scrollto">
+            <a href="#resume" class="nav-link btn btn-outline-primary shadow-sm scrollto">
               <i class="bx bx-file-blank"></i> <span>Resume</span>
             </a>
           </li> -->
           <li>
-            <a href="#portfolio" class="nav-link scrollto">
+            <a href="#portfolio" class="nav-link btn btn-outline-primary shadow-sm scrollto">
               <i class="bx bx-book-content"></i> <span>Portfolio</span>
             </a>
           </li>
           <!-- <li>
-            <a href="#services" class="nav-link scrollto"><i class="bx bx-server">             
-              </i> <span>Services</span>
+            <a href="#services" class="nav-link btn btn-outline-primary shadow-sm scrollto">
+              <i class="bx bx-server"></i> <span>Services</span>
             </a>
           </li> -->
           <li>
-            <a href="#contact" class="nav-link scrollto">
+            <a href="#contact" class="nav-link btn btn-outline-primary shadow-sm scrollto">
               <i class='bx bxs-contact'></i> <span>Contact</span>
               </a>
           </li>
           <!-- <li>
-            <a href="#testimonials" class="nav-link scrollto">
+            <a href="#testimonials" class="nav-link btn btn-outline-primary shadow-sm scrollto">
               <i class="bx bx-conversation"></i> <span>Testimonials</span>
             </a>
           </li> -->
@@ -146,16 +148,16 @@
               <div class="modal fade modal-lg text-center" id="profile-picture" tabindex="-1" aria-labelledby="profile-picture-label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-body">
+                    <div class="modal-body p-0">
                       <div class="profile-container position-relative">
                         <button type="button" 
                         class="btn btn-icon btn-outline-info rounded-circle fs-4 p-1 position-absolute" 
-                        style="right: 0; top: 0"
+                        style="right: 1rem; top: 1rem"
                         data-bs-dismiss="modal" 
                         aria-label="Close">
-                        <i class='bx bx-x'></i>
+                          <i class='bx bx-x'></i>
                         </button>
-                        <img src="./img/profile.webp" class="img-fluid" alt="Profile Picture">
+                        <img src="./img/profile.webp" class="img-fluid rounded-bottom-3" alt="Profile Picture">
                       </div>
                     </div>
                   </div>  
