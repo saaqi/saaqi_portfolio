@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+.header {
   bottom: 0;
   left: 0;
   overflow-y: auto;
@@ -13,20 +13,20 @@
 }
 
 .mobile-nav-active{
-  #header {
+  .header {
     left: 0;
   }
 }
 
 @media (max-width: 991px) {
-  #header {
+  .header {
     display: none;
     width: 20rem;
     background: v.$light;
     left: -20rem;
   }
   .mobile-nav-active {
-     #header {
+     .header {
       box-shadow: 0 0 0 100vw rgba(#333, 0.3);
     }
   }
