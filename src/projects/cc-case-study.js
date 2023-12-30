@@ -1,6 +1,7 @@
-document.querySelector("#cc-case-study-body").innerHTML = `
-<h1>Auto Repairing Garage</h1>
-<h2>Website Design and Digital Marketing</h2>
+document.querySelector("#cc-case-study-body").innerHTML = 
+`
+<h2>Auto Repairing Garage</h2>
+<h4>Website Design and Digital Marketing</h4>
 <p>
   The auto repair service website project aimed to establish a strong online
   presence for a garage in Orange City, Florida. The goal was to create a

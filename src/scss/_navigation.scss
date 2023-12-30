@@ -26,8 +26,12 @@
     left: -20rem;
   }
   .mobile-nav-active {
+    main {
+      filter: blur(5px);
+    }
+    
     #header {
-      box-shadow: 2px 0 4px rgba(#333, 0.3);
+      box-shadow: 0 0 0 100vw rgba(#333, 0.3);
     }
   }
 }
@@ -118,18 +122,12 @@
 }
 
 .mobile-nav-active {
+  // overflow: hidden;
+
   .mobile-nav-toggle {
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
     
     i {
       transform: rotate(180deg);
     }
   }
 }
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-
-

@@ -5,7 +5,7 @@
 import "./css/bs-compiled.css"
 
 // IMPORT CUSTOM STYLES
-import "./style.scss"
+import "./main.scss"
 
 // IMPPORT BOXICONS
 import "boxicons/css/boxicons.css"

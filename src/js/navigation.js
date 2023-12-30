@@ -1,3 +1,4 @@
+
 (function () {
   ("use strict");
 
@@ -5,7 +6,7 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
       return [...document.querySelectorAll(el)];
     } else {
@@ -60,23 +61,14 @@
   /**
    * Mobile nav toggle
    */
-  on(
-    "click",
-    ".mobile-nav-toggle",
-    function (e) {
+  on("click", ".mobile-nav-toggle", function (e) {
     select("body").classList.toggle("mobile-nav-active");
-    });
-  
-  on(
-    "click",
-    ".mobile-nav-toggle i",
-    function (e) {
-    this.classList.toggle("bx-menu");
-    this.classList.toggle("bx-x");
+    select(".mobile-nav-toggle i").classList.toggle("bx-x");
   });
 
-
-  // Hide navigation on clicking outside the bar
+  /**
+   * Hide navigation on clicking elements
+   */
   on(
     "click",
     "main, .scrollto",
@@ -84,13 +76,9 @@
       const body = select("body");
       if (body.classList.contains("mobile-nav-active")) {
         body.classList.remove("mobile-nav-active");
-
-        const navbarToggle = select(".mobile-nav-toggle i");
-        navbarToggle.classList.toggle("bx-menu");
-        navbarToggle.classList.toggle("bx-x");
+        select(".mobile-nav-toggle i").classList.remove("bx-x");
       }
     },
     true
   );
-
 })();
