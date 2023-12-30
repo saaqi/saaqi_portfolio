@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// import partials ---
+@use "./scss/variables" as v;
+
+// defaults
+@import "./scss/base";
+@import "./scss/navigation";
+
+// sections
+@import "./scss/hero-section";
+@import "./scss/about-section";
+@import "./scss/contact-section";
+// @import "./scss/portfolio-section";
+// @import "./scss/whyus";
+// @import "./scss/testimonials";
+// @import "./scss/footer";
