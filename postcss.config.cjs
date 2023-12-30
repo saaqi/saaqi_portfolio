@@ -7,7 +7,7 @@ module.exports = {
       content: [
         "index.html",
         "./src/**/*.js",
-        // `${bootstrap}/dist/js/bootstrap.bundle.min.js`,
+        `${bootstrap}/js/dist/modal.js`,
       ],
       defaultExtractor(content) {
         const contentWithoutStyleBlocks = content.replace(
