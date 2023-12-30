@@ -146,11 +146,17 @@
               <div class="modal fade modal-lg" id="profile-picture" tabindex="-1" aria-labelledby="profile-picture-label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
                     <div class="modal-body">
-                      <img src="./img/profile.webp" class="img-fluid" alt="Lightbox Image">
+                      <div class="profile-container position-relative">
+                        <button type="button" 
+                        class="btn btn-icon btn-outline-info rounded-circle fs-4 p-1 position-absolute" 
+                        style="right: 0; top: 0"
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                        <i class='bx bx-x'></i>
+                        </button>
+                        <img src="./img/profile.webp" class="img-fluid" alt="Lightbox Image">
+                      </div>
                     </div>
                   </div>  
                 </div>
@@ -382,48 +388,48 @@
                   </p>
                   <div class="btn-group w-100">
                     <a href="https://github.com/saaqi/car-mechanic-shop" 
-                    class="btn btn-outline-primary icon-btn fs-3" 
+                    class="btn btn-outline-primary btn-icon fs-3" 
                     title="View Project on GitHub" 
                     rel="nofollow" 
                     target="_blank">
                     <i class="bx bxl-github"></i>
                   </a>
                   <a href="https://carclubtire.com" 
-                  class="btn btn-outline-primary icon-btn fs-3" 
+                  class="btn btn-outline-primary btn-icon fs-3" 
                   title="View Live Project" 
                   rel="nofollow" 
                   target="_blank">
                   <i class="bx bx-globe"></i>
                   </a>
-                  <button type="button" class="btn btn-outline-primary icon-btn fs-3" data-bs-toggle="modal" data-bs-target="#cc-case-study" title="Portfolio Project: Case Study">
+                  <button type="button" class="btn btn-outline-primary btn-icon fs-3" data-bs-toggle="modal" data-bs-target="#cc-case-study" title="Portfolio Project: Case Study">
                     <i class="bx bx-book-content"></i>
                   </button>                  
                 </div>
-                <!-- Modal -->
                 <div class="modal fade modal-xl" id="cc-case-study" tabindex="-1" aria-labelledby="Portfolio Project: Case Study" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <div class="modal-title fs-5" id="cc-case-study-label">Portfolio Project: Case Study</div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" 
+                        class="btn btn-icon btn-outline-info rounded-circle fs-4 p-1 " 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                        <i class='bx bx-x'></i>
+                        </button>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                       </div>
                       <div class="modal-body">
-                        <h1>Auto Repairing Garage:</h1> 
+                        <h1>Auto Repairing Garage</h1>
                         <h2>Website Design and Digital Marketing</h2>
                         <p>
-                          The auto repair service website project aimed to establish a
-                          strong online presence for a garage in Orange City, Florida.
-                          The goal was to create a user-friendly and responsive
-                          website that provided essential information about services,
-                          testimonials, and easy contact options. Through user
-                          research, UX design, responsive development, and iterative
-                          testing, a visually appealing and accessible website was
-                          created to cater to the needs of local residents and
-                          businesses seeking reliable auto repair services.
+                          The auto repair service website project aimed to establish a strong online
+                          presence for a garage in Orange City, Florida. The goal was to create a
+                          user-friendly and responsive website that provided essential information about
+                          services, testimonials, and easy contact options. Through user research, UX
+                          design, responsive development, and iterative testing, a visually appealing
+                          and accessible website was created to cater to the needs of local residents
+                          and businesses seeking reliable auto repair services.
                         </p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                       </div>
                     </div>
                   </div>
