@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 991px) {
-  section {
+  .section {
     padding-left: 5.5rem;
   }
 }
@@ -78,8 +78,11 @@
     }
 
     &:hover {
-      color: v.$light;
       width: 100%;
+    }
+    
+    &:hover, &:active, &:focus {
+      color: v.$light;
     }
     
     &:hover span {

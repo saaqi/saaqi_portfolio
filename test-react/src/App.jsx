@@ -1,17 +1,3 @@
-/* ## Import Styles
---------------------------------------------- */
-// IMPORT BOOTSTRAP
-// import "../scss/bs-dynamic.scss"
-import "./css/bs-compiled.css";
-
-// IMPORT CUSTOM STYLES
-import "./main.scss";
-
-// IMPPORT BOXICONS
-import "boxicons/css/boxicons.css";
-
-
-
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
