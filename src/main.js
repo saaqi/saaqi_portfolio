@@ -1,8 +1,8 @@
 /* ## Import Styles
 --------------------------------------------- */
 // IMPORT BOOTSTRAP
-// import "../scss/bs-dynamic.scss"
-import "./css/bs-compiled.css"
+// import "./scss/bs-dynamic.scss"
+import "./scss/bs-static.css"
 
 // IMPORT CUSTOM STYLES
 import "./main.scss"

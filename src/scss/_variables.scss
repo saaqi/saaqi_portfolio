@@ -1,14 +1,15 @@
 // Bootstrap over rides ---
+// Import theme
+@import "./themes/default";
+// @import "./themes/blue";
+// @import "./themes/dark-green";
+// @import "./themes/dark-1";
+// @import "./themes/dark-2";
 
-// Colors ----------
-$primary: #374162;
-$secondary: #f9d949;
-$info: #f45050;
 $danger: #9E1A1A;
 $success: #105B38;
 $dark: #212529;
 $light: #fefefe;
-// $warning: $warning;
 
 // Typography ------
 // $font-size-base: 0.9375rem;;
@@ -17,7 +18,7 @@ $font-family-sans-serif: Montserrat, sans-serif;
 
 // custom variables -----
 $even-bg: #f0f0f0;
-$odd-bg: #f9f9f9;
+$odd-bg: #f6f6f6;
 
 $box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 $text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);

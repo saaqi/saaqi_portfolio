@@ -139,8 +139,8 @@ a.top-link {
 // Modals
 
 // Glass Effect
-// .modal-content {
-//   background: rgba(255, 255, 255, 0.7);
-//   backdrop-filter: blur(5px);
-//   border: 1px solid rgba(v.$dark, 0.5);
-// }
+.modal-content {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(v.$dark, 0.5);
+}

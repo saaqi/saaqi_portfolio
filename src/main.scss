@@ -8,10 +8,15 @@
 @import "./scss/navigation";
 
 // sections
-@import "./scss/home-section";
-@import "./scss/about-section";
-@import "./scss/contact-section";
-// @import "./scss/portfolio-section";
-// @import "./scss/whyus";
-// @import "./scss/testimonials";
-// @import "./scss/footer";
+@import "./scss/sections/home-section";
+@import "./scss/sections/about-section";
+@import "./scss/sections/contact-section";
+// @import "./scss/sections/portfolio-section";
+// @import "./scss/sections/whyus";
+// @import "./scss/sections/testimonials";
+// @import "./scss/sections/footer";
+
+// IMPPORT BOXICONS
+@import "boxicons/css/boxicons.css"
+
+
