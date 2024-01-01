@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import webfontDownload from "vite-plugin-webfont-dl";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
-// import { comment } from "postcss";
+
 const IN_PRODUCTION = process.env.NODE_ENV === "production";
 const IN_DEVELOPMENT = process.env.NODE_ENV === "development";
 
