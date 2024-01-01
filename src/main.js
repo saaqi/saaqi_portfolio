@@ -25,7 +25,3 @@ import "./js/hide-preloader"
 
 // Import Bootstrap Modal
 import "./js/lightbox"
-
-
-// Import Project Case Studies
-// import 
