@@ -35,18 +35,11 @@
   color: v.$light;
 }
 
-.contact .contact-email-form {
-  width: 100%;
-}
-
-.contact .contact-email-form .form-group {
-  padding-bottom: 8px;
-}
 
 .contact .contact-email-form .error-message {
   display: none;
   color: v.$light;
-  background: #ed3c0d;
+  background: v.$danger;
   text-align: left;
   padding: 15px;
   font-weight: 700;
@@ -84,34 +77,15 @@
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .contact-email-form input,
-.contact .contact-email-form textarea {
-  font-size: 14px;
-}
-
-.contact .contact-email-form input[type=text],
-.contact .contact-email-form input[type=email] {
-  height: 44px;
-}
-
-.contact .contact-email-form textarea {
-  padding: 10px 12px;
-}
-
 .form-control {
-  border-color: v.$dark;
+  border-color: var(--bs-primary-border-subtle);
 }
 
 .form-control:focus {
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
-  border-color: v.$info;
-  transition: all ease-in-out 0.3s;
+  border-color: var(--bs-primary);
+  transition: v.$transition;
 }
-
-.contact-email-form label > i.bx {
-  vertical-align: middle;
-}
-
 
 @keyframes animate-loading {
   0% {

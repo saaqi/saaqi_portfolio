@@ -30,11 +30,8 @@ export default defineConfig({
     IN_PRODUCTION && webfontDownload(
       [
         "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap",
-      ],
-      {
-        injectAsStyleTag: false
-      }
-  ),
+      ]
+    ),
 
     /* ## Minify the output HTML files in production
     --------------------------------------------- */
