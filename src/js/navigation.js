@@ -47,46 +47,42 @@ closerLinks.forEach((close) => {
 
 
 //Hide navigation on swiping left
-(function () {
-  let min_horizontal_move = 30;
-  // let max_vertical_move = 30;
-  let within_ms = 1000;
+let min_horizontal_move = 30;
+// let max_vertical_move = 30;
+let within_ms = 1000;
 
-  let start_xPos;
-  // let start_yPos;
-  let start_time;
-  function touch_start(event) {
-    start_xPos = event.touches[0].pageX;
-    // start_yPos = event.touches[0].pageY;
-    start_time = new Date();
-  }
+let start_xPos;
+// let start_yPos;
+let start_time;
+function touch_start(event) {
+  start_xPos = event.touches[0].pageX;
+  // start_yPos = event.touches[0].pageY;
+  start_time = new Date();
+}
 
-  function touch_end(event) {
-    let end_xPos = event.changedTouches[0].pageX;
-    // let end_yPos = event.changedTouches[0].pageY;
-    let end_time = new Date();
-    let move_x = end_xPos - start_xPos;
-    // let move_y = end_yPos - start_yPos;
-    let elapsed_time = end_time - start_time;
-    if (
-      Math.abs(move_x) > min_horizontal_move &&
-      // Math.abs(move_y) < max_vertical_move &&
-      elapsed_time < within_ms
-    ) {
-      if (move_x < 0) {
-        body.classList.remove("mobile-nav-active");
-        toggleButtonIcon.classList.remove("bx-x");
-      } else {
-        body.classList.add("mobile-nav-active");
-        toggleButtonIcon.classList.add("bx-x");
-      }
+function touch_end(event) {
+  let end_xPos = event.changedTouches[0].pageX;
+  // let end_yPos = event.changedTouches[0].pageY;
+  let end_time = new Date();
+  let move_x = end_xPos - start_xPos;
+  // let move_y = end_yPos - start_yPos;
+  let elapsed_time = end_time - start_time;
+  if (
+    Math.abs(move_x) > min_horizontal_move &&
+    // Math.abs(move_y) < max_vertical_move &&
+    elapsed_time < within_ms
+  ) {
+    if (move_x < 0) {
+      body.classList.remove("mobile-nav-active");
+      toggleButtonIcon.classList.remove("bx-x");
     }
   }
+}
 
-  const swipeAble = document.getElementById("header");
-    swipeAble.addEventListener("touchstart", touch_start);
-    swipeAble.addEventListener("touchend", touch_end);
-})();
+const swipeAble = document.getElementById("header");
+swipeAble.addEventListener("touchstart", touch_start);
+swipeAble.addEventListener("touchend", touch_end);
+
 
 /**
  * Scroll with ofset on page load with hash links in the url
