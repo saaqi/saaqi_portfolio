@@ -11,8 +11,8 @@ const hidePreloader = () => {
     name: "hide-preloader",
     transformIndexHtml(html) {
       return html.replace(
-        `<link rel="stylesheet" href="./src/css/preloader.css" type="text/css" media="screen">`,
-        `<!-- <link rel="stylesheet" href="./src/css/preloader.css" type="text/css" media="screen"> -->`
+        `<link rel="stylesheet" href="./src/scss/preloader.css" type="text/css" media="screen">`,
+        `<!-- <link rel="stylesheet" href="./src/scss/preloader.css" type="text/css" media="screen"> -->`
       );
     }
   }
