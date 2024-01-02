@@ -14,8 +14,7 @@ import "boxicons/css/boxicons.css"
 /* ## Import JS
 --------------------------------------------- */
 import "./js/navigation"
-import "./js/animate-counter"
-import "./js/skill-waypoints"
+import "./js/skill-stats"
 import "./js/contact-form"
 import "./js/top-link"
 import "./js/date"
