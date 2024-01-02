@@ -10,6 +10,7 @@
   top: 0;
   z-index: 1049;
   transition: v.$transition;
+  height: 100%;
 }
 
 .mobile-nav-active{
@@ -18,7 +19,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .header {
     display: none;
     width: 20rem;
@@ -30,11 +31,17 @@
       box-shadow: 2px 0 4px rgba(#333, 0.3);
     }
   }
+  .mobile-nav-toggle {
+    display: block;
+  }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   .section {
     padding-left: 5.5rem;
+  }
+  .mobile-nav-toggle {
+    display: none;
   }
 }
 
@@ -92,7 +99,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .nav-menu {
     a {
