@@ -12,26 +12,9 @@
   transition: v.$transition;
 }
 
-.mobile-nav-active{
+.mobile-nav-active {
   .header {
     left: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .header {
-    display: none;
-    width: 20rem;
-    background: v.$light;
-    left: -20rem;
-  }
-  .mobile-nav-active {
-    .header {
-      box-shadow: 2px 0 4px rgba(#333, 0.3);
-    }
-  }
-  .mobile-nav-toggle {
-    display: block;
   }
 }
 
@@ -126,6 +109,7 @@
   }
 }
 
+
 .mobile-nav-active {
   overflow: hidden;
 
@@ -134,5 +118,22 @@
     i {
       transform: rotate(90deg);
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: none;
+    width: 20rem;
+    background: v.$light;
+    left: -20rem;
+  }
+  .mobile-nav-active {
+    .header {
+      box-shadow: 2px 0 4px rgba(#333, 0.3);
+    }
+  }
+  .mobile-nav-toggle {
+    display: block;
   }
 }
