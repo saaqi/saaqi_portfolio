@@ -18,8 +18,10 @@ const navbarlinksActive = () => {
     }
   });
 };
-window.addEventListener("load", navbarlinksActive);
-document.addEventListener("scroll", navbarlinksActive);
+if (navbarlinksActive) {
+  window.addEventListener("load", navbarlinksActive);
+  document.addEventListener("scroll", navbarlinksActive);
+}
 
 /**
  * Mobile Navigation Setup
@@ -29,21 +31,25 @@ const toggleButton = document.querySelector(".mobile-nav-toggle");
 const toggleButtonIcon = document.querySelector(".mobile-nav-toggle i");
 
 // Mobile nav toggle button
+if (toggleButton) {
 toggleButton.addEventListener("click", () => {
-  body.classList.toggle("mobile-nav-active");
-  toggleButtonIcon.classList.toggle("bx-x");
-});
+    body.classList.toggle("mobile-nav-active");
+    toggleButtonIcon.classList.toggle("bx-x");
+  });
+}
 
 //Hide navigation on clicking elements
 const closerLinks = document.querySelectorAll("main, .scrollto");
+if (closerLinks) {
 closerLinks.forEach((close) => {
-  close.addEventListener("click", () => {
-    if (body.classList.contains("mobile-nav-active")) {
-      body.classList.remove("mobile-nav-active");
-      toggleButtonIcon.classList.remove("bx-x");
-    }
+    close.addEventListener("click", () => {
+      if (body.classList.contains("mobile-nav-active")) {
+        body.classList.remove("mobile-nav-active");
+        toggleButtonIcon.classList.remove("bx-x");
+      }
+    });
   });
-});
+}
 
 
 //Hide navigation on swiping left
@@ -80,22 +86,24 @@ function touch_end(event) {
 }
 
 const swipeAble = document.getElementById("header");
-swipeAble.addEventListener("touchstart", touch_start);
-swipeAble.addEventListener("touchend", touch_end);
+if (swipeAble) {
+  swipeAble.addEventListener("touchstart", touch_start);
+  swipeAble.addEventListener("touchend", touch_end);
+}
 
 
 /**
  * Scroll with ofset on page load with hash links in the url
  */
+if (window.location.hash) {
 window.addEventListener("load", () => {
   const winHash = document.querySelector(window.location.hash)
-  if (window.location.hash) {
     if (winHash) {
       document.addEventListener("scroll", winHash);
     }
-  }
-});
-
+  });
+}
+  
 /**
  * Link Scrolling to avoid url update hash
  */

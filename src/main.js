@@ -19,6 +19,7 @@ import "./js/contact-form"
 import "./js/top-link"
 import "./js/date"
 import "./js/hide-preloader"
+import "./js/update-titles"
 
 
 
