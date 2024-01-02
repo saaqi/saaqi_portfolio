@@ -10,7 +10,6 @@
   top: 0;
   z-index: 1049;
   transition: v.$transition;
-  height: 100%;
 }
 
 .mobile-nav-active{
@@ -128,7 +127,7 @@
 }
 
 .mobile-nav-active {
-  // overflow: hidden;
+  overflow: hidden;
 
   .mobile-nav-toggle {
     
