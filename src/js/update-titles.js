@@ -4,24 +4,24 @@ const orgDescription = document.querySelector('meta[name="description"]').conten
 window.addEventListener("scroll", () => {
   // Define the sections and their corresponding titles and descriptions
   const sections = [
-    // {
-    //   id: "home",
-    //   title: "",
-    //   // description: "Description for Section 1",
-    // },
+    {
+      id: "home",
+      title: orgTitle,
+      // description: "Description for Section 1",
+    },
     {
       id: "about",
-      title: "About ",
+      title: "About " + orgTitle,
       // description: "Description for Section 2",
     },
     {
       id: "portfolio",
-      title: "Portfolio of ",
+      title: "Portfolio of " + orgTitle,
       // description: "Description for Section 2",
     },
     {
       id: "contact",
-      title: "Contact ",
+      title: "Contact " + orgTitle,
       // description: "Description for Section 2",
     },
   ];
@@ -43,9 +43,10 @@ window.addEventListener("scroll", () => {
   // const metaDescription = document.querySelector('meta[name="description"]');
 
   if (currentSection) {
-    document.title = currentSection.title + orgTitle;
+    document.title = currentSection.title;
     // metaDescription.content = currentSection.description;
-  } else {
+  }
+  else {
     document.title = orgTitle;
     // metaDescription.content = orgDescription;
   }
