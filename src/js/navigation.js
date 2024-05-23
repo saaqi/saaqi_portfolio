@@ -1,27 +1,30 @@
-/**
- * Navbar links active state on scroll
- */
-const navbarlinks = document.querySelectorAll("#navbar .scrollto");
-const navbarlinksActive = () => {
-  let position = window.scrollY + 200;
-  navbarlinks.forEach((navbarlink) => {
-    if (!navbarlink.hash) return;
-    let section = document.querySelector(navbarlink.hash);
-    if (!section) return;
-    if (
-      position >= section.offsetTop &&
-      position <= section.offsetTop + section.offsetHeight
-    ) {
-      navbarlink.classList.add("active");
-    } else {
-      navbarlink.classList.remove("active");
-    }
-  });
-};
-if (navbarlinksActive) {
-  window.addEventListener("load", navbarlinksActive);
-  document.addEventListener("scroll", navbarlinksActive);
-}
+// Setup Scroll Spy
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('#navbar .scrollto');
+  function highlightNavLink() {
+    let scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+      const top = section.offsetTop - 0;
+      const bottom = top + section.offsetHeight;
+
+      if (scrollPosition >= top && scrollPosition < bottom) {
+        const id = section.getAttribute('id');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href').slice(1) === id) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }
+  window.addEventListener('load', highlightNavLink);
+  window.addEventListener('scroll', highlightNavLink);
+  window.addEventListener('resize', highlightNavLink);
+});
 
 /**
  * Mobile Navigation Setup
