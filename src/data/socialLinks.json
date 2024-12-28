@@ -1,0 +1,44 @@
+[
+  {
+    "name": "linkedin",
+    "url": "https://linkedin.com/in/saaqi",
+    "title": "LinedIn Profile Link",
+    "icon": "bxl-linkedin"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/saaqi",
+    "title": "Github Profile Link",
+    "icon": "bxl-github"
+  },
+  {
+    "name": "email",
+    "url": "mailto:saaqi.grw@gmail.com?subject=Hi, Saqib Let's talk!",
+    "title": "Send me and E-Mail",
+    "icon": "bxl-gmail"
+  },
+  {
+    "name": "whatsapp",
+    "url": "https://wa.me/+923006412193",
+    "title": "Send me a message on WhatsApp",
+    "icon": "bxl-whatsapp"
+  },
+  {
+    "name": "phone",
+    "url": "tel:+923006412193",
+    "title": "Give me a Call",
+    "icon": "bx-phone-call"
+  },
+  {
+    "name": "twitter",
+    "url": "https://x.com/saaqi",
+    "title": "X Profile Link",
+    "icon": "bxl-twitter"
+  },
+  {
+    "name": "facebook",
+    "url": "https://facebook.com/saqibislam",
+    "title": "Facebook Profile Link",
+    "icon": "bxl-facebook"
+  }
+]

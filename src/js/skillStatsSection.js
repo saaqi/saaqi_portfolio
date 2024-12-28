@@ -1,6 +1,9 @@
 /**
  * Skills animation
- */
+*/
+import { skillStatsLists } from "./functions/skillStatsLists"
+skillStatsLists('skill-level-bars')
+
 const progressBars = document.querySelectorAll(".progress-bar");
 const animateWhenVisible = new IntersectionObserver(
   (entries, observer) => {
@@ -24,7 +27,9 @@ if (progressBars) {
 /**
  * Stats counters
  */
-const statsCounters = document.querySelectorAll(".statcounter");
+import { statCountersLists } from "./functions/skillStatsLists"
+statCountersLists('stats-counters')
+const statsCounters = document.querySelectorAll(".statcounter")
 
 if (statsCounters) {
   statsCounters.forEach((statsCounter) => {

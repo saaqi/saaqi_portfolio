@@ -93,13 +93,12 @@ a.top-link {
   i {
     letter-spacing: normal;
   }
-  
   &.btn-icon {
-    line-height: 0; 
+    line-height: 0;
     padding: 0.5rem;
-    letter-spacing: 0; 
+    letter-spacing: 0;
 
-    &:hover {      
+    &:hover {
       transform: none;
     }
 
@@ -126,11 +125,11 @@ a.top-link {
 
 [class*="btn-outline-"] {
   box-shadow: none;
-  
+
   &:hover {
     box-shadow: none;
   }
-  
+
   &:active {
     box-shadow: none;
   }

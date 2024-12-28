@@ -1,22 +1,17 @@
 @charset "UTF-8";
 
 // import partials ---
-@use "./scss/variables" as v;
+// @use "./styles/variables" as v;
 
 // defaults
-@import "./scss/base";
-@import "./scss/navigation";
+@use "./styles/base";
+@use "./styles/navigation";
 
 // sections
-@import "./scss/sections/home-section";
-@import "./scss/sections/about-section";
-@import "./scss/sections/contact-section";
-// @import "./scss/sections/portfolio-section";
-// @import "./scss/sections/whyus";
-// @import "./scss/sections/testimonials";
-// @import "./scss/sections/footer";
-
-// IMPPORT BOXICONS
-@import "boxicons/css/boxicons.css"
-
-
+@use "./styles/home-section";
+@use "./styles/about-section";
+@use "./styles/contact-section";
+// @use "./styles/portfolio-section";
+// @use "./styles/whyus";
+// @use "./styles/testimonials";
+// @use "./styles/footer";

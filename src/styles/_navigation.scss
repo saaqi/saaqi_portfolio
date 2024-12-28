@@ -1,3 +1,4 @@
+@use "./variables" as v;
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -31,7 +32,7 @@
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .nav-menu {
   padding: 0;
@@ -43,7 +44,7 @@
       white-space: nowrap;
     }
   }
-  
+
   a {
     line-height: normal;
     display: flex;
@@ -51,8 +52,8 @@
     padding: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 5rem;
-    border: 1px solid rgba(v.$primary, 0.3);
-    background-color: rgba(v.$light, 0.9);
+    border: 1px solid rgba(var(--bs-primary-rgb), 0.3);
+    background-color: rgba(var(--bs-light-rgb), 0.9);
     transition: v.$transition;
     height: 3.5rem;
     width: 100%;
@@ -61,7 +62,7 @@
     i {
       font-size: 1.25rem;
     }
-    
+
     span {
       padding-left: 0.5rem;
     }
@@ -69,15 +70,15 @@
     &:hover {
       width: 100%;
     }
-    
+
     &:hover, &:active, &:focus {
-      color: v.$light;
+      color: var(--bs-light);
     }
-    
+
     &:hover span {
       display: block;
     }
-    
+
   }
 }
 
@@ -95,15 +96,15 @@
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   left: 10px;
   position: fixed;
   top: 10px;
   z-index: 1050;
-  background-color: rgba(v.$light, 0.5);
-  
+  background-color: rgba(var(--bs-light-rgb), 0.5);
+
   i {
     transition: v.$transition;
   }
@@ -114,7 +115,6 @@
   overflow: hidden;
 
   .mobile-nav-toggle {
-    
     i {
       transform: rotate(90deg);
     }
@@ -125,7 +125,7 @@
   .header {
     display: none;
     width: 20rem;
-    background: v.$light;
+    background: var(--bs-light);
     left: -20rem;
   }
   .mobile-nav-active {

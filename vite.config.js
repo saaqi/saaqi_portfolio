@@ -38,6 +38,14 @@ export default defineConfig({
     IN_PRODUCTION && ViteMinifyPlugin({}),
   ],
 
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern'
+      }
+    }
+  },
+
   base: "./",
   server: {
     port: 3000,

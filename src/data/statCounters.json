@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Happy Clients",
+    "level": 30,
+    "icon": "bx-smile"
+  },
+  {
+    "title": "Projects",
+    "level": 45,
+    "icon": "bx-notepad"
+  },
+  {
+    "title": "Hours Of Support",
+    "level": 1500,
+    "icon": "bx-support"
+  },
+  {
+    "title": "Certificates",
+    "level": 8,
+    "icon": "bx-certification"
+  }
+]
