@@ -9,8 +9,8 @@ const iconsList = () => {
     } = ic
 
     const output =
-      `<symbol xmlns="http://www.w3.org/2000/svg" viewBox="${viewbox}" id="${title}">
-        <path fill="currentColor" d="${path}" />
+      `<symbol id="${title}" viewBox="${viewbox}">
+        <path fill="currentColor" fill-rule="evenodd" d="${path}" />
       </symbol>`
 
     return output

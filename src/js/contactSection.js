@@ -75,10 +75,10 @@ if (contactForm) {
       return false;
     } else {
       const receiveEmail = "saaqi.grw@gmail.com";
-      const subjectInput = document.querySelector('#' + formId + ' #contact-form-subject');
+      const subjectInput = document.querySelector('#' + formId + ' #contact-form-subject').value;
       const subjectDefault = `[Contact-Form] ${nameInput.value}`;
       const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`;
-      const mailtoUrl = `mailto:${encodeURIComponent(receiveEmail)}?subject=${encodeURIComponent(subjectInput ? subjectInput : subjectDefault)}&body=${encodeURIComponent(body)}`;
+      const mailtoUrl = `mailto:${receiveEmail}?subject=${subjectInput ? subjectInput : subjectDefault}&body=${encodeURIComponent(body)}`;
       window.open(mailtoUrl);
     }
   });
