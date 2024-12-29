@@ -59,8 +59,9 @@
     width: 100%;
     overflow: hidden;
 
-    i {
-      font-size: 1.25rem;
+    svg.icon {
+      font-size: 1.5em;
+      text-align: end;
     }
 
     span {
@@ -105,7 +106,7 @@
   z-index: 1050;
   background-color: rgba(var(--bs-light-rgb), 0.5);
 
-  i {
+  svg.icon {
     transition: v.$transition;
   }
 }
@@ -115,7 +116,7 @@
   overflow: hidden;
 
   .mobile-nav-toggle {
-    i {
+    svg.icon {
       transform: rotate(90deg);
     }
   }

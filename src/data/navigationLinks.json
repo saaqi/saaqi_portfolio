@@ -1,0 +1,22 @@
+[
+  {
+    "link": "#home",
+    "text": "Home",
+    "icon": "home-icon"
+  },
+  {
+    "link": "#about",
+    "text": "About Me",
+    "icon": "user-icon"
+  },
+  {
+    "link": "#portfolio",
+    "text": "Portfolio",
+    "icon": "briefcase-icon"
+  },
+  {
+    "link": "#contact",
+    "text": "Contact Me",
+    "icon": "address-book-icon"
+  }
+]

@@ -1,3 +1,31 @@
+import navigationLinks from '../data/navigationLinks.json'
+
+const navLinksInsert = () => {
+  const navLinks = navigationLinks.map(ln => {
+    const {
+      link = '',
+      text = '',
+      icon = ''
+    } = ln
+
+    const output =
+      `<li>
+        <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto">
+          <svg class="icon ${icon} bx bx-home">
+            <use xlink:href="#${icon}"></use>
+          </svg>
+          <span>${text}</span>
+        </a>
+      </li>`
+
+    return output
+
+  })
+  const mainNavContainer = document.getElementById('main-navigation')
+  if (mainNavContainer) mainNavContainer.innerHTML = navLinks.join("")
+}
+navLinksInsert()
+
 // Setup Scroll Spy
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll('section');
