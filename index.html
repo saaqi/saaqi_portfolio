@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <svg class="d-none hidden" id="svgSprites"></svg>
   <div id="preloader"></div>
   <!-- Header Start -->
   <header id="header" class="header d-flex flex-column justify-content-center">
@@ -117,13 +118,9 @@
               aria-labelledby="profile-picture-label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
+                  <button type="button" class="btn-close align-self-end mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
                   <div class="modal-body p-0">
                     <div class="profile-container position-relative">
-                      <button type="button"
-                        class="btn btn-icon btn-outline-info rounded-circle fs-4 p-1 position-absolute"
-                        style="right: 1rem; top: 1rem" data-bs-dismiss="modal" aria-label="Close">
-                        <i class='bx bx-x'></i>
-                      </button>
                       <img src="./img/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label" alt="Profile Picture"
                         loading="lazy">
                     </div>

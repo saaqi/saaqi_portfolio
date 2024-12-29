@@ -11,7 +11,9 @@ const socialMediaLists = (selectorID, btn) => {
     const output =
     `<li>
       <a href="${url}" class="${name} ${btn ? `btn btn-icon btn-secondary rounded-circle` : ``}" title="${title}" target="_blank" rel="nofollow">
-        <i class="bx ${icon} ${btn ? '' : `link-info`} ${icon} ${btn ? 'fs-6' : `fs-4`}"></i>
+        <svg class="icon ${icon} ${btn ? '' : `link-info`} ${btn ? 'fs-6' : `fs-4`}">
+          <use xlink:href="#${icon}"></use>
+        </svg>
       </a>
     </li>`
 

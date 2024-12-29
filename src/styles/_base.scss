@@ -141,3 +141,12 @@ a.top-link {
 .modal-content {
   background: rgba(var(--bs-light-rgb), 0.95);
 }
+
+// Icons
+svg.icon {
+  // display: inline;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  vertical-align: sub;
+}
