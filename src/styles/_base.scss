@@ -56,7 +56,6 @@ a {
   margin-right: auto;
 }
 
-////////////
 /*Top Link*/
 a.top-link.active {
   opacity: 1;
@@ -73,9 +72,10 @@ a.top-link {
   visibility: hidden;
   z-index: 4;
 
-  i {
-    line-height: normal;
-    letter-spacing: normal;
+  svg.icon {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
   }
 }
 
@@ -144,9 +144,9 @@ a.top-link {
 
 // Icons
 svg.icon {
-  // display: inline;
+  // display: inline-block;
   height: 1em;
   width: 1em;
   text-align: center;
-  vertical-align: sub;
+  // vertical-align: sub;
 }

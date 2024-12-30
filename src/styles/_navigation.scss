@@ -60,11 +60,11 @@
     overflow: hidden;
 
     svg.icon {
-      font-size: 1.4em;
+      font-size: 1.25rem;
     }
 
     span {
-      padding-left: 0.5rem;
+      padding-left: 0.8rem;
     }
 
     &:hover {
@@ -99,14 +99,14 @@
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  left: 10px;
+  left: 12px;
   position: fixed;
-  top: 10px;
+  top: 12px;
   z-index: 1050;
   background-color: rgba(var(--bs-light-rgb), 0.5);
 
   svg.icon {
-    transition: v.$transition;
+    transition: transform ease-in-out .3s;
   }
 }
 
@@ -115,6 +115,8 @@
   overflow: hidden;
 
   .mobile-nav-toggle {
+    font-size: 3rem;
+
     svg.icon {
       transform: rotate(90deg);
     }

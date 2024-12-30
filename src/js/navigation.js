@@ -11,7 +11,7 @@ const navLinksInsert = () => {
     const output =
       `<li>
         <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto">
-          <svg class="icon ${icon} bx bx-home">
+          <svg class="icon ${icon}">
             <use xlink:href="#${icon}"></use>
           </svg>
           <span>${text}</span>
@@ -59,24 +59,28 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 const body = document.querySelector("body");
 const toggleButton = document.querySelector(".mobile-nav-toggle");
-const toggleButtonIcon = document.querySelector(".mobile-nav-toggle i");
+const toggleButtonIcon = document.querySelector(".mobile-nav-toggle svg.icon use");
 
 // Mobile nav toggle button
 if (toggleButton) {
-toggleButton.addEventListener("click", () => {
-    body.classList.toggle("mobile-nav-active");
-    toggleButtonIcon.classList.toggle("bx-x");
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("mobile-nav-active")
+    if (body.classList.contains('mobile-nav-active')) {
+      toggleButtonIcon.setAttribute('xlink:href', '#close-icon')
+    } else {
+      toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
+    }
   });
 }
 
 //Hide navigation on clicking elements
 const closerLinks = document.querySelectorAll("main, .scrollto");
 if (closerLinks) {
-closerLinks.forEach((close) => {
+  closerLinks.forEach((close) => {
     close.addEventListener("click", () => {
       if (body.classList.contains("mobile-nav-active")) {
-        body.classList.remove("mobile-nav-active");
-        toggleButtonIcon.classList.remove("bx-x");
+        body.classList.remove("mobile-nav-active")
+        toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
       }
     });
   });
@@ -110,8 +114,8 @@ function touch_end(event) {
     elapsed_time < within_ms
   ) {
     if (move_x < 0) {
-      body.classList.remove("mobile-nav-active");
-      toggleButtonIcon.classList.remove("bx-x");
+      body.classList.remove("mobile-nav-active")
+      toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
     }
   }
 }
@@ -127,14 +131,14 @@ if (swipeAble) {
  * Scroll with ofset on page load with hash links in the url
  */
 if (window.location.hash) {
-window.addEventListener("load", () => {
-  const winHash = document.querySelector(window.location.hash)
+  window.addEventListener("load", () => {
+    const winHash = document.querySelector(window.location.hash)
     if (winHash) {
       document.addEventListener("scroll", winHash);
     }
   });
 }
-  
+
 /**
  * Link Scrolling to avoid url update hash
  */

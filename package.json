@@ -35,6 +35,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.20",
+    "caniuse-lite": "^1.0.30001690",
     "cssnano": "^6.1.2",
     "postcss": "^8.4.49",
     "sass": "^1.83.0",
@@ -43,7 +44,6 @@
     "vite-plugin-webfont-dl": "^3.10.3"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "boxicons": "^2.1.4"
+    "bootstrap": "^5.3.3"
   }
 }

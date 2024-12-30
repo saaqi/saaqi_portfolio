@@ -23,9 +23,11 @@
   <div id="preloader"></div>
   <!-- Header Start -->
   <header id="header" class="header d-flex flex-column justify-content-center">
-    <button class="mobile-nav-toggle rounded-circle fs-1 shadow-sm p-1 btn btn-outline-primary btn-icon"
+    <button type="button" class="mobile-nav-toggle rounded-circle fs-1 shadow-sm p-1 btn btn-outline-primary btn-icon"
       title="Navigation Menu">
-      <i class="bx bx-menu-alt-left"></i>
+      <svg class="icon menu-icon">
+        <use xlink:href="#menu-icon"></use>
+      </svg>
     </button>
     <nav id="navbar" class="navbar nav-menu">
       <ul class="list-unstyled" id="main-navigation">
@@ -46,18 +48,20 @@
           <div class="text-col d-flex flex-column gap-2 text-center text-lg-start col-lg-6 fw-medium">
             <div>Hi there, I'M</div>
             <h1 class="text-primary display-3 fw-bold">Saqib Islam</h1>
-            <p>
+            <p class="mb-0">
               a Full Stack Web Developer and UX/UI Designer certified by Google & Meta,
               passionate about creating meaningful user experiences. Let's shape the future together!
             </p>
             <ul
-              class="social-links list-unstyled d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start"
+              class="social-links list-unstyled d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start my-4"
               id="hero-social-links">
               <!-- Insert with heroSection.js -->
             </ul>
             <div class="col-12 m-0 hire-me-button">
               <a href="#contact" class="btn btn-secondary scrollto" title="Hire Me!">
-                <i class="bx bx-conversation"></i> Hire Me!
+                <svg class="icon handshake-icon">
+                  <use xlink:href="#handshake-icon"></use>
+                </svg> Hire Me!
               </a>
             </div>
           </div>
@@ -72,13 +76,16 @@
       <div class="container">
         <div class="heading-container">
           <h2 class="section-heading">
-            <i class="bx bx-user"></i> About Me
+            <svg class="icon user-icon">
+              <use xlink:href="#user-icon"></use>
+            </svg> About Me
           </h2>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-2 col-lg-2">
-            <a class="profile-image" data-bs-toggle="modal" data-bs-target="#profile-picture" title="Saqib Islam: Profile Photo">
+            <a class="profile-image" data-bs-toggle="modal" data-bs-target="#profile-picture"
+              title="Saqib Islam: Profile Photo">
               <img src="./img/profile-thumb.webp" class="img-fluid profile rounded-3 shadow-sm"
                 alt="Saqib Islam, Profile Photo" loading="lazy">
             </a>
@@ -86,11 +93,12 @@
               aria-labelledby="profile-picture-label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                  <button type="button" class="btn-close align-self-end mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn-close align-self-end mt-2 me-2" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
                   <div class="modal-body p-0">
                     <div class="profile-container position-relative">
-                      <img src="./img/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label" alt="Profile Picture"
-                        loading="lazy">
+                      <img src="./img/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label"
+                        alt="Profile Picture" loading="lazy">
                     </div>
                   </div>
                 </div>
@@ -114,7 +122,10 @@
         <article class="statistics mt-5">
           <div class="heading-container">
             <h4 class="section-heading">
-              <i class='bx bx-stats'></i> Stats
+              <svg class="icon chart-icon">
+                <use xlink:href="#chart-icon"></use>
+              </svg>
+              Stats
             </h4>
           </div>
           <div class="row stats g-3 row-gap-4 mt-4" id="stats-counters">
@@ -125,7 +136,9 @@
         <article class="expertise mt-5">
           <div class="heading-container">
             <h4 class="section-heading">
-              <i class='bx bx-code-curly'></i> Skills
+              <svg class="icon coding-icon">
+                <use xlink:href="#coding-icon"></use>
+              </svg> Skills
             </h4>
           </div>
 
@@ -142,7 +155,7 @@
 
         <div class="heading-container">
           <h2 class="section-heading">
-            <i class="bx bx-user"></i> My Resume
+            <i class="bx-user"></i> My Resume
           </h2>
         </div>
 
@@ -209,7 +222,9 @@
 
         <div class="heading-container">
           <h2 class="section-heading">
-            <i class='bx bxs-collection'></i> Portfolio
+            <svg class="icon briefcase-icon">
+              <use xlink:href="#briefcase-icon"></use>
+            </svg> Portfolio
           </h2>
         </div>
 
@@ -227,27 +242,30 @@
                 <div class="btn-group w-100">
                   <a href="https://github.com/saaqi/car-mechanic-shop" class="btn btn-outline-primary btn-icon fs-4"
                     title="View Project on GitHub" rel="nofollow" target="_blank">
-                    <i class="bx bxl-github"></i>
+                    <svg class="icon github-icon">
+                      <use xlink:href="#github-icon"></use>
+                    </svg>
                   </a>
                   <a href="https://carclubtire.com" class="btn btn-outline-primary btn-icon fs-4"
                     title="View Live Project" rel="nofollow" target="_blank">
-                    <i class="bx bx-globe"></i>
+                    <svg class="icon globe-icon">
+                      <use xlink:href="#globe-icon"></use>
+                    </svg>
                   </a>
                   <button type="button" class="btn btn-outline-primary btn-icon fs-4" data-bs-toggle="modal"
                     data-bs-target="#cc-case-study" title="Car Club: Case Study">
-                    <i class="bx bx-book-content"></i>
+                    <svg class="icon content-icon">
+                      <use xlink:href="#content-icon"></use>
+                    </svg>
                   </button>
                 </div>
-                <div class="modal fade modal-xl" id="cc-case-study" tabindex="-1"
-                  aria-labelledby="car-club-case-study" aria-hidden="true">
+                <div class="modal fade modal-xl" id="cc-case-study" tabindex="-1" aria-labelledby="car-club-case-study"
+                  aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <div class="modal-title fs-5" id="car-club-case-study">Car Club: Case Study</div>
-                        <button type="button" class="btn btn-icon btn-outline-info rounded-circle fs-4 p-1 ms-auto"
-                          data-bs-dismiss="modal" aria-label="Close">
-                          <i class='bx bx-x'></i>
-                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <script type="module" src="./src/projects/cc-case-study.js"></script>
                       </div>
                       <div class="modal-body">
@@ -365,7 +383,9 @@
       <div class="container">
         <div class="heading-container">
           <h2 class="section-heading">
-            <i class='bx bxs-contact'></i> Contact Me
+            <svg class="icon address-book-icon">
+              <use xlink:href="#address-book-icon"></use>
+            </svg> Contact Me
           </h2>
         </div>
 
@@ -378,61 +398,85 @@
         <div class="row mt-4">
           <div class="col-lg-3 col-12 info d-flex flex-column gap-4 gap-lg-5">
             <a href="mailto:saaqi.grw@gmail.com?subject=Hi,&nbsp;Saqib&nbsp;Let's&nbsp;talk!" target="_blank">
-              <div class="email">
-                <i class="bx bx-envelope bg-primary text-bg-primary"></i>
-                <h4>Email:</h4>
-                <p>saaqi.grw@gmail.com</p>
+              <div class="icon-container btn btn-outline-primary rounded-circle p-3 me-3">
+                <svg class="icon email-icon">
+                  <use xlink:href="#email-icon"></use>
+                </svg>
               </div>
+              <h4>Email:</h4>
+              <p>saaqi.grw@gmail.com</p>
             </a>
             <a href="https://wa.me/+923006412193" target="_blank">
-              <div class="phone whatsapp">
-                <i class="bx bxl-whatsapp bg-primary text-bg-primary"></i>
-                <h4>WhatsApp:</h4>
-                <p>+92 300 6412193</p>
+              <div class="icon-container btn btn-outline-primary rounded-circle p-3 me-3">
+                <svg class="icon whatsapp-icon">
+                  <use xlink:href="#whatsapp-icon"></use>
+                </svg>
               </div>
+              <h4>WhatsApp:</h4>
+              <p>+92 300 6412193</p>
             </a>
             <a href="tel:+923006412193">
-              <div class="phone">
-                <i class="bx bx-phone-call bg-primary text-bg-primary"></i>
-                <h4>Call:</h4>
-                <p>+92 300 6412193</p>
+              <div class="icon-container btn btn-outline-primary rounded-circle p-3 me-3">
+                <svg class="icon phone-icon">
+                  <use xlink:href="#phone-icon"></use>
+                </svg>
               </div>
+              <h4>Call:</h4>
+              <p>+92 300 6412193</p>
             </a>
-            <!-- <div class="address">
-                <i class="bx bx-map bg-primary text-bg-primary"></i>
-                <h4>Location:</h4>
-                <p>Azizia Town, Gujranwala, Pakistan</p>
-              </div> -->
           </div>
 
           <div class="col-lg-9 col-12 mt-5 mt-lg-0">
             <form id="contact-email-form" class="contact-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="contact-form-name"><i class="bx bx-user"></i> Name:</label>
+                  <label for="contact-form-name">
+                    <svg class="icon user-icon">
+                      <use xlink:href="#user-icon"></use>
+                    </svg>
+                    Name:
+                  </label>
                   <input type="text" name="contact-form-name" class="form-control" id="contact-form-name"
                     placeholder="Enter Your Full Name *" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <label for="contact-form-email"><i class="bx bx-envelope"></i> Email Address:</label>
+                  <label for="contact-form-email">
+                    <svg class="icon email-icon">
+                      <use xlink:href="#email-icon"></use>
+                    </svg>
+                    Email Address:
+                  </label>
                   <input type="email" class="form-control" name="contact-form-email" id="contact-form-email"
                     placeholder="Enter Your Email *" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <label for="contact-form-subject"><i class="bx bx-message"></i> Subject:</label>
+                <label for="contact-form-subject">
+                  <svg class="icon subject-icon">
+                    <use xlink:href="#subject-icon"></use>
+                  </svg>
+                  Subject:
+                </label>
                 <input type="text" class="form-control" name="contact-form-subject" id="contact-form-subject"
                   placeholder="Enter The subject">
               </div>
               <div class="form-group mt-3">
-                <label for="contact-form-message"><i class="bx bx-message-alt-detail"></i> Message:</label>
+                <label for="contact-form-message">
+                  <svg class="icon message-icon">
+                    <use xlink:href="#message-icon"></use>
+                  </svg>
+                  Message:
+                </label>
                 <textarea class="form-control" name="contact-form-message" id="contact-form-message" rows="5"
                   placeholder="What is on your mind? *" required></textarea>
               </div>
               <div id="errorAlerts" class="mt-3"></div>
               <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary">
-                  <i class="bx bx-mail-send"></i> Send Message
+                  <svg class="icon email-icon">
+                    <use xlink:href="#email-icon"></use>
+                  </svg>
+                  Send Message
                 </button>
               </div>
             </form>
@@ -541,8 +585,11 @@
         </div>
       </div>
     </footer>
-    <a href="#home" class="top-link scrollto" title="Go To Top">
-      <i class="bx bx-arrow-to-top btn btn-outline-info p-2 fs-5 rounded-circle"></i>
+    <a href="#home" class="top-link scrollto btn btn-outline-info bg-transparent text-info p-1 rounded-circle"
+      title="Go To Top">
+      <svg class="icon top-icon">
+        <use xlink:href="#top-icon"></use>
+        </div>
     </a>
   </main>
 

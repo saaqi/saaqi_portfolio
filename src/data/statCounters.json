@@ -2,21 +2,21 @@
   {
     "title": "Happy Clients",
     "level": 30,
-    "icon": "bx-smile"
+    "icon": "happy-icon"
   },
   {
     "title": "Projects",
     "level": 45,
-    "icon": "bx-notepad"
+    "icon": "project-icon"
   },
   {
     "title": "Hours Of Support",
     "level": 1500,
-    "icon": "bx-support"
+    "icon": "support-icon"
   },
   {
     "title": "Certificates",
     "level": 8,
-    "icon": "bx-certification"
+    "icon": "certificate-icon"
   }
 ]

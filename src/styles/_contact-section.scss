@@ -3,17 +3,9 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
-.contact .info i {
-  font-size: 1.5rem;
+.contact .info .icon-container {
   float: left;
-  width: 3rem;
-  height: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rem;
-  transition: v.$transition;
 }
 
 .contact .info h4 {

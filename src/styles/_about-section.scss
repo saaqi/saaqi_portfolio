@@ -13,11 +13,17 @@
   .count-box {
     position: relative;
 
-    i {
+    .stats-icon-container {
       position: absolute;
       top: -25px;
       left: 50%;
+      height: 50px;
+      width: 50px;
       transform: translateX(-50%);
+
+      svg.icon {
+        vertical-align: bottom;
+      }
     }
   }
 }

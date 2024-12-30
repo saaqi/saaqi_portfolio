@@ -2,31 +2,31 @@
   {
     "title": "HTML",
     "level": 100,
-    "icon": "bxl-html5"
+    "icon": "html-icon"
   },
   {
     "title": "CSS",
     "level": 98,
-    "icon": "bxl-css3"
+    "icon": "css-icon"
   },
   {
     "title": "Javascript",
     "level": 95,
-    "icon": "bxl-javascript"
+    "icon": "javascript-icon"
   },
   {
     "title": "WordPress/CMS",
     "level": 95,
-    "icon": "bxl-wordpress"
+    "icon": "wordpress-icon"
   },
   {
-    "title": "React.js",
+    "title": "React / React-Native",
     "level": 80,
-    "icon": "bxl-react"
+    "icon": "react-icon"
   },
   {
-    "title": "React-Native",
+    "title": "Shopify",
     "level": 80,
-    "icon": "bxl-react"
+    "icon": "shopify-icon"
   }
 ]

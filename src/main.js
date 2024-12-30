@@ -7,9 +7,6 @@ import "./styles/bootstrap.css"
 // IMPORT CUSTOM STYLES
 import "./main.scss"
 
-// IMPPORT BOXICONS
-import "boxicons/css/boxicons.css"
-
 
 /* ## Import JS
 --------------------------------------------- */
@@ -22,7 +19,6 @@ import "./js/icons"
 import "./js/top-link"
 import "./js/hide-preloader"
 import "./js/update-titles"
-
 
 
 // Import Bootstrap Modal
