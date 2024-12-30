@@ -44,6 +44,13 @@ window.addEventListener("scroll", () => {
 
   if (currentSection) {
     document.title = currentSection.title;
+
+
+    const newUrl = `#${currentSection.id}`;
+    if (window.location.hash !== newUrl) {
+      history.replaceState(null, '', newUrl); // Update URL hash
+    }
+
     // metaDescription.content = currentSection.description;
   }
   else {

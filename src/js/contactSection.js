@@ -6,9 +6,9 @@ const formId = 'contact-email-form';
 const contactForm = document.getElementById(formId);
 
 if (contactForm) {
-  const nameInput = document.querySelector('#' + formId + ' #contact-form-name');
-  const emailInput = document.querySelector('#' + formId + ' #contact-form-email');
-  const messageInput = document.querySelector('#' + formId + ' #contact-form-message');
+  const nameInput = document.getElementById('contact-form-name');
+  const emailInput = document.getElementById('contact-form-email');
+  const messageInput = document.getElementById('contact-form-message');
 
   // Function to validate email format using a regular expression
   /**
@@ -22,7 +22,7 @@ if (contactForm) {
     return emailRegex.test(email);
   }
 
-  const alertPlaceholder = document.querySelector('#' + formId + ' #errorAlerts');
+  const alertPlaceholder = document.getElementById('errorAlerts');
 
   // Function to append an alert message to the alert placeholder
   /**
@@ -75,7 +75,7 @@ if (contactForm) {
       return false
     } else {
       const receiveEmail = "saaqi.grw@gmail.com";
-      const subjectInput = document.querySelector('#' + formId + ' #contact-form-subject').value
+      const subjectInput = document.getElementById('contact-form-subject').value
       const subjectDefault = `[Contact-Form] ${nameInput.value}`
       const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`
       const mailtoUrl =

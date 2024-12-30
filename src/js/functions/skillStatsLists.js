@@ -41,8 +41,9 @@ import statCounters from '../../data/statCounters.json'
 export const statCountersLists = selectorID => {
   const skillStatList = statCounters.map(sl => {
     const {
-      title = '',
+      header = '',
       level = '',
+      title = '',
       icon = ''
     } = sl
 
@@ -54,10 +55,11 @@ export const statCountersLists = selectorID => {
               <use xlink:href="#${icon}"></use>
             </svg>
           </div>
-          <span class="fs-2 fw-medium">
+          <p class="mb-0 mt-2">${header}</p>
+          <span class="fs-2 fw-bold text-primary">
             <span class="statcounter">${level}</span> +
           </span>
-          <p class="mb-0 fw-medium">${title}</p>
+          <p class="mb-0">${title}</p>
         </div>
       </div>`
 

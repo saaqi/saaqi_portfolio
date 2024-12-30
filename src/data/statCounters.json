@@ -1,22 +1,26 @@
 [
   {
-    "title": "Happy Clients",
+    "header": "Trusted by",
     "level": 30,
+    "title": "Satisfied Clients to Grow Their Businesses.",
     "icon": "happy-icon"
   },
   {
-    "title": "Projects",
+    "header": "Completed",
     "level": 45,
+    "title": "Projects, Delivered On Time and Budget.",
     "icon": "project-icon"
   },
   {
-    "title": "Hours Of Support",
-    "level": 1500,
-    "icon": "support-icon"
+    "header": "Experience of",
+    "level": 5,
+    "title": "Years Satisfied Clients to Grow Their Businesses.",
+    "icon": "working-icon"
   },
   {
-    "title": "Certificates",
+    "header": "Achieved",
     "level": 8,
+    "title": "Certificates from Meta, Google & IBM.",
     "icon": "certificate-icon"
   }
 ]
