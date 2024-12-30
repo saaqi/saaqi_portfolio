@@ -10,15 +10,15 @@ import "./main.scss"
 
 /* ## Import JS
 --------------------------------------------- */
+import "./js/icons"
 import "./js/navigation"
+import "./js/updateTitles"
 import "./js/heroSection"
-import "./js/footerSection"
 import "./js/skillStatsSection"
 import "./js/contactSection"
-import "./js/icons"
-import "./js/top-link"
-import "./js/hide-preloader"
-import "./js/update-titles"
+import "./js/footerSection"
+import "./js/toplink"
+import "./js/hidePreloader"
 
 
 // Import Bootstrap Modal

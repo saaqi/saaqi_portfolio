@@ -2,6 +2,7 @@
 # Hero Section
 --------------------------------------------------------------*/
 .home {
-  background: url('/img/linedpaper.png') repeat;
+  background-image: url('/img/linedpaper.png');
+  background-repeat: repeat;
   min-height: 100svh;
 }
