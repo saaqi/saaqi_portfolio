@@ -72,14 +72,17 @@ if (contactForm) {
       });
     }
     if (!validateForm()) {
-      return false;
+      return false
     } else {
       const receiveEmail = "saaqi.grw@gmail.com";
-      const subjectInput = document.querySelector('#' + formId + ' #contact-form-subject').value;
-      const subjectDefault = `[Contact-Form] ${nameInput.value}`;
-      const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`;
-      const mailtoUrl = `mailto:${receiveEmail}?subject=${subjectInput ? subjectInput : subjectDefault}&body=${encodeURIComponent(body)}`;
-      window.open(mailtoUrl);
+      const subjectInput = document.querySelector('#' + formId + ' #contact-form-subject').value
+      const subjectDefault = `[Contact-Form] ${nameInput.value}`
+      const body = `${messageInput.value}\n\n${nameInput.value}\n${emailInput.value}`
+      const mailtoUrl =
+        `mailto:${receiveEmail}?` +
+        `subject=${subjectInput ? subjectInput : subjectDefault}&` +
+        `body=${encodeURIComponent(body)}`
+      window.open(mailtoUrl)
     }
   });
 }
