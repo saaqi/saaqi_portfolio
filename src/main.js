@@ -16,6 +16,3 @@ import "./js/footerSection"
 import "./js/toplink"
 import "./js/hidePreloader"
 
-
-// Import Bootstrap Modal
-import "./js/lightbox"

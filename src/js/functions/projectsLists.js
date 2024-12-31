@@ -1,3 +1,6 @@
+import 'bootstrap/js/dist/modal.js'
+// ".modal-backdrop, .fad, .show, .modal-open"
+
 import projects from '../../data/projects.json'
 
 const projectsList = (selectorID) => {
@@ -12,9 +15,9 @@ const projectsList = (selectorID) => {
     } = pl
 
     const output =
-      `<li class="col-lg-4 col-md-6 col-12 d-flex portfolio-item">
+      `<div class="col-lg-4 col-md-6 col-12 d-flex portfolio-item">
         <div class="card portfolio-card">
-          <img src="./img/portfolio/${cover}" class="card-img-top" alt="PakLikte Website and Mobile App"
+          <img src="./portfolio/${cover}" class="card-img-top" alt="PakLikte Website and Mobile App"
             loading="lazy">
           <div class="card-body">
             <h4>${title}</h4>
@@ -38,25 +41,25 @@ const projectsList = (selectorID) => {
                     <use xlink:href="#content-icon"></use>
                   </svg>
                 </button>`}
-            </div>`+
-            // `${caseStudy &&
-            // `<div class="modal fade modal-xl" id="${`cc-`+index}" tabindex="-1" aria-labelledby="${`cc-label-`+index}"
-            //   aria-hidden="true">
-            //   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            //     <div class="modal-content">
-            //       <div class="modal-header">
-            //         <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}</div>
-            //         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            //       </div>
-            //       <div class="modal-body" id="${`cc-modal-body` + index}">
-            //         ----
-            //       </div>
-            //     </div>
-            //   </div>
-            // </div>`}`+
-          `</div>
+            </div>
+            ${caseStudy &&
+            `<div class="modal fade modal-xl" id="${`cc-`+index}" tabindex="-1" aria-labelledby="${`cc-label-`+index}"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <embed src="/portfolio/${caseStudy}" type="application/pdf" width="100%" height="600px" />
+                  </div>
+                </div>
+              </div>
+            </div>`}
+          </div>
         </div>
-      </li>`
+      </div>`
 
     return output
 
