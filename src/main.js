@@ -1,10 +1,5 @@
 /* ## Import Styles
 --------------------------------------------- */
-// IMPORT BOOTSTRAP
-// import "./scss/bs-dynamic.scss"
-import "./styles/bootstrap.css"
-
-// IMPORT CUSTOM STYLES
 import "./main.scss"
 
 
