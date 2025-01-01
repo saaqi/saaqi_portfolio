@@ -142,7 +142,7 @@
 
 @media (max-width: 767px) {
   .mobile-nav-active .main-container::before {
-    backdrop-filter: blur(1px);
+    // backdrop-filter: blur(1px);
     background: rgba(var(--bs-primary-rgb), 0.3);
     content: "";
     height: 100vh;
