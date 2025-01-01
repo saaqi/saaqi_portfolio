@@ -1,10 +1,43 @@
 [
   {
     "cover": "cct-thumb.webp",
-    "title": "Auto Repair: Website",
-    "copy": "The auto repair service website project aimed to establish a strong online presence for a garage in Orange City, Florida.",
+    "title": "Car Club Auto Repair Garage: JavaScript Website",
+    "copy": "Developed a responsive and user-friendly website for Car Club Tire and Auto Repair Service using vanilla JavaScript.",
     "github": "https://github.com/saaqi/car-mechanic-shop",
     "link": "https://carclubtire.com",
     "caseStudy": "cct-case-styudy.pdf"
+  },
+  {
+    "cover": "paklite.webp",
+    "title": "Paklite E-Commerce Platform: WordPress Website",
+    "copy": "Designed and developed a modern e-commerce website for Paklite, one of Pakistan's largest LED manufacturers, using WordPress and WooCommerce.",
+    "link": "https://paklite.com"
+  },
+  {
+    "cover": "o2clothing.webp",
+    "title": "O2 Clothing Studio - Shopify Website",
+    "copy": "Built a sleek and modern e-commerce website for O2 Clothing Studio using Shopify.",
+    "link": "https://o2clothingstudio.com/"
+  },
+  {
+    "cover": "ll-restaurant.webp",
+    "title": "Littel Lemon: Cross-platform Mobile App",
+    "copy": "A cross-paltform mobile app for a restaurant, developed using React Native with the Expo framework!",
+    "link": "https://github.com/saaqi/restaurant-mobile-app-react-native/releases/",
+    "github": "https://github.com/saaqi/restaurant-mobile-app-react-native/"
+  },
+  {
+    "cover": "sadiqsuperstore.webp",
+    "title": "Sadiq Superstore Grocery: JavaScript Website",
+    "copy": "Developed a responsive and interactive website for Sadiq Superstore, a local grocery store, using vanilla JavaScript.",
+    "link": "http://sadiqsuperstore.com/",
+    "github": "https://github.com/saaqi/grocery-store-template"
+  },
+  {
+    "cover": "ikramsteel.webp",
+    "title": "Steel Rebars Manufacturer: JavaScript Website",
+    "copy": "Created a professional and user-friendly website for Ikram Steel Industries, a leading manufacturer of steel rebars in Pakistan.",
+    "link": "https://ikramsteel.com/",
+    "github": "https://github.com/saaqi/ikram-steel-industries"
   }
 ]

@@ -11,18 +11,18 @@ const projectsList = (selectorID) => {
       copy = '',
       github = '',
       link = '',
-      caseStudy = false
+      caseStudy = ''
     } = pl
 
     const output =
-      `<div class="col-lg-4 col-md-6 col-12 d-flex portfolio-item">
-        <div class="card portfolio-card">
+      `<div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="card portfolio-card h-100">
           <img src="./portfolio/${cover}" class="card-img-top" alt="PakLikte Website and Mobile App"
             loading="lazy">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h3 class="h4">${title}</h3>
             <p>${copy}</p>
-            <div class="btn-group w-100">
+            <div class="btn-group w-100 mt-auto">
               ${github && `<a href="${github}" class="btn btn-outline-primary btn-icon fs-4"
                 title="View ${title} Project on GitHub" rel="nofollow" target="_blank">
                 <svg class="icon github-icon">
