@@ -71,8 +71,9 @@
       width: 100%;
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &.active, &:focus {
       color: var(--bs-light);
+      border-color: #333;
     }
 
     &:hover span {
