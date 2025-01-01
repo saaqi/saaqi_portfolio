@@ -43,16 +43,16 @@ const projectsList = (selectorID) => {
                 </button>`}
             </div>
             ${caseStudy &&
-            `<div class="modal fade modal-xl" id="${`cc-`+index}" tabindex="-1" aria-labelledby="${`cc-label-`+index}"
+            `<div class="modal fade modal-fullscreen modal-xl" id="${`cc-`+index}" tabindex="-1" aria-labelledby="${`cc-label-`+index}"
               aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-dialog modal-dialog-centered h-75">
                 <div class="modal-content">
                   <div class="modal-header">
                     <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}</div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    <embed src="/portfolio/${caseStudy}" type="application/pdf" width="100%" height="600px" />
+                  <div class="modal-body p-0" style="scrollbar-width: none; overflow-y: hidden;">
+                    <embed src="/portfolio/${caseStudy}" type="application/pdf" width="100%" height="100%" />
                   </div>
                 </div>
               </div>
