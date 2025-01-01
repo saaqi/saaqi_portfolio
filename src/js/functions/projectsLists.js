@@ -20,7 +20,7 @@ const projectsList = (selectorID) => {
           <img src="./portfolio/${cover}" class="card-img-top" alt="PakLikte Website and Mobile App"
             loading="lazy">
           <div class="card-body">
-            <h4>${title}</h4>
+            <h3 class="h4">${title}</h3>
             <p>${copy}</p>
             <div class="btn-group w-100">
               ${github && `<a href="${github}" class="btn btn-outline-primary btn-icon fs-4"
