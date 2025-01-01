@@ -11,10 +11,10 @@ a {
   padding: 3rem 0;
 }
 .section:nth-child(even) {
-  background-color: var(--bs-light);
+  background-color: var(--bs-gray-100);
 }
 .section:nth-child(odd) {
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-gray-200);
 }
 
 .heading-container {
