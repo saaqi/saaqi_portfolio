@@ -15,6 +15,11 @@
     "icon": "briefcase-icon"
   },
   {
+    "link": "#education",
+    "text": "My Education",
+    "icon": "user-graduate-icon"
+  },
+  {
     "link": "#contact",
     "text": "Contact Me",
     "icon": "address-book-icon"

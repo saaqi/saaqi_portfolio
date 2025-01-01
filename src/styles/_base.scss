@@ -144,9 +144,9 @@ a.top-link {
 
 // Icons
 svg.icon {
-  // display: inline-block;
+  display: inline-block;
   height: 1em;
   width: 1em;
-  text-align: center;
-  // vertical-align: sub;
+  line-height: 0;
+  // vertical-align: text-top;
 }

@@ -17,7 +17,7 @@ const projectsList = (selectorID) => {
     const output =
       `<div class="col-lg-4 col-md-6 portfolio-item">
         <div class="card portfolio-card h-100">
-          <img src="./portfolio/${cover}" class="card-img-top" alt="PakLikte Website and Mobile App"
+          <img src="./portfolio/${cover}" class="card-img-top border-bottom" alt="PakLikte Website and Mobile App"
             loading="lazy">
           <div class="card-body d-flex flex-column">
             <h3 class="h4">${title}</h3>
