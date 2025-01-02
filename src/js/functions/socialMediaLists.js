@@ -22,6 +22,6 @@ const socialMediaLists = (selectorID, btn) => {
   })
 
   const parentSelector = document.getElementById(selectorID);
-  if (parentSelector) parentSelector.innerHTML = socialList.join("")
+  parentSelector && (parentSelector.innerHTML = socialList.join(""))
 }
 export default socialMediaLists

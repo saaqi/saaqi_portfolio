@@ -66,6 +66,6 @@ const projectsList = (selectorID) => {
   })
 
   const parentSelector = document.getElementById(selectorID);
-  if (parentSelector) parentSelector.innerHTML = projectList.join("")
+  parentSelector &&  (parentSelector.innerHTML = projectList.join(""))
 }
 export default projectsList

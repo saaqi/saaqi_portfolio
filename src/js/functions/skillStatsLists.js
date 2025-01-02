@@ -33,7 +33,7 @@ export const skillStatsLists = selectorID => {
   })
 
   const parentSelector = document.getElementById(selectorID);
-  if (parentSelector) parentSelector.innerHTML = skillStatList.join("")
+  parentSelector && (parentSelector.innerHTML = skillStatList.join(""))
 }
 
 // Stat Counters
@@ -68,5 +68,5 @@ export const statCountersLists = selectorID => {
   })
 
   const parentSelector = document.getElementById(selectorID);
-  if (parentSelector) parentSelector.innerHTML = skillStatList.join("")
+  parentSelector && (parentSelector.innerHTML = skillStatList.join(""))
 }

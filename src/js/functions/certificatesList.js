@@ -37,6 +37,6 @@ const certificatesList = (selectorID) => {
   })
 
   const parentSelector = document.getElementById(selectorID);
-  if (parentSelector) parentSelector.innerHTML = certificateList.join("")
+  parentSelector && (parentSelector.innerHTML = certificateList.join(""))
 }
 export default certificatesList

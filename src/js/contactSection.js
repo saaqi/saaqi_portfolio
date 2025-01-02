@@ -32,10 +32,10 @@ if (contactForm) {
    */
   const appendAlert = message => {
     alertPlaceholder.innerHTML = [
-      `<div class="alert alert-danger alert-dismissible" role="alert">`,
-      `<div>${message}</div>`,
-      '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
+      `<div class="alert alert-danger alert-dismissible" role="alert">
+        <div>${message}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>`
     ].join('');
   }
 
