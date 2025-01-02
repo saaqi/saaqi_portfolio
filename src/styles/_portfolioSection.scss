@@ -8,6 +8,16 @@
   flex: 0 0 33.3333333%;
 }
 
+.portfolio-over-container {
+  position: relative;
+
+  .direction-indicators {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+  }
+}
+
 @media (max-width: 992px) {
   .portfolio-container {
     flex-wrap: nowrap;
