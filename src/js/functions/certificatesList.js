@@ -1,7 +1,7 @@
 import certificates from '../../data/certificates.json'
 
 const certificatesList = (selectorID) => {
-  const certificateList = certificates.map((cr, index) => {
+  const certificateList = certificates.map((cr) => {
     const {
       title = '',
       description = '',
@@ -9,9 +9,9 @@ const certificatesList = (selectorID) => {
     } = cr
 
     const output =
-      `<div class="col-lg-4 col-md-6 certificate-item">
-        <div class="card bg-transparent border-0 portfolio-card h-100 border-start ps-2 rounded-0 border-primary border-3">
-          <div class="card-body d-flex flex-column p-0">
+      `<div class="certificate-item">
+        <div class="card bg-transparent certificate-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
             <svg class="icon award-icon h2">
               <use xlink:href="#award-icon"></use>
             </svg>

@@ -3,7 +3,7 @@ import 'bootstrap/js/dist/modal.js'
 
 import projects from '../../data/projects.json'
 
-const projectsList = (selectorID) => {
+const projectsList = selectorID => {
   const projectList = projects.map((pl, index) => {
     const {
       cover = '',
@@ -15,10 +15,10 @@ const projectsList = (selectorID) => {
     } = pl
 
     const output =
-      `<div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="card portfolio-card h-100">
+      `<div class="portfolio-item">
+        <div class="card portfolio-card h-100 shadow-sm">
           <img src="./portfolio/${cover}" class="card-img-top border-bottom" alt="PakLikte Website and Mobile App"
-            loading="lazy">
+            loading="lazy" draggable="false">
           <div class="card-body d-flex flex-column">
             <h3 class="h4">${title}</h3>
             <p>${copy}</p>
