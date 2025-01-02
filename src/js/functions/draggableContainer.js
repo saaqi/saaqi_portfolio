@@ -18,35 +18,52 @@
  *
  * draggableContainer('myContainer');
  */
+
+// function isMobile() {
+//   const isAndroid = /Android/i.test(navigator.userAgent);
+//   const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+//   return isAndroid || isiOS;
+// }
+
+function hasTouchSupport() {
+  return (
+    'ontouchstart' in window || // Most browsers
+    navigator.maxTouchPoints > 0 || // Modern browsers
+    navigator.msMaxTouchPoints > 0 // Older IE
+  )
+}
 const draggableContainer = selectorID => {
-  const container = document.getElementById(selectorID)
-  let isDragging = false
-  let startX
-  let scrollLeft
+  if (!hasTouchSupport()) {
 
-  container.addEventListener('mousedown', (e) => {
-    isDragging = true
-    startX = e.pageX - container.offsetLeft
-    scrollLeft = container.scrollLeft
-    container.classList.add('dragging')
-  })
+    const container = document.getElementById(selectorID)
+    let isDragging = false
+    let startX
+    let scrollLeft
 
-  container.addEventListener('mouseleave', () => {
-    isDragging = false
-    container.classList.remove('dragging')
-  })
+    container.addEventListener('mousedown', (e) => {
+      isDragging = true
+      startX = e.pageX - container.offsetLeft
+      scrollLeft = container.scrollLeft
+      container.classList.add('dragging')
+    })
 
-  container.addEventListener('mouseup', () => {
-    isDragging = false;
-    container.classList.remove('dragging')
-  })
+    container.addEventListener('mouseleave', () => {
+      isDragging = false
+      container.classList.remove('dragging')
+    })
 
-  container.addEventListener('mousemove', (e) => {
-    if (!isDragging) return
-    e.preventDefault()
-    const x = e.pageX - container.offsetLeft
-    const walk = (x - startX) * 3
-    container.scrollLeft = scrollLeft - walk
-  })
+    container.addEventListener('mouseup', () => {
+      isDragging = false;
+      container.classList.remove('dragging')
+    })
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDragging) return
+      e.preventDefault()
+      const x = e.pageX - container.offsetLeft
+      const walk = (x - startX) * 3
+      container.scrollLeft = scrollLeft - walk
+    })
+  }
 }
 export default draggableContainer

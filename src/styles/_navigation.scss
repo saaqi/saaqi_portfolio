@@ -135,12 +135,12 @@
       box-shadow: 2px 0 4px rgba(#333, 0.3);
     }
   }
+  .main-navigation.nav-visibility {
+    visibility: hidden;
+  }
   .mobile-nav-toggle {
     display: block;
   }
-}
-
-@media (max-width: 767px) {
   .mobile-nav-active .main-container::before {
     // backdrop-filter: blur(1px);
     background: rgba(var(--bs-primary-rgb), 0.5);

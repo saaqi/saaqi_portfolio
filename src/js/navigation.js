@@ -58,32 +58,35 @@ document.addEventListener("DOMContentLoaded", function () {
  * Mobile Navigation Setup
  */
 const body = document.querySelector("body");
-const toggleButton = document.querySelector(".mobile-nav-toggle");
-const toggleButtonIcon = document.querySelector(".mobile-nav-toggle svg.icon use");
+const toggleButton = document.querySelector(".mobile-nav-toggle")
+const toggleButtonIcon = document.querySelector(".mobile-nav-toggle svg.icon use")
+const toggleNavVisibility = document.querySelector(".main-navigation")
 
 // Mobile nav toggle button
 if (toggleButton) {
   toggleButton.addEventListener("click", () => {
     body.classList.toggle("mobile-nav-active")
+    toggleNavVisibility.classList.toggle("nav-visibility")
     if (body.classList.contains('mobile-nav-active')) {
       toggleButtonIcon.setAttribute('xlink:href', '#close-icon')
     } else {
       toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
     }
-  });
+  })
 }
 
 //Hide navigation on clicking elements
-const closerLinks = document.querySelectorAll("main, .scrollto");
+const closerLinks = document.querySelectorAll("main, .scrollto")
 if (closerLinks) {
   closerLinks.forEach((close) => {
     close.addEventListener("click", () => {
       if (body.classList.contains("mobile-nav-active")) {
         body.classList.remove("mobile-nav-active")
+        toggleNavVisibility.classList.add("nav-visibility")
         toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
       }
-    });
-  });
+    })
+  })
 }
 
 
@@ -115,6 +118,7 @@ function touch_end(event) {
   ) {
     if (move_x < 0) {
       body.classList.remove("mobile-nav-active")
+      toggleNavVisibility.classList.add("nav-visibility")
       toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
     }
   }
