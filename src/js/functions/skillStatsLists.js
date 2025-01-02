@@ -57,7 +57,7 @@ export const statCountersLists = selectorID => {
           </div>
           <p class="mb-0 mt-2">${header}</p>
           <span class="fs-2 fw-bold text-primary">
-            <span class="statcounter">${level}</span> +
+            <span class="statcounter">${level}</span>+
           </span>
           <p class="mb-0">${title}</p>
         </div>

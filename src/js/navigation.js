@@ -10,7 +10,7 @@ const navLinksInsert = () => {
 
     const output =
       `<li>
-        <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto">
+        <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto" title="${text}">
           <svg class="icon ${icon}">
             <use xlink:href="#${icon}"></use>
           </svg>
