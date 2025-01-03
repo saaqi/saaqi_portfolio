@@ -16,4 +16,3 @@ import "./js/contactSection"
 import "./js/footerSection"
 import "./js/toplink"
 import "./js/hidePreloader"
-

@@ -40,7 +40,13 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none" id="svgSprites" style="display: none;">
     <!-- Insert with icons.js -->
   </svg>
-  <div id="preloader"></div>
+  <div id="preloader">
+    <div class="typewriter">
+      <div class="slide"><i></i></div>
+      <div class="paper"></div>
+      <div class="keyboard"></div>
+    </div>
+  </div>
   <!-- Header Start -->
   <header id="header" class="header d-flex flex-column justify-content-center">
     <button type="button" class="mobile-nav-toggle rounded-circle fs-1 shadow-sm p-1 btn btn-outline-primary btn-icon"
@@ -117,7 +123,10 @@
               data-bs-target="#profile-picture" title="Saqib Islam: Profile Photo">
               <img src="/img/profile-thumb.webp"
                 class="img-fluid profile rounded-3 shadow-sm border border-primary-subtle"
-                alt="Saqib Islam, Profile Photo" loading="lazy">
+                alt="Saqib Islam, Profile Photo"
+                loading="lazy"
+                draggable="false"
+              >
             </button>
             <div class="modal fade modal-lg text-center" id="profile-picture" tabindex="-1"
               aria-labelledby="profile-picture-label" aria-hidden="true">
@@ -127,8 +136,14 @@
                     aria-label="Close"></button>
                   <div class="modal-body p-0">
                     <div class="profile-container position-relative">
-                      <img src="/img/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label"
-                        alt="Profile Picture" loading="lazy">
+                      <img
+                        src="/img/profile.webp"
+                        class="img-fluid rounded-bottom-3"
+                        id="profile-picture-label"
+                        alt="Profile Picture"
+                        loading="lazy"
+                        draggable="false"
+                      >
                     </div>
                   </div>
                 </div>
@@ -385,7 +400,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" loading="lazy">
+                <img src="/img/testimonials/testimonials-1.jpg" draggable="false" class="testimonial-img" alt="" loading="lazy">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <p>
@@ -405,7 +420,7 @@
       <div class="container py-2">
         <div class="row align-items-center g-3">
           <div class="col-md-4 m-0 text-center text-lg-start">
-            <img src="/logo.svg" alt="Logo" height="150">
+            <img src="/logo.svg" alt="Logo" height="150" draggable="false">
           </div>
           <ul class="col-md-4 m-0 my-4 social-links list-unstyled d-flex flex-wrap justify-content-center gap-3"
             id="footer-social-links">

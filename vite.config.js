@@ -11,8 +11,8 @@ const hidePreloader = () => {
     name: "hide-preloader",
     transformIndexHtml(html) {
       return html.replace(
-        `<link rel="stylesheet" href="./src/styles/preloader.css" type="text/css">`,
-        `<!-- <link rel="stylesheet" href="./src/styles/preloader.css" type="text/css"> -->`
+        `<link rel="stylesheet" href="/src/styles/preloader.css" type="text/css">`,
+        `<!-- <link rel="stylesheet" href="/src/styles/preloader.css" type="text/css"> -->`
       );
     }
   }
@@ -29,7 +29,7 @@ export default defineConfig({
     --------------------------------------------- */
     IN_PRODUCTION && webfontDownload(
       [
-        "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap",
       ]
     ),
 

@@ -72,8 +72,7 @@
     }
 
     &:hover,
-    &.active,
-    &:focus {
+    &.active {
       color: var(--bs-light);
       border-color: #333;
     }
