@@ -10,6 +10,11 @@
     "icon": "user-icon"
   },
   {
+    "link": "#services",
+    "text": "Service I Offer",
+    "icon": "working-icon"
+  },
+  {
     "link": "#portfolio",
     "text": "Portfolio",
     "icon": "briefcase-icon"

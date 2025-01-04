@@ -10,7 +10,7 @@ const certificatesList = (selectorID) => {
 
     const output =
       `<div class="certificate-item">
-        <div class="card bg-transparent certificate-card h-100 shadow-sm">
+        <div class="card certificate-card h-100 shadow-sm">
           <div class="card-body d-flex flex-column">
             <svg class="icon award-icon h2">
               <use xlink:href="#award-icon"></use>
