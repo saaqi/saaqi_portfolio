@@ -19,15 +19,13 @@ const certificatesList = (selectorID) => {
               ${title}
             </h3>
             <p class="card-text">${description}</p>
-            <div class="mt-auto d-flex gap-2 align-items-center">
-              <div>
-                <svg class="icon certificate-icon">
-                  <use xlink:href="#certificate-icon"></use>
-                </svg>
-                Verify :
-              </div>
-              <a href="https://coursera.org/verify/professional-cert/${id}" class="text-decoration-underline" target="_blank" rel="noopener noreferrer" title="Verify ${title} Certificate">${id}</a>
-            </div>
+          </div>
+          <div class="card-footer d-flex gap-2 align-items-center">
+            <svg class="icon certificate-icon">
+              <use xlink:href="#certificate-icon"></use>
+            </svg>
+            Verify :
+            <a href="https://coursera.org/verify/professional-cert/${id}" class="text-decoration-underline" target="_blank" rel="noopener noreferrer" title="Verify ${title} Certificate">${id}</a>
           </div>
         </div>
       </div>`

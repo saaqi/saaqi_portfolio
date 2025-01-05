@@ -1,7 +1,7 @@
 [
   {
     "title": "Website and Web App Development",
-    "subtitle": "Custom Websites & Web Applications – Built for Performance",
+    "subtitle": "Custom Websites & Web Applications",
     "copy": "Craft responsive, scalable, and user-friendly websites and web applications using React, JavaScript, and Svelte. Whether it’s a dynamic web app or a custom business website, I deliver fast, modern, and engaging solutions tailored to your needs.",
     "icons": ["react-icon", "svelte-icon", "javascript-icon"]
   },
@@ -18,18 +18,21 @@
     "icons": ["google-icon", "facebook-icon"]
   },
   {
-    "title": "SEO (Search Engine Optimization)",
-    "subtitle": "Boost Visibility and Drive Organic Traffic",
-    "copy": "Enhance your website’s ranking with proven SEO strategies. From keyword research and on-page optimization to link building and technical SEO, I ensure your site stays ahead of the competition."
-  },
-  {
     "title": "Cross-Platform Mobile App Development",
     "subtitle": "Mobile Apps for iOS and Android",
-    "copy": "Develop responsive and high-performance mobile apps using React Native. Deliver seamless user experiences across iOS and Android with offline support and auto-update features."
+    "copy": "Develop responsive and high-performance mobile apps using React Native. Deliver seamless user experiences across iOS and Android with offline support and auto-update features.",
+    "icons": ["react-icon", "playstore-icon", "appstore-icon"]
   },
   {
-    "title": "Maintenance and Support",
+    "title": "SEO (Search Engine Optimization)",
+    "subtitle": "Boost Visibility and Drive Organic Traffic",
+    "copy": "Enhance your website’s ranking with proven SEO strategies. From keyword research and on-page optimization to link building and technical SEO, I ensure your site stays ahead of the competition.",
+    "icons": ["google-icon"]
+  },
+  {
+    "title": "Maintenance & Support",
     "subtitle": "Reliable Maintenance & Ongoing Support",
-    "copy": "Ensure your website or application stays secure, updated, and optimized. I provide continuous maintenance, bug fixes, and performance improvements so you can focus on growing your business."
+    "copy": "Ensure your website or application stays secure, updated, and optimized. I provide continuous maintenance, bug fixes, and performance improvements so you can focus on growing your business.",
+    "icons": ["working-icon", "pen-ruler-icon", "coding-icon"]
   }
 ]

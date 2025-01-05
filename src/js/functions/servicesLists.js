@@ -18,7 +18,7 @@ const servicesLists = selectorID => {
     `).join('')
 
     const output =
-      `<div class="services-item col-6 col-lg-4">
+      `<div class="services-item col-md-6 col-lg-4">
         <div class="card services-card h-100 shadow-sm">
           <div class="card-header fw-bold">${title}</div>
           <div class="card-body d-flex flex-column">
@@ -27,7 +27,7 @@ const servicesLists = selectorID => {
           </div>
           ${ icons.length > 0 ?
           `<div class="card-footer">
-            <div class="fs-4 d-flex gap-4 align-items-center">
+            <div class="fs-4 d-flex gap-4">
               ${iconsHTML}
             </div>
           </div>` : ''
