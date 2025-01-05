@@ -13,7 +13,7 @@ const certificatesList = (selectorID) => {
         <div class="card certificate-card h-100 shadow-sm">
           <div class="card-body d-flex flex-column">
             <svg class="icon award-icon h2">
-              <use xlink:href="#award-icon"></use>
+              <use href="#award-icon"></use>
             </svg>
             <h3 class="h4 card-title">
               ${title}
@@ -22,7 +22,7 @@ const certificatesList = (selectorID) => {
           </div>
           <div class="card-footer d-flex gap-2 align-items-center">
             <svg class="icon certificate-icon">
-              <use xlink:href="#certificate-icon"></use>
+              <use href="#certificate-icon"></use>
             </svg>
             Verify :
             <a href="https://coursera.org/verify/professional-cert/${id}" class="text-decoration-underline" target="_blank" rel="noopener noreferrer" title="Verify ${title} Certificate">${id}</a>
