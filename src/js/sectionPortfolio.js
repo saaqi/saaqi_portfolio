@@ -1,11 +1,14 @@
+// Import Styles -
+import "../styles/sectionPortfolio.scss"
+
 
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('portfolio-container')
 
-import 'bootstrap/js/dist/modal.js'
-// ".modal-backdrop, .fad, .show, .modal-open"
 
 import projects from '../data/projects.json'
+import 'bootstrap/js/dist/modal.js'
+// ".modal-backdrop, .fad, .show, .modal-open"
 
 const projectsList = selectorID => {
   const projectList = projects.map((pl, index) => {

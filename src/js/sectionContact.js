@@ -1,3 +1,6 @@
+// Import Styles -
+import "../styles/sectionContact.scss";
+
 // Import Bootstrap's alert component
 import "bootstrap/js/dist/alert.js";
 

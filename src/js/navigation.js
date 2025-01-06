@@ -1,3 +1,6 @@
+// Import Styles -
+import "../styles/navigation.scss"
+
 import navigationLinks from '../data/navigationLinks.json'
 
 const navLinksInsert = () => {

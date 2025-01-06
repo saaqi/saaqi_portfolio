@@ -1,3 +1,6 @@
+// Import Styles -
+import "../styles/sectionAbout.scss"
+
 /**
  * Skills animation
 */

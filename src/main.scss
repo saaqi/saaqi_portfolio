@@ -4,13 +4,156 @@
 // @use "./styles/variables" as v;
 
 // defaults
-@use "./styles/base";
 @use "./styles/navigation";
 
-// sections
-@use "./styles/homeSection";
-@use "./styles/aboutSection";
-@use "./styles/sectionPortfolio";
-@use "./styles/contactSection";
-// @use "./styles/testimonials";
-// @use "./styles/footer";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ## Section default
+--------------------------------------------- */
+.section {
+  display: flex;
+  place-items: center;
+  padding: 3rem 0;
+  min-height: 75svh;
+}
+.section:nth-child(even) {
+  background-color: var(--bs-gray-100);
+}
+.section:nth-child(odd) {
+  background-color: var(--bs-gray-200);
+}
+
+.heading-container {
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  text-align: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 240px;
+  height: 1px;
+  background: var(--bs-primary-border-subtle);
+  bottom: 1px;
+  left: calc(50% - 120px);
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--bs-primary);
+  bottom: 0;
+  left: calc(50% - 40px);
+}
+
+.section-copy {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.direction-indicators {
+  pointer-events: none;
+}
+
+/*Top Link*/
+a.top-link.active {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+  visibility: visible;
+}
+
+a.top-link {
+  bottom: 10px;
+  opacity: 0;
+  position: fixed;
+  right: 10px;
+  transition: all ease-in-out 0.3s;
+  visibility: hidden;
+  z-index: 4;
+
+  svg.icon {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+  }
+}
+
+
+// Compenents
+// BUTTONS ---------------------------
+.btn {
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3), 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.1s;
+  letter-spacing: 1px;
+
+  &.btn-icon {
+    line-height: 0;
+    padding: 0.5rem;
+    letter-spacing: 0;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(0.5px);
+  }
+
+  &:active {
+    box-shadow: none;
+    text-shadow: none;
+    transform: translateY(2px);
+  }
+}
+
+[class*="btn-"]:not([class*="btn-outline-"]) {
+  border: 0;
+}
+
+[class*="btn-outline-"] {
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+// Modals
+
+// Glass Effect
+.modal-content {
+  background: rgba(var(--bs-light-rgb), 0.95);
+}
+
+// Icons
+svg.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  line-height: 0;
+  // vertical-align: text-top;
+}
