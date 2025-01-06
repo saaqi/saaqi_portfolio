@@ -12,7 +12,7 @@ const navLinksInsert = () => {
       `<li>
         <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto" title="${text}">
           <svg class="icon ${icon}">
-            <use xlink:href="#${icon}"></use>
+            <use href="#${icon}"></use>
           </svg>
           <span>${text}</span>
         </a>
@@ -68,9 +68,9 @@ if (toggleButton) {
     body.classList.toggle("mobile-nav-active")
     toggleNavVisibility.classList.toggle("nav-visibility")
     if (body.classList.contains('mobile-nav-active')) {
-      toggleButtonIcon.setAttribute('xlink:href', '#close-icon')
+      toggleButtonIcon.setAttribute('href', '#close-icon')
     } else {
-      toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
+      toggleButtonIcon.setAttribute('href', '#menu-icon')
     }
   })
 }
@@ -83,7 +83,7 @@ if (closerLinks) {
       if (body.classList.contains("mobile-nav-active")) {
         body.classList.remove("mobile-nav-active")
         toggleNavVisibility.classList.add("nav-visibility")
-        toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
+        toggleButtonIcon.setAttribute('href', '#menu-icon')
       }
     })
   })
@@ -119,7 +119,7 @@ function touch_end(event) {
     if (move_x < 0) {
       body.classList.remove("mobile-nav-active")
       toggleNavVisibility.classList.add("nav-visibility")
-      toggleButtonIcon.setAttribute('xlink:href', '#menu-icon')
+      toggleButtonIcon.setAttribute('href', '#menu-icon')
     }
   }
 }

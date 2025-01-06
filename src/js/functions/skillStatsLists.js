@@ -12,7 +12,7 @@ export const skillStatsLists = selectorID => {
     `<div class="col-6 progress d-block h-auto bg-transparent">
       <div class="skill pb-2 fs-6 fw-medium">
         <svg class="icon ${icon}">
-          <use xlink:href="#${icon}"></use>
+          <use href="#${icon}"></use>
         </svg>
         ${title}
         <!-- <span class="val">${level}%</span> -->
@@ -52,7 +52,7 @@ export const statCountersLists = selectorID => {
         <div class="count-box pt-4 pb-3 px-3 text-center border border-primary rounded-3 h-100">
           <div class="stats-icon-container d-flex align-items-center justify-content-center fs-4 bg-primary text-bg-primary rounded-circle">
             <svg class="icon ${icon}">
-              <use xlink:href="#${icon}"></use>
+              <use href="#${icon}"></use>
             </svg>
           </div>
           <p class="mb-0 mt-2">${header}</p>

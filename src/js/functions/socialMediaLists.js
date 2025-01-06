@@ -12,7 +12,7 @@ const socialMediaLists = (selectorID, btn, color) => {
     `<li>
       <a href="${url}" class="${name} ${btn ? `btn btn-icon btn-secondary rounded-circle` : ``}" title="${title}" target="_blank" rel="nofollow noopener">
         <svg class="icon ${icon} ${btn ? 'fs-6' : `fs-4`}" style="--icon-fill: ${btn ? 'var(--bs-btn-hover-color)' : `${color}`}">
-          <use xlink:href="#${icon}"></use>
+          <use href="#${icon}"></use>
         </svg>
       </a>
     </li>`

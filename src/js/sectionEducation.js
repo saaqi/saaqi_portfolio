@@ -1,5 +1,10 @@
-import certificates from '../../data/certificates.json'
+// Import Styles
+import "../styles/sectionEducation.scss"
 
+import draggableContainer from "./functions/draggableContainer.js"
+draggableContainer('certificates-container')
+
+import certificates from '../data/certificates.json'
 const certificatesList = (selectorID) => {
   const certificateList = certificates.map((cr) => {
     const {
@@ -29,12 +34,9 @@ const certificatesList = (selectorID) => {
           </div>
         </div>
       </div>`
-
     return output
-
   })
-
   const parentSelector = document.getElementById(selectorID);
   parentSelector && (parentSelector.innerHTML = certificateList.join(""))
 }
-export default certificatesList
+certificatesList('certificates-container')
