@@ -90,6 +90,7 @@ a.top-link {
     height: 25px;
     width: 25px;
     padding: 5px;
+    vertical-align: bottom;
   }
 }
 
@@ -155,5 +156,5 @@ svg.icon {
   height: 1em;
   width: 1em;
   line-height: 0;
-  // vertical-align: text-top;
+  vertical-align: inherit;
 }

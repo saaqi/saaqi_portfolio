@@ -1,3 +1,7 @@
+// Import Styles
+import "../styles/sectionServices.scss"
+
+
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('services-container')
 
@@ -7,7 +11,6 @@ const servicesLists = selectorID => {
   const serviceList = services.map(sr => {
     const {
       title = '',
-      subtitle = '',
       copy = '',
       icons = []
     } = sr
@@ -22,18 +25,16 @@ const servicesLists = selectorID => {
     const output =
       `<div class="services-item col-md-6 col-lg-4">
         <div class="card services-card h-100 shadow-sm">
-          <div class="card-header fw-bold">${title}</div>
+          <h3 class="card-header fw-bold h6">${title}</h3>
           <div class="card-body d-flex flex-column">
-            <h3 class="h5 fw-bold text-primary">${subtitle}</h3>
             <p class="card-text">${copy}</p>
           </div>
           ${icons.length > 0 ?
-        `<div class="card-footer">
+          `<div class="card-footer">
             <div class="fs-4 d-flex gap-4">
               ${iconsHTML}
             </div>
-          </div>` : ''
-      }
+          </div>` : '' }
         </div>
       </div>`
 

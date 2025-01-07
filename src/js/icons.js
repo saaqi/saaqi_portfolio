@@ -5,9 +5,7 @@ const iconsList = () => {
     const {
       title = '',
       paths = [],
-      d = '',
-      viewbox = '0 0 512 512',
-      fill = 'currentColor'
+      viewbox = '0 0 512 512'
     } = ic
 
     // Handle dynamic paths (if provided)
@@ -15,15 +13,12 @@ const iconsList = () => {
       `<path fill="var(--icon-fill, ${p.fill || 'currentColor'})" fill-rule="evenodd" d="${p.d}" />`
     ).join("")
 
-    // Fallback to single or dual path rendering if no "paths" array is defined
-    const fallbackHTML = `<path fill="var(--icon-fill, ${fill})" fill-rule="evenodd" d="${d}" />`
-
     // Render either pathsHTML or fallbackHTML
-    const output = `
-      <symbol id="${title}" viewBox="${viewbox}">
+    const output =
+      `<symbol id="${title}-icon" viewBox="${viewbox}">
+        <title>${title} icon</title>
         ${pathsHTML}
-      </symbol>
-    `
+      </symbol>`
 
     return output
   })
