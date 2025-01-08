@@ -6,7 +6,7 @@
   bottom: 0;
   left: 0;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 1em;
   position: fixed;
   top: 0;
   z-index: 1049;
@@ -21,7 +21,7 @@
 
 @media (min-width: 768px) {
   .section {
-    padding-left: 5.5rem;
+    padding-left: 5.5em;
   }
   .mobile-nav-toggle {
     display: none;
@@ -49,22 +49,22 @@
     line-height: normal;
     display: flex;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5rem;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5em;
     border: 1px solid rgba(var(--bs-primary-rgb), 0.3);
     background-color: rgba(var(--bs-light-rgb), 0.9);
     transition: v.$transition;
-    height: 3.5rem;
+    height: 3.5em;
     width: 100%;
     overflow: hidden;
 
     svg.icon {
-      font-size: 1.25rem;
+      font-size: calc(3.5em / 2);
     }
 
     span {
-      padding-left: 0.8rem;
+      padding-left: 0.8em;
     }
 
     &:hover {
@@ -72,8 +72,10 @@
     }
 
     &:hover,
+    &:focus,
     &.active {
       color: var(--bs-light);
+      background-color: var(--bs-primary);
       border-color: #333;
     }
 
@@ -86,7 +88,11 @@
 @media (min-width: 768px) {
   .nav-menu {
     a {
-      width: 3.5rem;
+      width: 3.5em;
+
+      svg.icon {
+        margin: 0 auto;
+      }
 
       span {
         display: none;
@@ -114,7 +120,7 @@
   overflow: hidden;
 
   .mobile-nav-toggle {
-    font-size: 3rem;
+    font-size: 3em;
 
     svg.icon {
       transform: rotate(90deg);
@@ -125,9 +131,9 @@
 @media (max-width: 767px) {
   .header {
     display: none;
-    width: 20rem;
+    width: 20em;
     background: var(--bs-light);
-    left: -20rem;
+    left: -20em;
   }
   .mobile-nav-active {
     .header {

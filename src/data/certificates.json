@@ -1,93 +1,103 @@
 [
   {
-    "title": "Meta React Native",
-    "description": "I'm a Meta-trained React Native developer proficient in JavaScript, React, mobile development principles, and UX/UI design.",
+    "title": "Meta React Native Developer Certificate",
+    "description": "I am a <b>Meta-trained React Native developer</b> skilled in <b>JavaScript, React</b>, and <b>mobile development principles</b>, with expertise in building cross-platform mobile applications and optimizing user experiences.",
     "id": "NY92RRAPU10L",
     "date": "December, 2024",
     "skills": [
-      "React Native",
-      "Expo Framework",
-      "Android App Development",
-      "iOS App Development",
-      "Cross-Plarform Development"
+      "⚛️ React Native",
+      "🚀 Expo Framework",
+      "📱 iOS App Development",
+      "🤖 Android App Development",
+      "🌐 Cross-Platform Development"
+    ],
+    "issuer": [
+      "Google",
+      "Coursera"
     ]
   },
   {
-    "title": "Meta Front-End Developer",
-    "description": "I'm a Meta-trained front-end developer proficient in HTML, CSS, JavaScript, React, and UX/UI design.",
+    "title": "Meta Front-End Developer Certificate",
+    "description": "I am a <b>Meta-trained front-end developer</b> skilled in <b>HTML, CSS, JavaScript, React</b>, and <b>UI/UX design</b>, with expertise in building responsive, dynamic, and user-friendly web applications.",
     "id": "9CCJ5KFCJ45F",
     "date": "May, 2024",
     "skills": [
-      "React",
-      "HTML",
-      "JavaScript",
-      "UI/UX design",
-      "Cascading Style Sheets (CSS)"
-    ]
+      "⚛️ React",
+      "🌐 HTML",
+      "💻 JavaScript",
+      "🎨 UI/UX Design",
+      "🖌️ Cascading Style Sheets (CSS)"
+    ],
+    "issuer": ["Meta", "Coursera"]
   },
   {
-    "title": "Google Cybersecurity",
-    "description": "I'm a Google-certified cybersecurity professional proficient in Python, Linux, SQL, SIEM tools, and IDS.",
+    "title": "Google Cybersecurity Certificate",
+    "description": "I am a <b>Google-certified cybersecurity professional</b> skilled in <b>Python, Linux, SQL, SIEM tools, and Intrusion Detection Systems (IDS)</b> to protect networks and data from threats effectively.",
     "id": "G7Z2FUBMV8U9",
     "date": "August, 2023",
     "skills": [
-      "Python Programming",
-      "SIEM Tools",
-      "SQL",
-      "Linux",
-      "Intrusion Detection Systems (IDS)"
-    ]
+      "🛡️ Cybersecurity",
+      "💻 Linux Systems",
+      "📊 SQL",
+      "🔧 SIEM Tools",
+      "🚨 Intrusion Detection Systems (IDS)"
+    ],
+    "issuer": ["Google", "Coursera"]
   },
   {
-    "title": "Google UX Design",
-    "description": "I'm a Google-certified UX designer proficient in user research, ideation, wireframing, prototyping, and user testing.",
+    "title": "Google UX Design Certificate",
+    "description": "I am a <b>Google-certified UX designer</b> skilled in <b>user research, ideation, wireframing, prototyping</b>, and <b>user testing</b> to create intuitive and user-friendly designs.",
     "id": "NG39RJTUYVRE",
     "date": "June, 2023",
     "skills": [
-      "User Experience (UX)",
-      "UX Research",
-      "Wireframes",
-      "Prototype",
-      "Figma"
-    ]
+      "🖌️ Prototyping",
+      "📐 Wireframes",
+      "🔍 UX Research",
+      "🎨 Figma, Adobe XD",
+      "👤 User Experience (UX)"
+    ],
+    "issuer": ["Google", "Coursera"]
   },
   {
-    "title": "JavaScript by UC, Davis",
-    "description": "I'm proficient in JavaScript and jQuery, with experience manipulating web page content, handling data, and interactivity.",
+    "title": "JavaScript Programming Certificate",
+    "description": "I am proficient in <b>JavaScript</b> and <b>jQuery</b>, with hands-on experience in <b>manipulating web content, handling data</b>, and <b>enhancing interactivity</b> for dynamic web applications.",
     "id": "GP4W3YTB2LM3",
     "date": "June, 2023",
     "skills": [
-      "JavaScript",
-      "jQuery",
-      "Web Interactivty",
-      "Web Forms",
-      "Data Manipulation"
-    ]
+      "📜 JavaScript",
+      "💠 jQuery",
+      "📄 Web Forms",
+      "⚡ Web Interactivity",
+      "🔄 Data Manipulation"
+    ],
+    "issuer": ["Google", "UC Davis"]
   },
   {
-    "title": "Google IT Automation",
-    "description": "I'm a Google-certified IT professional proficient in Python, Git, IT automation, and Systems Administration.",
+    "title": "Google IT Automation with Python Certificate",
+    "description": "I am a <b>Google-certified IT professional</b> skilled in <b>Python programming, Git, IT automation, and Systems Administration</b> to streamline workflows and improve operational efficiency.",
     "id": "PH9N4E46D3HU",
     "date": "March, 2023",
     "skills": [
-      "Configuration",
-      "Python",
-      "Version Control",
-      "Debugging",
-      "Automation"
-    ]
+      "🤖 Automation",
+      "🔄 Version Control (Git)",
+      "🐍 Python Programming",
+      "⚙️ Configuration Management",
+      "🛠️ Troubleshooting & Debugging"
+    ],
+    "issuer": ["Google", "Coursera"]
   },
   {
-    "title": "Google IT Support ",
-    "description": "I'm a Google-certified IT Support Professional proficient in troubleshooting, networking, operating systems, and security.",
+    "title": "Google IT Support Professional Certificate",
+    "description": "I am a <b>Google-certified IT Support Professional</b> with expertise in <b>troubleshooting, networking, operating systems</b>, and <b>cybersecurity</b>.",
     "id": "GKX5NPNLRMJC",
     "date": "February, 2023",
     "skills": [
-      "Cybersecurity",
-      "Cryptography",
-      "Troubleshooting",
-      "Customer Support",
-      "Linux"
-    ]
+      "🔒 Cryptography",
+      "🛠️ Advanced Troubleshooting",
+      "🌐 Network Security",
+      "🤝 Customer Support",
+      "💻 Command-Line Interface (CLI)"
+    ],
+    "issuer": ["Google", "Coursera"]
   }
 ]

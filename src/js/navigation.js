@@ -17,7 +17,7 @@ const navLinksInsert = () => {
           <svg class="icon ${icon}">
             <use href="#${icon}"></use>
           </svg>
-          <span>${text}</span>
+          <span class="nav-text">${text}</span>
         </a>
       </li>`
 
