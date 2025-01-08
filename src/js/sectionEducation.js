@@ -17,7 +17,11 @@ const certificatesList = (selectorID) => {
 
     // Generate Skills List
     const skillsList = skills.map(skill => `
-      <li class="list-group-item">${skill}</li>
+      <li class="list-group-item">
+        <svg class="icon skill-icon small">
+          <use href="#skill-icon"></use>
+        </svg> ${skill}
+      </li>
     `).join('')
 
     const output =
@@ -27,19 +31,16 @@ const certificatesList = (selectorID) => {
             <svg class="icon award-icon h2"><use href="#award-icon"></use></svg>
             <h3 class="h5 card-title mb-2">${title}</h3>
             <div class="card-subtitle mb-2 text-body-secondary">
-              <svg class="icon award-icon"><use href="#calendar-icon"></use></svg>
-              ${date}
+              <svg class="icon award-icon small">
+                <use href="#calendar-icon"></use>
+              </svg> ${date}
             </div>
             <p class="card-text">${description}</p>
-            <div class="fw-bolder">Earned Skills:</div>
+            <div class="fw-bolder mt-auto">Skills Learned:</div>
           </div>
-          <ul class="list-group list-group-flush">
-            ${skillsList}
-          </ul>
+          <ul class="list-group list-group-flush">${skillsList}</ul>
           <div class="card-footer d-flex gap-2 align-items-center">
-            <svg class="icon certificate-icon">
-              <use href="#certificate-icon"></use>
-            </svg>
+            <svg class="icon certificate-icon small"><use href="#certificate-icon"></use></svg>
             Verify :
             <a href="https://coursera.org/verify/professional-cert/${id}" class="text-decoration-underline" target="_blank" rel="noopener noreferrer" title="Verify ${title} Certificate">${id}</a>
           </div>

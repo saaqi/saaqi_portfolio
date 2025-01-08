@@ -3,9 +3,9 @@
 // import partials ---
 // @use "./styles/variables" as v;
 
-// defaults
-@use "./styles/navigation";
-
+* {
+  font-family: Monserrat, Iter, Lato, sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -94,13 +94,13 @@ a.top-link {
   }
 }
 
-
 // Compenents
 // BUTTONS ---------------------------
 .btn {
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3), 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+    1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   font-weight: 500;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   transition: all ease-in-out 0.1s;
   letter-spacing: 1px;
@@ -157,4 +157,9 @@ svg.icon {
   width: 1em;
   line-height: 0;
   vertical-align: inherit;
+
+  &.small {
+    height: 0.9em;
+    width: 0.9em;
+  }
 }
