@@ -25,7 +25,12 @@ const servicesLists = selectorID => {
     const output =
       `<div class="services-item col-md-6 col-lg-4">
         <div class="card services-card h-100 shadow-sm">
-          <h3 class="card-header fw-bold h6">${title}</h3>
+          <h3 class="card-header fw-bold h5">
+            <svg class="icon working-icon small">
+              <use href="#working-icon"></use>
+            </svg>
+            ${title}
+          </h3>
           <div class="card-body d-flex flex-column">
             <p class="card-text">${copy}</p>
           </div>

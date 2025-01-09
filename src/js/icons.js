@@ -16,7 +16,6 @@ const iconsList = () => {
     // Render either pathsHTML or fallbackHTML
     const output =
       `<symbol id="${title}-icon" viewBox="${viewbox}">
-        <title>${title} icon</title>
         ${pathsHTML}
       </symbol>`
 
