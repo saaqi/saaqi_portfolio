@@ -29,7 +29,7 @@ const certificatesList = (selectorID) => {
           <use href="#${authority.toLowerCase().split(" ").join("")}-icon"></use>
         </svg> ${authority}
       </div>`
-    ).join('')
+    ).join(', ')
 
     const output =
       `<div class="certificate-item">
@@ -53,10 +53,10 @@ const certificatesList = (selectorID) => {
           </div>
           <ul class="list-group list-group-flush">${skillsList}</ul>
           <div class="btn-group">
-            <a href="https://coursera.org/verify/professional-cert/${id}" class="w-50 btn btn-outline-primary py-2 rounded-0 border-light fw-bolder d-flex gap-2 justify-content-center" title="Download ${title}" target="_blank" rel="noopener noreferrer">
+            <a href="https://coursera.org/verify/professional-cert/${id}" class="w-50 btn btn-outline-primary py-2 fw-bolder d-flex gap-2 justify-content-center" title="Download ${title}" target="_blank" rel="noopener noreferrer">
               <svg class="icon certificate-icon"><use href="#certificate-icon"></use></svg> Verify
             </a>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/${id}" class="w-50 btn btn-outline-primary py-2 rounded-0 border-light fw-bolder d-flex gap-2 justify-content-center" title="Download ${title}" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/${id}" class="w-50 btn btn-outline-primary py-2 fw-bolder d-flex gap-2 justify-content-center" title="Download ${title}" target="_blank" rel="noopener noreferrer">
               <svg class="icon download-icon"><use href="#download-icon"></use></svg> Download
             </a>
           </div>
