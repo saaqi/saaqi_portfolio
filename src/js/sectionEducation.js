@@ -59,8 +59,8 @@ const certificatesList = (selectorID) => {
               ${id}
             </a>
           </div>
-          <div class="card-footer">
-          <a href="https://www.coursera.org/account/accomplishments/certificate/${id}" class="btn shadow-none py-2 d-flex gap-1 justify-content-center" title="Download ${title}" target="_blank" rel="noopener noreferrer">
+          <div class="card-footer p-0">
+          <a href="https://www.coursera.org/account/accomplishments/certificate/${id}" class="btn btn-outline-primary py-3 rounded-0 rounded-bottom-2 border-0 w-100" title="Download ${title}" target="_blank" rel="noopener noreferrer">
             <svg class="icon download-icon"><use href="#download-icon"></use></svg> Certificate
           </a>
           </div>
