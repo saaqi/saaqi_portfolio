@@ -15,11 +15,19 @@ const projectsList = selectorID => {
     const {
       cover = '',
       title = '',
+      techStack = [],
       copy = '',
       github = '',
       link = '',
       caseStudy = ''
     } = pl
+
+    // Generate Tech Stack List
+
+      const techStackList = techStack.map(ts =>
+      `<li class="list-group-item">
+        <svg class="icon ${ts.icon}-icon"><use href="#${ts.icon}-icon"></use></svg > ${ts.text}
+      </li>`).join('')
 
     const output =
       `<div class="portfolio-item">
@@ -27,9 +35,11 @@ const projectsList = selectorID => {
           <img src="./portfolio/${cover}" class="card-img-top border-bottom" alt="Screenshot of ${title}"
             loading="lazy" draggable="false">
           <div class="card-body d-flex flex-column">
-            <h3 class="h4 card-title">${title}</h3>
-            <p class="card-text">${copy}</p>
+            <h3 class="h4 card-title fw-semibold mb-3">${title}</h3>
+            <p class="card-text mb-4">${copy}</p>
+            <div class="fw-semibold mt-auto">Tech Stack:</div>
           </div>
+          <ul class="list-group list-group-flush mt-auto">${techStackList}</ul>
           <div class="card-footer bg-transparent">
             <div class="btn-group w-100">
               ${github && `<a href="${github}" class="btn btn-outline-primary btn-icon fs-5"
@@ -45,7 +55,7 @@ const projectsList = selectorID => {
                 </svg>
               </a>`}
               ${caseStudy &&
-              `<button type="button" class="btn btn-outline-primary btn-icon fs-5" data-bs-toggle="modal" data-bs-target="#${`cc-` + index}" title="Car Club: Case Study">
+      `<button type="button" class="btn btn-outline-primary btn-icon fs-5" data-bs-toggle="modal" data-bs-target="#${`cc-` + index}" title="Car Club: Case Study">
                 <svg class="icon content-icon">
                   <use href="#content-icon"></use>
                 </svg>

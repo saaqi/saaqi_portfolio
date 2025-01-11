@@ -19,7 +19,7 @@ const certificatesList = (selectorID) => {
     // Generate Skills List
     const skillsList = skills.map(skill => `
       <li class="list-group-item">
-        ${skill}
+        <svg style="--icon-fill: var(--bs-card-color)" class="icon ${skill.icon}-icon small"><use href="#${skill.icon}-icon"></use></svg > ${skill.text}
       </li>
     `).join('')
 
@@ -49,7 +49,7 @@ const certificatesList = (selectorID) => {
               </div>
             </div>
             <p class="card-text mb-4">${description}</p>
-            <div class="fw-bolder mt-auto">Skills Learned:</div>
+            <div class="fw-semibold mt-auto">Skills Learned:</div>
           </div>
           <ul class="list-group list-group-flush mt-auto">${skillsList}</ul>
           <div class="card-body text-center">

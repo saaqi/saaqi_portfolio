@@ -5,11 +5,11 @@
     "id": "NY92RRAPU10L",
     "date": "December, 2024",
     "skills": [
-      "⚛️ React Native",
-      "🚀 Expo Framework",
-      "📱 iOS App Development",
-      "🤖 Android App Development",
-      "🌐 Cross-Platform Development"
+      { "text": "React-Native", "icon": "react" },
+      { "text": "Expo Framework", "icon": "expo" },
+      { "text": "iOS App Development", "icon": "appstore" },
+      { "text": "Android App Development", "icon": "playstore" },
+      { "text": "Cross-Platform Development", "icon": "globe" }
     ],
     "issuer": [
       "Meta",
@@ -22,11 +22,11 @@
     "id": "9CCJ5KFCJ45F",
     "date": "May, 2024",
     "skills": [
-      "⚛️ React",
-      "🌐 HTML",
-      "💻 JavaScript",
-      "🎨 UI/UX Design",
-      "🖌️ Cascading Style Sheets (CSS)"
+      {"text": "React", "icon": "react"},
+      { "text": "HTML", "icon": "html" },
+      { "text": "JavaScript", "icon": "javascript" },
+      { "text": "UI/UX Design", "icon": "pen-ruler" },
+      { "text": "Cascading Style Sheets (CSS)", "icon": "css" }
     ],
     "issuer": ["Meta", "Coursera"]
   },
@@ -36,11 +36,11 @@
     "id": "G7Z2FUBMV8U9",
     "date": "August, 2023",
     "skills": [
-      "🛡️ Cybersecurity",
-      "💻 Linux Systems",
-      "📊 SQL",
-      "🔧 SIEM Tools",
-      "🚨 Intrusion Detection Systems (IDS)"
+      { "text": "SQL", "icon": "database" },
+      { "text": "SIEM Tools", "icon": "screwdriver-wrench" },
+      { "text": "Cybersecurity", "icon": "shield" },
+      { "text": "Linux Systems", "icon": "linux" },
+      { "text": "Intrusion Detection Systems (IDS)", "icon": "user-sercret" }
     ],
     "issuer": ["Google", "Coursera"]
   },
@@ -50,11 +50,11 @@
     "id": "NG39RJTUYVRE",
     "date": "June, 2023",
     "skills": [
-      "🖌️ Prototyping",
-      "📐 Wireframes",
-      "🔍 UX Research",
-      "🎨 Figma, Adobe XD",
-      "👤 User Experience (UX)"
+      { "text": "Prototyping", "icon": "pen-ruler" },
+      { "text": "Wireframes", "icon": "pen-ruler" },
+      { "text": "UX Research", "icon": "pen-ruler" },
+      { "text": "Figma, Adobe XD", "icon": "pen-ruler" },
+      { "text": "User Experience (UX)", "icon": "pen-ruler" }
     ],
     "issuer": ["Google", "Coursera"]
   },
@@ -64,11 +64,11 @@
     "id": "GP4W3YTB2LM3",
     "date": "June, 2023",
     "skills": [
-      "📜 JavaScript",
-      "💠 jQuery",
-      "📄 Web Forms",
-      "⚡ Web Interactivity",
-      "🔄 Data Manipulation"
+      { "text": "JavaScript", "icon": "javascript" },
+      { "text": "jQuery", "icon": "jquery" },
+      { "text": "Web Forms", "icon": "working" },
+      { "text": "Web Interactivity", "icon": "working" },
+      { "text": "Data Manipulation", "icon": "screwdriver-wrench" }
     ],
     "issuer": ["Google", "UC Davis"]
   },
@@ -78,11 +78,11 @@
     "id": "PH9N4E46D3HU",
     "date": "March, 2023",
     "skills": [
-      "🤖 Automation",
-      "🔄 Version Control (Git)",
-      "🐍 Python Programming",
-      "⚙️ Configuration Management",
-      "🛠️ Troubleshooting & Debugging"
+      { "text": "Automation", "icon": "screwdriver-wrench" },
+      { "text": "Version Control (Git)", "icon": "git" },
+      { "text": "Python Programming", "icon": "python" },
+      { "text": "Configuration Management", "icon": "gear" },
+      { "text": "Troubleshooting & Debugging", "icon": "screwdriver-wrench" }
     ],
     "issuer": ["Google", "Coursera"]
   },
@@ -92,11 +92,11 @@
     "id": "GKX5NPNLRMJC",
     "date": "February, 2023",
     "skills": [
-      "🔒 Cryptography",
-      "🛠️ Advanced Troubleshooting",
-      "🌐 Network Security",
-      "🤝 Customer Support",
-      "💻 Command-Line Interface (CLI)"
+      { "text": "Cryptography", "icon": "lock" },
+      { "text": "Advanced Troubleshooting", "icon": "screwdriver-wrench" },
+      { "text": "Network Security", "icon": "globe" },
+      { "text": "Customer Support", "icon": "handshake" },
+      { "text": "Command-Line Interface (CLI)", "icon": "working" }
     ],
     "issuer": ["Google", "Coursera"]
   }

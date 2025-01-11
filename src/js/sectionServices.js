@@ -25,21 +25,17 @@ const servicesLists = selectorID => {
     const output =
       `<div class="services-item col-md-6 col-lg-4">
         <div class="card services-card h-100 shadow-sm">
-          <h3 class="card-header fw-bold h5">
-            <svg class="icon working-icon small">
-              <use href="#working-icon"></use>
-            </svg>
-            ${title}
-          </h3>
+          <div class="card-header fs-4 d-flex gap-4">${iconsHTML}</div>
           <div class="card-body d-flex flex-column">
-            <p class="card-text">${copy}</p>
+            <h3 class="card-title fw-semibold h4 mb-3">${title}</h3>
+            <p class="card-text mb-3">${copy}</p>
           </div>
-          ${icons.length > 0 ?
-          `<div class="card-footer">
-            <div class="fs-4 d-flex gap-4">
-              ${iconsHTML}
-            </div>
-          </div>` : '' }
+          <div class="card-footer">
+            <a href="#contact" class="btn btn-sm rounded-pill btn-outline-secondary scrollto" title="Hire Me!">
+              <svg class="icon handshake-icon"><use href="#handshake-icon"></use></svg>
+              Hire Me!
+            </a>
+          </div>
         </div>
       </div>`
 
