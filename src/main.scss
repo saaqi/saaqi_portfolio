@@ -3,9 +3,14 @@
 // import partials ---
 // @use "./styles/variables" as v;
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
+
+// h1, h2, h3, h4, h5, h6,
+// .h1, .h2, .h3, .h4, .h5, .h6 {
+//   font-weight: 700;
+// }
 
 b {
   font-weight: 600;
@@ -31,6 +36,7 @@ b {
 }
 
 .section-heading {
+  font-weight: 600;
   text-align: center;
   padding-bottom: 1rem;
   position: relative;
