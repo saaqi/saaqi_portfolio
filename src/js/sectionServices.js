@@ -28,7 +28,7 @@ const servicesLists = selectorID => {
           <div class="card-header fs-4 d-flex gap-4">${iconsHTML}</div>
           <div class="card-body d-flex flex-column">
             <h3 class="card-title fw-semibold h4 mb-3">${title}</h3>
-            <p class="card-text mb-3">${copy}</p>
+            <p class="card-text">${copy}</p>
           </div>
           <div class="card-footer">
             <a href="#contact" class="btn btn-sm rounded-pill btn-outline-secondary scrollto" title="Hire Me!">

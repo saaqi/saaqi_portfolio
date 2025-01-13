@@ -306,7 +306,7 @@
 
         <div class="row mt-4">
           <div class="col-lg-3 info d-flex flex-column gap-4 gap-lg-5">
-            <a href="mailto:saaqi.grw@gmail.com?subject=Hi,&nbsp;Saqib&nbsp;Let's&nbsp;talk!" target="_blank">
+            <a href="mailto:saaqi.grw@gmail.com?subject=Hi,&nbsp;Saqib&nbsp;Let's&nbsp;talk!" class="text-decoration-none" target="_blank">
               <div class="icon-container btn btn-primary rounded-pill p-3 me-3 fs-3">
                 <svg class="icon email-icon" style="--icon-fill: var(--bs-btn-hover-color)">
                   <use href="#email-icon"></use>
@@ -315,7 +315,7 @@
               <div class="h4">Email</div>
               <div>saaqi.grw@gmail.com</div>
             </a>
-            <a href="https://wa.me/+923006412193" target="_blank">
+            <a href="https://wa.me/+923006412193" class="text-decoration-none" target="_blank">
               <div class="icon-container btn btn-primary rounded-pill p-3 me-3 fs-3">
                 <svg class="icon whatsapp-icon" style="--icon-fill: var(--bs-btn-hover-color)">
                   <use href="#whatsapp-icon"></use>
@@ -324,7 +324,7 @@
               <div class="h4">WhatsApp</div>
               <div>+92 300 6412193</div>
             </a>
-            <a href="tel:+923006412193">
+            <a href="tel:+923006412193" class="text-decoration-none">
               <div class="icon-container btn btn-primary rounded-pill p-3 me-3 fs-3">
                 <svg class="icon phone-icon" style="--icon-fill: var(--bs-btn-hover-color)">
                   <use href="#phone-icon"></use>
@@ -374,7 +374,7 @@
                   placeholder="What is on your mind? *" required></textarea>
               </div>
               <div id="errorAlerts" class="mt-3"></div>
-              <div class="text-center mt-4">
+              <div class="text-center text-md-start mt-4">
                 <button type="submit" class="btn btn-primary">
                   <svg class="icon email-icon" style="--icon-fill: var(--bs-btn-hover-color);">
                     <use href="#email-icon"></use>
@@ -397,10 +397,13 @@
           <div class="col-md-4 m-0 text-center text-lg-start">
             <img src="/logo.svg" alt="Logo" height="150" draggable="false">
           </div>
-          <ul class="col-md-4 m-0 my-4 social-links list-unstyled d-flex flex-wrap justify-content-center gap-3"
+          <div class="col-md-4 m-0 my-4">
+            <div class="h4 text-center mb-3">Say, Hello!</div>
+            <ul class="social-links list-unstyled d-flex flex-wrap justify-content-center gap-3"
             id="footer-social-links">
             <!-- Insert with footerSection.js -->
           </ul>
+        </div>
           <div class="col-md-4 m-0 copyright text-center text-lg-end">
             <div class="h2">Saqib Islam</div>
             <div>
