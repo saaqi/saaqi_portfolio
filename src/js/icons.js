@@ -14,12 +14,7 @@ const iconsList = () => {
     ).join("")
 
     // Render either pathsHTML or fallbackHTML
-    const output =
-      `<symbol id="${title}-icon" viewBox="${viewbox}">
-        ${pathsHTML}
-      </symbol>`
-
-    return output
+    return `<symbol id="${title}-icon" viewBox="${viewbox}">${pathsHTML}</symbol>`
   })
 
   // Insert icons into the container
