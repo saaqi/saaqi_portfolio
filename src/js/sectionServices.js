@@ -31,7 +31,8 @@ const servicesLists = selectorID => {
             <h3 class="card-title fw-semibold h4 mb-3">${title}</h3>
             <p class="card-text">${copy}</p>
           </div>
-          <div class="card-footer ${ more && `btn-group`}">
+          <div class="card-footer">
+          ${ more && `<div class="btn-group w-100">`}
             <a href="#contact" class="btn btn-outline-secondary w-50 btn-icon scrollto" title="Hire Me!">
               <svg class="icon handshake-icon"><use href="#handshake-icon"></use></svg> Hire Me!
             </a>
@@ -39,12 +40,13 @@ const servicesLists = selectorID => {
             `<button type="button" class="btn btn-outline-primary w-50 btn-icon" data-bs-toggle="modal" data-bs-target="#${`service-` + index}" title="Get More Info">
               <svg class="icon content-icon"><use href="#content-icon"></use></svg> More
             </button>`}
+          ${ more && `</div>`}
           </div>
         </div>
         ${more &&
         `<div class="modal fade modal-fullscreen modal-xl" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`service-label-` + index}"
           aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered h-75">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
                 <div class="modal-title fs-5" id="${`service-label-` + index}">${title}</div>
