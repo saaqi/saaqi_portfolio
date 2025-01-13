@@ -1,7 +1,7 @@
 [
   {
     "cover": "carclub.webp",
-    "title": "Car Club Auto Repair Garage: JavaScript",
+    "title": "Car Club Auto Repair Garage",
     "copy": "Developed a responsive and user-friendly website for Car Club Tire and Auto Repair Service using vanilla JavaScript.",
     "github": "https://github.com/saaqi/car-mechanic-shop",
     "link": "https://carclubtire.com",
@@ -14,7 +14,7 @@
   },
   {
     "cover": "paklite.webp",
-    "title": "Paklite E-Commerce Platform: WordPress",
+    "title": "Paklite E-Commerce Platform",
     "copy": "Designed and developed a modern e-commerce website for Paklite, one of Pakistan's largest LED manufacturers, using WordPress and WooCommerce.",
     "link": "https://paklite.com",
     "techStack": [
@@ -25,7 +25,7 @@
   },
   {
     "cover": "o2clothing.webp",
-    "title": "O2 Clothing Studio: Shopify",
+    "title": "O2 Clothing Studio",
     "copy": "Built a sleek and modern e-commerce website for O2 Clothing Studio using Shopify.",
     "link": "https://o2clothingstudio.com/",
     "techStack": [
@@ -48,7 +48,7 @@
   },
   {
     "cover": "sadiqsuperstore.webp",
-    "title": "Sadiq Superstore Grocery: JavaScript",
+    "title": "Sadiq Superstore Grocery",
     "copy": "Developed a responsive and interactive website for Sadiq Superstore, a local grocery store, using vanilla JavaScript.",
     "link": "http://sadiqsuperstore.com/",
     "github": "https://github.com/saaqi/grocery-store-template",
@@ -60,7 +60,7 @@
   },
   {
     "cover": "ikramsteel.webp",
-    "title": "Steel Rebars Manufacturer: JavaScript",
+    "title": "Steel Rebars Manufacturer",
     "copy": "Created a professional and user-friendly website for Ikram Steel Industries, a leading manufacturer of steel rebars in Pakistan.",
     "link": "https://ikramsteel.com/",
     "github": "https://github.com/saaqi/ikram-steel-industries",
