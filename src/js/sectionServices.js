@@ -8,10 +8,11 @@ draggableContainer('services-container')
 import services from '../data/services.json'
 
 const servicesLists = selectorID => {
-  const serviceList = services.map(sr => {
+  const serviceList = services.map((sr, index) => {
     const {
       title = '',
       copy = '',
+      more = '',
       icons = []
     } = sr
 
@@ -30,13 +31,29 @@ const servicesLists = selectorID => {
             <h3 class="card-title fw-semibold h4 mb-3">${title}</h3>
             <p class="card-text">${copy}</p>
           </div>
-          <div class="card-footer">
-            <a href="#contact" class="btn btn-sm rounded-pill btn-outline-secondary scrollto" title="Hire Me!">
-              <svg class="icon handshake-icon"><use href="#handshake-icon"></use></svg>
-              Hire Me!
+          <div class="card-footer ${ more && `btn-group`}">
+            <a href="#contact" class="btn btn-outline-secondary w-50 btn-icon scrollto" title="Hire Me!">
+              <svg class="icon handshake-icon"><use href="#handshake-icon"></use></svg> Hire Me!
             </a>
+            ${more &&
+            `<button type="button" class="btn btn-outline-primary w-50 btn-icon" data-bs-toggle="modal" data-bs-target="#${`service-` + index}" title="Get More Info">
+              <svg class="icon content-icon"><use href="#content-icon"></use></svg> More
+            </button>`}
           </div>
         </div>
+        ${more &&
+        `<div class="modal fade modal-fullscreen modal-xl" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`service-label-` + index}"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered h-75">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title fs-5" id="${`service-label-` + index}">${title}</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">${more}</div>
+            </div>
+          </div>
+        </div>`}
       </div>`
 
     return output

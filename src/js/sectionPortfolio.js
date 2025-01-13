@@ -44,27 +44,21 @@ const projectsList = selectorID => {
             <div class="btn-group w-100">
               ${github && `<a href="${github}" class="btn btn-outline-primary btn-icon fs-5"
                 title="View ${title} Project on GitHub" rel="nofollow" target="_blank">
-                <svg class="icon github-icon">
-                  <use href="#github-icon"></use>
-                </svg>
+                <svg class="icon github-icon"><use href="#github-icon"></use></svg>
               </a>`}
               ${link && `<a href="${link}" class="btn btn-outline-primary btn-icon fs-5"
                 title="View ${title} Live Project" rel="nofollow" target="_blank">
-                <svg class="icon globe-icon">
-                  <use href="#globe-icon"></use>
-                </svg>
+                <svg class="icon globe-icon"><use href="#globe-icon"></use></svg>
               </a>`}
               ${caseStudy &&
-      `<button type="button" class="btn btn-outline-primary btn-icon fs-5" data-bs-toggle="modal" data-bs-target="#${`cc-` + index}" title="Car Club: Case Study">
-                <svg class="icon content-icon">
-                  <use href="#content-icon"></use>
-                </svg>
+              `<button type="button" class="btn btn-outline-primary btn-icon fs-5" data-bs-toggle="modal" data-bs-target="#${`cc-` + index}" title="Read Case Study">
+                <svg class="icon content-icon"><use href="#content-icon"></use></svg>
               </button>`}
             </div>
           </div>
         </div>
         ${caseStudy &&
-      `<div class="modal fade modal-fullscreen modal-xl" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`cc-label-` + index}"
+        `<div class="modal fade modal-fullscreen modal-xl" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`cc-label-` + index}"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered h-75">
             <div class="modal-content">
