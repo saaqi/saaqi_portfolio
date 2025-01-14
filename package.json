@@ -35,13 +35,13 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.20",
-    "caniuse-lite": "^1.0.30001690",
+    "caniuse-lite": "^1.0.30001692",
     "cssnano": "^6.1.2",
-    "postcss": "^8.4.49",
-    "sass": "^1.83.0",
+    "postcss": "^8.5.0",
+    "sass": "^1.83.3",
     "vite": "^5.4.11",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-webfont-dl": "^3.10.3"
+    "vite-plugin-webfont-dl": "^3.10.4"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"

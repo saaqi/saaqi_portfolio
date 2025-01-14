@@ -1,5 +1,5 @@
 {
-  "name": "Saqib Islam, Web Developer - UX/UI Designer",
+  "name": "Saqib Islam",
   "short_name": "Saaqi",
   "icons": [
     {
@@ -16,6 +16,6 @@
     }
   ],
   "theme_color": "#ffffff",
-  "background_color": "#374162",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
