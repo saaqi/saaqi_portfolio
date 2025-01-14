@@ -1,14 +1,14 @@
+import 'bootstrap/js/dist/modal.js'
+// ".modal-backdrop, .fad, .show, .modal-open"
+
 // Import Styles -
 import "../styles/sectionPortfolio.scss"
-
 
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('portfolio-container')
 
 
 import projects from '../data/projects.json'
-import 'bootstrap/js/dist/modal.js'
-// ".modal-backdrop, .fad, .show, .modal-open"
 
 const projectsList = selectorID => {
   const projectList = projects.map((pl, index) => {
@@ -58,16 +58,20 @@ const projectsList = selectorID => {
           </div>
         </div>
         ${caseStudy &&
-        `<div class="modal fade modal-fullscreen modal-xl" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`cc-label-` + index}"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered h-75">
+        `<div class="modal fade" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`cc-label-` + index}" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-xl">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}</div>
+                <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}: Case Study</div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body p-0" style="scrollbar-width: none; overflow-y: hidden;">
                 <embed src="/portfolio/${caseStudy}" type="application/pdf" width="100%" height="100%" />
+              </div>
+              <div class="modal-footer py-1">
+                <button type="button" class="btn btn-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
+                  <svg class="icon close-icon fs-4"><use href="#close-icon"></use></svg> Close
+                </button>
               </div>
             </div>
           </div>
