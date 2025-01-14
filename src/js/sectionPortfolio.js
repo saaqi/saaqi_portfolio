@@ -58,11 +58,11 @@ const projectsList = selectorID => {
           </div>
         </div>
         ${caseStudy &&
-        `<div class="modal fade" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`cc-label-` + index}" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-xl">
+        `<div class="modal fade" id="${`cc-` + index}" tabindex="-1" aria-labelledby="${`label-cc-` + index}" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title fs-5" id="${`cc-label-` + index}">${title}: Case Study</div>
+                <div class="modal-title fs-5" id="${`label-cc-` + index}">${title}: Case Study</div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body p-0" style="scrollbar-width: none; overflow-y: hidden;">

@@ -46,11 +46,11 @@ const servicesLists = selectorID => {
           </div>
         </div>
         ${more &&
-        `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`service-` + index}" aria-hidden="true">
+        `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`label-service-` + index}" aria-hidden="true">
           <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title fs-5" id="${`service-` + index}">${title}</div>
+                <div class="modal-title fs-5" id="${`label-service-` + index}">${title}</div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">${more}</div>
