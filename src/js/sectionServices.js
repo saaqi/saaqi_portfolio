@@ -2,7 +2,7 @@ import 'bootstrap/js/dist/modal.js'
 // ".modal-backdrop, .fad, .show, .modal-open"
 
 // Import Styles
-import "../styles/sectionServices.scss"
+import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('services-container')
@@ -26,8 +26,8 @@ const servicesLists = selectorID => {
     `).join('')
 
     const output =
-      `<div class="services-item col-md-6 col-lg-4">
-        <div class="card services-card h-100 shadow-sm">
+      `<div class="draggableItem">
+        <div class="card serviceCard h-100 shadow-sm">
           <div class="card-header fs-4 d-flex gap-4">${iconsHTML}</div>
           <div class="card-body d-flex flex-column">
             <h3 class="card-title fw-semibold h4 mb-3">${title}</h3>

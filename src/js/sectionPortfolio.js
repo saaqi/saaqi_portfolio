@@ -1,8 +1,8 @@
 import 'bootstrap/js/dist/modal.js'
 // ".modal-backdrop, .fad, .show, .modal-open"
 
-// Import Styles -
-import "../styles/sectionPortfolio.scss"
+// Import Styles
+import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('portfolio-container')
@@ -30,8 +30,8 @@ const projectsList = selectorID => {
       </li>`).join('')
 
     const output =
-      `<div class="portfolio-item">
-        <div class="card portfolio-card h-100 shadow-sm">
+      `<div class="draggableItem">
+        <div class="card portfolioCard h-100 shadow-sm">
           <img src="./portfolio/${cover}" class="card-img-top border-bottom" alt="Screenshot of ${title}"
             loading="lazy" draggable="false">
           <div class="card-body d-flex flex-column">

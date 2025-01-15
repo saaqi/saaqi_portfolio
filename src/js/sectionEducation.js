@@ -1,5 +1,8 @@
+import 'bootstrap/js/dist/modal.js'
+// ".modal-backdrop, .fad, .show, .modal-open"
+
 // Import Styles
-import "../styles/sectionEducation.scss"
+import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('certificates-container')
@@ -32,8 +35,8 @@ const certificatesList = (selectorID) => {
     ).join(' - ')
 
     const output =
-      `<div class="certificate-item">
-        <div class="card certificate-card h-100 shadow-sm">
+      `<div class="draggableItem">
+        <div class="card certificateCard h-100 shadow-sm">
           <div class="card-body d-flex flex-column h-100">
             <svg class="icon award-icon h2 text-secondary"><use href="#award-icon"></use></svg>
             <h3 class="h4 card-title fw-semibold mb-3">${title}</h3>
