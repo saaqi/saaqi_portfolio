@@ -24,22 +24,19 @@
   <meta property="og:description"
     content="Saqib Islam is a certified Full Stack Web Developer and UX/UI Designer, passionate about creating meaningful user experiences.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://saqibtech.com/logo.svg">
+  <meta property="og:image" content="https://saqibtech.com/favicon.svg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@saaqi">
   <meta name="twitter:title" content="Saqib Islam - Web Developer - UX/UI Designer">
   <meta name="twitter:description"
     content="Saqib Islam is a certified Full Stack Web Developer and UX/UI Designer, passionate about creating meaningful user experiences.">
-  <meta name="twitter:image" content="https://saqibtech.com/logo.svg">
+  <meta name="twitter:image" content="https://saqibtech.com/favicon.svg">
   <link rel="stylesheet" href="/src/styles/preloader.css" type="text/css">
   <link rel="stylesheet" href="/src/styles/bootstrap.css" type="text/css">
   <script type="module" src="/src/main.js"></script>
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" id="svgSprites" style="display: none;">
-    <!-- Insert with icons.js -->
-  </svg>
   <div id="preloader">
     <div class="typewriter">
       <div class="slide"><i></i></div>
@@ -52,7 +49,7 @@
     <button type="button" class="mobile-nav-toggle rounded-circle fs-1 shadow-sm p-1 btn btn-outline-primary btn-icon"
       title="Navigation Menu">
       <svg class="icon menu-icon">
-        <use href="#menu-icon"></use>
+        <use xlink:href="/src/assets/icons.svg#menu-icon"></use>
       </svg>
     </button>
     <nav id="navbar" class="navbar nav-menu">
@@ -69,7 +66,7 @@
       <div class="container">
         <div class="row flex-lg-row-reverse align-items-center gap-5 gap-lg-0">
           <div class="graphic-col col-lg-6">
-            <img class="hero-graphic" src="/img/graphic.svg" alt="Hero Graphic" draggable="false" fetchpriority="high">
+            <img class="hero-graphic" src="/src/assets/hero.svg" alt="Hero Graphic" draggable="false" fetchpriority="high">
           </div>
           <div class="text-col d-flex flex-column gap-2 text-center text-lg-start col-lg-6 fw-medium">
             <div>Hi there, I am</div>
@@ -86,14 +83,14 @@
             <div class="col-12 m-0 hero-buttons d-flex gap-2 justify-content-lg-start justify-content-center">
               <a href="#contact" class="btn btn-secondary scrollto" title="Hire Me!">
                 <svg class="icon handshake-icon">
-                  <use href="#handshake-icon"></use>
+                  <use xlink:href="/src/assets/icons.svg#handshake-icon"></use>
                 </svg>
                 Hire Me!
               </a>
               <a href="/portfolio/resume-saqib-islam.pdf" class="btn btn-primary" title="Download My Resume"
                 target="_blank">
                 <svg class="icon download-icon">
-                  <use href="#download-icon"></use>
+                  <use xlink:href="/src/assets/icons.svg#download-icon"></use>
                 </svg>
                 Resume
               </a>
@@ -111,7 +108,7 @@
         <div class="heading-container">
           <h2 class="section-heading">
             <svg class="icon user-icon">
-              <use href="#user-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#user-icon"></use>
             </svg>
             About Me
           </h2>
@@ -121,19 +118,19 @@
           <div class="col-2 col-lg-2">
             <button type="button" class="profile-image border-0 bg-transparent p-0" data-bs-toggle="modal"
               data-bs-target="#profile-picture" title="Saqib Islam: Profile Photo">
-              <img src="/img/profile-thumb.webp"
+              <img src="/src/assets/profile-thumb.webp"
                 class="img-fluid profile rounded-3 shadow-sm border border-primary-subtle"
                 alt="Saqib Islam, Profile Photo" loading="lazy" draggable="false">
             </button>
-            <div class="modal fade modal-lg text-center" id="profile-picture" tabindex="-1"
+            <div class="modal fade" id="profile-picture" tabindex="-1"
               aria-labelledby="profile-picture-label" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg text-center">
                 <div class="modal-content">
                   <button type="button" class="btn-close align-self-end mt-2 me-2" data-bs-dismiss="modal"
                     aria-label="Close"></button>
                   <div class="modal-body p-0">
                     <div class="profile-container position-relative">
-                      <img src="/img/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label"
+                      <img src="/src/assets/profile.webp" class="img-fluid rounded-bottom-3" id="profile-picture-label"
                         alt="Profile Picture" loading="lazy" draggable="false">
                     </div>
                   </div>
@@ -156,7 +153,7 @@
           <div class="heading-container">
             <h3 class="h4 text-center">
               <svg class="icon chart-icon">
-                <use href="#chart-icon"></use>
+                <use xlink:href="/src/assets/icons.svg#chart-icon"></use>
               </svg>
               My Track Record
             </h3>
@@ -170,7 +167,7 @@
           <div class="heading-container">
             <h3 class="h4 text-center">
               <svg class="icon coding-icon">
-                <use href="#coding-icon"></use>
+                <use xlink:href="/src/assets/icons.svg#coding-icon"></use>
               </svg>
               My Skills
             </h3>
@@ -192,7 +189,7 @@
         <div class="heading-container">
           <h2 class="section-heading">
             <svg class="icon working-icon">
-              <use href="#working-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#working-icon"></use>
             </svg>
             Services I Offer
           </h2>
@@ -205,10 +202,10 @@
 
           <div class="directionIndicators d-flex justify-content-between text-primary fs-4 d-lg-none">
             <svg class="icon swipe-indicator left-circle-icon">
-              <use href="#left-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#left-circle-icon"></use>
             </svg>
             <svg class="icon swipe-indicator right-circle-icon">
-              <use href="#right-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#right-circle-icon"></use>
             </svg>
           </div>
         </div>
@@ -225,7 +222,7 @@
         <div class="heading-container">
           <h2 class="section-heading">
             <svg class="icon briefcase-icon">
-              <use href="#briefcase-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#briefcase-icon"></use>
             </svg>
             My Portfolio
           </h2>
@@ -237,10 +234,10 @@
           </div>
           <div class="directionIndicators d-flex justify-content-between text-primary fs-4 d-lg-none">
             <svg class="icon swipe-indicator left-circle-icon">
-              <use href="#left-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#left-circle-icon"></use>
             </svg>
             <svg class="icon swipe-indicator right-circle-icon">
-              <use href="#right-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#right-circle-icon"></use>
             </svg>
           </div>
         </div>
@@ -256,7 +253,7 @@
         <div class="heading-container">
           <h2 class="section-heading">
             <svg class="icon user-graduate-icon">
-              <use href="#user-graduate-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#user-graduate-icon"></use>
             </svg>
             My Education
           </h2>
@@ -267,10 +264,10 @@
           </div>
           <div class="directionIndicators d-flex justify-content-between text-primary fs-4 d-lg-none">
             <svg class="icon swipe-indicator left-circle-icon">
-              <use href="#left-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#left-circle-icon"></use>
             </svg>
             <svg class="icon swipe-indicator right-circle-icon">
-              <use href="#right-circle-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#right-circle-icon"></use>
             </svg>
           </div>
         </div>
@@ -290,7 +287,7 @@
         <div class="heading-container">
           <h2 class="section-heading">
             <svg class="icon address-book-icon">
-              <use href="#address-book-icon"></use>
+              <use xlink:href="/src/assets/icons.svg#address-book-icon"></use>
             </svg>
             Contact Me
           </h2>
@@ -307,7 +304,7 @@
               class="text-decoration-none" target="_blank">
               <div class="icon-container btn btn-primary rounded-circle p-3 me-3 fs-3">
                 <svg class="icon email-icon" style="--icon-fill: var(--bs-btn-hover-color)">
-                  <use href="#email-icon"></use>
+                  <use xlink:href="/src/assets/icons.svg#email-icon"></use>
                 </svg>
               </div>
               <div class="h4">Email</div>
@@ -316,7 +313,7 @@
             <a href="https://wa.me/+923006412193" class="text-decoration-none" target="_blank">
               <div class="icon-container btn btn-primary rounded-circle p-3 me-3 fs-3">
                 <svg class="icon whatsapp-icon" style="--icon-fill: var(--bs-btn-hover-color)">
-                  <use href="#whatsapp-icon"></use>
+                  <use xlink:href="/src/assets/icons.svg#whatsapp-icon"></use>
                 </svg>
               </div>
               <div class="h4">WhatsApp</div>
@@ -325,7 +322,7 @@
             <a href="tel:+923006412193" class="text-decoration-none">
               <div class="icon-container btn btn-primary rounded-circle p-3 me-3 fs-3">
                 <svg class="icon phone-icon" style="--icon-fill: var(--bs-btn-hover-color)">
-                  <use href="#phone-icon"></use>
+                  <use xlink:href="/src/assets/icons.svg#phone-icon"></use>
                 </svg>
               </div>
               <div class="h4">Call</div>
@@ -339,7 +336,7 @@
                 <div class="col-md-6">
                   <label for="contact-form-name">
                     <svg class="icon user-icon small">
-                      <use href="#user-icon"></use>
+                      <use xlink:href="/src/assets/icons.svg#user-icon"></use>
                     </svg>
                     Name:
                   </label>
@@ -349,7 +346,7 @@
                 <div class="col-md-6 mt-3 mt-md-0">
                   <label for="contact-form-email">
                     <svg class="icon email-icon small" style="--icon-fill: var(--bs-body-color);">
-                      <use href="#email-icon"></use>
+                      <use xlink:href="/src/assets/icons.svg#email-icon"></use>
                     </svg>
                     Email Address:
                   </label>
@@ -360,7 +357,7 @@
               <div class="mt-3">
                 <label for="contact-form-subject">
                   <svg class="icon subject-icon small">
-                    <use href="#subject-icon"></use>
+                    <use xlink:href="/src/assets/icons.svg#subject-icon"></use>
                   </svg>
                   Subject:
                 </label>
@@ -370,7 +367,7 @@
               <div class="mt-3">
                 <label for="contact-form-message">
                   <svg class="icon message-icon small">
-                    <use href="#message-icon"></use>
+                    <use xlink:href="/src/assets/icons.svg#message-icon"></use>
                   </svg>
                   Message:
                 </label>
@@ -381,7 +378,7 @@
               <div class="text-end text-md-start mt-4">
                 <button type="submit" class="btn btn-primary">
                   <svg class="icon email-icon" style="--icon-fill: var(--bs-btn-hover-color);">
-                    <use href="#email-icon"></use>
+                    <use xlink:href="/src/assets/icons.svg#email-icon"></use>
                   </svg>
                   Send Message
                 </button>
@@ -397,9 +394,9 @@
 
     <footer id="footer" class="bg-primary text-bg-primary py-5">
       <div class="container py-2">
-        <div class="row align-items-center g-3 gap-md-0 gap-3">
+        <div class="row align-items-center gap-md-0 gap-3">
           <div class="col-md-4 text-center text-lg-start">
-            <img src="/logo.svg" alt="Logo" height="150" draggable="false">
+            <img src="/favicon.svg" alt="Logo" height="150" draggable="false">
           </div>
           <div class="col-md-4 m-0 my-4">
             <div class="h4 text-center mb-3">Say, Hello!</div>
@@ -411,7 +408,7 @@
           <div class="col-md-4 m-0 copyright text-center text-lg-end">
             <div class="h2">Saqib Islam</div>
             <div>
-              &copy; <span id="footerYear">2025</span>
+              &copy; 2024 - <span id="footerYear">2025</span>
               All Rights Reserved
             </div>
           </div>
@@ -419,7 +416,7 @@
       </div>
       <a href="#home" id="topLink" class="top-link scrollto" title="Go To Top">
         <svg class="icon top-icon">
-          <use href="#top-icon"></use>
+          <use xlink:href="/src/assets/icons.svg#top-icon"></use>
         </svg>
       </a>
     </footer>

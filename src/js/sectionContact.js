@@ -39,7 +39,7 @@ if (contactForm) {
         <div>${message}</div>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>`
-    ].join('');
+    ].join('').replace(/\s+/g, ' ')
   }
 
   // Function to validate the form inputs

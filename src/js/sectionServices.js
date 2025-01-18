@@ -1,3 +1,6 @@
+// Import Icons
+import svgSprite from "../assets/icons.svg"
+
 import 'bootstrap/js/dist/modal.js'
 // ".modal-backdrop, .fad, .show, .modal-open"
 
@@ -20,9 +23,7 @@ const servicesLists = selectorID => {
 
     // Generate icons HTML by mapping over the icons array
     const iconsHTML = icons.map(icon => `
-      <svg class="icon ${icon}">
-        <use href="#${icon}"></use>
-      </svg>
+      <svg class="icon ${icon}"><use xlink:href="${svgSprite + '#' + icon}"></use></svg>
     `).join('')
 
     const output =
@@ -36,11 +37,11 @@ const servicesLists = selectorID => {
           <div class="card-footer">
           ${ more && `<div class="btn-group w-100">`}
             <a href="#contact" class="btn btn-outline-secondary w-50 btn-icon d-flex align-items-center justify-content-center gap-1 scrollto" title="Hire Me!">
-              <svg class="icon handshake-icon"><use href="#handshake-icon"></use></svg> Hire Me!
+              <svg class="icon handshake-icon"><use xlink:href="${svgSprite}#handshake-icon"></use></svg> Hire Me!
             </a>
             ${more &&
             `<button type="button" class="btn btn-outline-primary w-50 btn-icon d-flex align-items-center justify-content-center gap-1" data-bs-toggle="modal" data-bs-target="#${`service-` + index}" title="Get More Info">
-              <svg class="icon content-icon"><use href="#content-icon"></use></svg> Info
+              <svg class="icon content-icon"><use xlink:href="${svgSprite}#content-icon"></use></svg> Info
             </button>`}
           ${ more && `</div>`}
           </div>
@@ -56,13 +57,13 @@ const servicesLists = selectorID => {
               <div class="modal-body">${more}</div>
               <div class="modal-footer py-1">
                 <button type="button" class="btn btn-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
-                  <svg class="icon close-icon fs-4"><use href="#close-icon"></use></svg> Close
+                  <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
                 </button>
               </div>
             </div>
           </div>
         </div>`}
-      </div>`
+      </div>`.replace(/\s+/g, ' ');
 
     return output
 

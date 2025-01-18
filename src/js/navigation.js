@@ -1,5 +1,6 @@
 // Import Styles -
 import "../styles/navigation.scss"
+import svgSprite from "../assets/icons.svg"
 
 import navigationLinks from '../data/navigationLinks.json'
 
@@ -14,10 +15,10 @@ const navLinksInsert = () => {
     const output =
       `<li>
         <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto" title="${text}">
-          <svg class="icon ${icon}"><use href="#${icon}"></use></svg>
+          <svg class="icon ${icon}"><use xlink:href="${svgSprite+'#'+icon}"></use></svg>
           <span class="nav-text">${text}</span>
         </a>
-      </li>`
+      </li>`.replace(/\s+/g, ' ');
 
     return output
 

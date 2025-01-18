@@ -5,7 +5,7 @@ import "./main.scss"
 
 /* ## Import JS
 --------------------------------------------- */
-import "./js/icons"
+// import "./js/icons" // Using External SVG Sprite for better browser cache
 import "./js/navigation"
 import "./js/updateTitles"
 
