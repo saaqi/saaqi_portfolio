@@ -70,9 +70,9 @@ if (toggleButton) {
     body.classList.toggle("mobile-nav-active")
     toggleNavVisibility.classList.toggle("nav-visibility")
     if (body.classList.contains('mobile-nav-active')) {
-      toggleButtonIcon.setAttribute('href', '#close-icon')
+      toggleButtonIcon.setAttribute('href', svgSprite+'#close-icon')
     } else {
-      toggleButtonIcon.setAttribute('href', '#menu-icon')
+      toggleButtonIcon.setAttribute('href', svgSprite+'#menu-icon')
     }
   })
 }
@@ -85,7 +85,7 @@ if (closerLinks) {
       if (body.classList.contains("mobile-nav-active")) {
         body.classList.remove("mobile-nav-active")
         toggleNavVisibility.classList.add("nav-visibility")
-        toggleButtonIcon.setAttribute('href', '#menu-icon')
+        toggleButtonIcon.setAttribute('href', svgSprite+'#menu-icon')
       }
     })
   })
