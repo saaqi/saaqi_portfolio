@@ -60,7 +60,7 @@ export const statCountersLists = selectorID => {
           </span>
           <p class="mb-0">${title}</p>
         </div>
-      </div>`
+      </div>`.replace(/\s+/g, ' ');
 
     return output
 
