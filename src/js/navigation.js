@@ -121,7 +121,7 @@ function touch_end(event) {
     if (move_x < 0) {
       body.classList.remove("mobile-nav-active")
       toggleNavVisibility.classList.add("nav-visibility")
-      toggleButtonIcon.setAttribute('href', '#menu-icon')
+      toggleButtonIcon.setAttribute('href', svgSprite+'#menu-icon')
     }
   }
 }
