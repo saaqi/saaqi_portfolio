@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 // override bootstrap variables
-// @import "./themes/default";
-@import "./themes/blue";
-// $font-size-base: 0.9375rem;
+$primary: #3D3B40;
+$secondary: #525CEB;
+// $light: #FFFAEC;
 $font-family-sans-serif: Montserrat, sans-serif;
 
 // import bootstrap scss

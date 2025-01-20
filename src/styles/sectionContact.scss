@@ -23,7 +23,7 @@
 
 
 .form-control {
-  border-color: var(--bs-primary-border-subtle);
+  border-color: rgba(var(--bs-body-color-rgb), 0.3);
 }
 
 .form-control:focus {

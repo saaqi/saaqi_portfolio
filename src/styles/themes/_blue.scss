@@ -1,5 +1,18 @@
 // Colors ----------
 $primary: #3D3B40;
 $secondary: #525CEB;
+$light: #FFFAEC;
 // $info: #305882;
 // $warning: $warning;
+
+// Define custom colors for light and dark modes
+:root {
+  --bs-primary: $primary;
+  --bs-secondary: $secondary;
+}
+
+:root[data-bs-theme="dark"] {
+  --bs-primary: #FFFAEC;
+  --bs-secondary: $secondary;
+}
+

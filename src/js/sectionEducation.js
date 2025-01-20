@@ -25,7 +25,7 @@ const certificatesList = (selectorID) => {
     // Generate Skills List
     const skillsList = skills.map(skill => `
       <li class="list-group-item">
-        <svg style="--icon-fill: var(--bs-card-color)" class="icon ${skill.icon}-icon small">
+        <svg style="--icon-fill: var(--bs-list-group-color)" class="icon ${skill.icon}-icon small">
           <use xlink:href="${svgSprite + '#' + skill.icon}-icon"></use>
         </svg> ${skill.text}
       </li>
@@ -51,8 +51,7 @@ const certificatesList = (selectorID) => {
               <div class="d-flex gap-1 my-2">
                 <div class="d-flex align-items-center gap-1">
                   <svg class="icon certificate-icon small"><use xlink:href="${svgSprite}#certificate-icon"></use></svg>
-                  <span class="me-1">From:</span>
-                  ${issuerList}
+                  <span class="me-1">From:</span> ${issuerList}
                 </div>
               </div>
             </div>
