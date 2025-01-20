@@ -24,21 +24,11 @@ b {
   padding: 3rem 0;
   min-height: 75svh;
 }
-
 .section:nth-child(even) {
   background-color: var(--bs-gray-100);
 }
 .section:nth-child(odd) {
   background-color: var(--bs-gray-200);
-}
-
-html[data-bs-theme=dark] {
-  .section:nth-child(even) {
-    background-color: var(--bs-gray-900);
-  }
-  .section:nth-child(odd) {
-    background-color: var(--bs-gray-800);
-  }
 }
 
 .heading-container {

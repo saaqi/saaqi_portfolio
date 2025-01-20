@@ -18,8 +18,8 @@ export const skillStatsLists = selectorID => {
         ${title}
         <!-- <span class="val">${level}%</span> -->
       </div>
-      <div class="progress-bar-wrap rounded-pill" style="background: rgba(var(--bs-body-color-rgb), 0.3)">
-        <div class="progress-bar rounded-pill" style="background: rgba(var(--bs-body-color-rgb), 0.9)"
+      <div class="progress-bar-wrap bg-primary-subtle rounded-pill">
+        <div class="progress-bar bg-primary rounded-pill"
           role="progressbar"
           aria-label="${title} Skill"
           aria-valuenow="${level}"
@@ -51,11 +51,11 @@ export const statCountersLists = selectorID => {
     const output =
       `<div class="col-lg-3 col-6 text-break">
         <div class="count-box pt-4 pb-3 px-3 text-center border border-primary rounded-3 h-100">
-          <div class="stats-icon-container d-flex align-items-center justify-content-center fs-4 text-bg-primary rounded-circle">
+          <div class="stats-icon-container d-flex align-items-center justify-content-center fs-4 bg-primary text-bg-primary rounded-circle">
             <svg class="icon ${icon}"><use xlink:href="${svgSprite+'#'+icon}"></use></svg>
           </div>
           <p class="mb-0 mt-2">${header}</p>
-          <span class="fs-2 fw-bold">
+          <span class="fs-2 fw-bold text-primary">
             <span class="statcounter">${level}</span>+
           </span>
           <p class="mb-0">${title}</p>
