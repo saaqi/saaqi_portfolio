@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
 // override bootstrap variables
-// @import "./themes/default";
-@import "./themes/blue";
+$primary: #3d3b40;
+$secondary: #525ceb;
+// @include color-mode(dark) {
+//   $primary: #525CEB;
+// }
 // $font-size-base: 0.9375rem;
 $font-family-sans-serif: Montserrat, sans-serif;
 
+[data-bs-theme="dark"] {
+  $primary: #ffeb00;
+  --bs-primary: #ffeb00;
+}
 // import bootstrap scss
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

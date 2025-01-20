@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+html[data-bs-theme="dark"] {
+  .home {
+    background: var(--bs-dark);
+  }
+}
 .home {
   background-image: url('../assets/lined_paper.webp');
   background-repeat: repeat;
