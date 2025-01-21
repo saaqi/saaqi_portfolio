@@ -1,5 +1,5 @@
 // Usage: import { setDarkMode } from './functions/setDarkMode.js';
-export const setDarkMode = () => {
+export const setDarkMode = switchSelector => {
   'use strict'
 
   const getStoredTheme = () => localStorage.getItem('theme')
@@ -45,9 +45,9 @@ export const setDarkMode = () => {
 
   // Dark Mode Switcher
   const htmlElement = document.documentElement;
-  const switchElement = document.querySelector('.darkModeSwitcher');
+  const switchElement = document.querySelector(switchSelector);
   if (switchElement) {
-    const currentTheme = getStoredTheme() || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'light';
     // htmlElement.setAttribute('data-bs-theme', currentTheme);
     switchElement.checked = currentTheme === 'dark'
     switchElement.addEventListener('change', function () {

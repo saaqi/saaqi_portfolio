@@ -1,8 +1,18 @@
 // Import Styles -
-import "../styles/sectionContact.scss";
+import "../styles/sectionContact.scss"
 
 // Import Bootstrap's alert component
-import "bootstrap/js/dist/alert.js";
+import "bootstrap/js/dist/alert.js"
+
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'btn-primary': 'btn-light',
+    'btn-outline-primary': 'btn-outline-light'
+  },
+  [".contact-email-form", ".contactList"]
+)
 
 // Define the form ID and get the form element
 const formId = 'contact-email-form';

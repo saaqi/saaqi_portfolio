@@ -9,7 +9,7 @@
 
 html[data-bs-theme="dark"] {
   .home {
-    background: var(--bs-dark);
+    background-image: url('../assets/twinkle_twinkle.png');
   }
 }
 
@@ -22,12 +22,20 @@ html[data-bs-theme="dark"] {
 
 
 
-
+.switchContainer {
+  padding: .4em;
+  border-radius: 2rem;
+  background-color: var(--bs-body-color);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  line-height: 1;
+}
 
 .darkModeSwitcher {
   appearance: none;
-  width: 3em;
-  height: 1.5em;
+  width: 2em;
+  height: 1em;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
   background-size: 205%;
   background-position: 0;
@@ -40,10 +48,10 @@ html[data-bs-theme="dark"] {
 
 .darkModeSwitcher::before {
   content: "";
-  width: 1.25em;
-  height: 1.25em;
+  width: .8em;
+  height: .8em;
   position: absolute;
-  top: calc(50% - 0.625em);
+  top: calc(50% - 0.4em);
   left: .1em;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
   background-size: 205%;
@@ -55,7 +63,7 @@ html[data-bs-theme="dark"] {
 }
 
 .darkModeSwitcher:checked::before {
-  left: calc(100% - 1.35em);
+  left: calc(100% - .9em);
   background-position: 0;
 }
 

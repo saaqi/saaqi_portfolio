@@ -16,7 +16,8 @@ import certificates from '../data/certificates.json'
 import { handleDarkMode } from "./functions/handleDarkMode"
 handleDarkMode(
   {
-    'btn-outline-primary': 'btn-outline-light'
+    'btn-outline-primary': 'btn-outline-light',
+    'text-secondary': 'text-warning'
   },
   ".certificateCard"
 )
