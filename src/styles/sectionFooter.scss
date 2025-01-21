@@ -1,0 +1,6 @@
+:not(html[data-bs-theme=dark]) {
+  .footer.bg-gradient {
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+  }
+}

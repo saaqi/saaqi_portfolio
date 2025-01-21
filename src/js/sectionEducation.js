@@ -11,6 +11,17 @@ import draggableContainer from "./functions/draggableContainer.js"
 draggableContainer('certificates-container')
 
 import certificates from '../data/certificates.json'
+
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'btn-outline-primary': 'btn-outline-light'
+  },
+  ".certificateCard"
+)
+
+
 const certificatesList = (selectorID) => {
   const certificateList = certificates.map((cr) => {
     const {
@@ -25,7 +36,7 @@ const certificatesList = (selectorID) => {
     // Generate Skills List
     const skillsList = skills.map(skill => `
       <li class="list-group-item">
-        <svg style="--icon-fill: var(--bs-card-color)" class="icon ${skill.icon}-icon small">
+        <svg style="--icon-fill: var(--bs-body-color)" class="icon ${skill.icon}-icon small">
           <use xlink:href="${svgSprite + '#' + skill.icon}-icon"></use>
         </svg> ${skill.text}
       </li>

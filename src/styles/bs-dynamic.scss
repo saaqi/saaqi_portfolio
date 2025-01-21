@@ -1,17 +1,77 @@
 @charset "UTF-8";
 
+// Function to calculate the luminance of a color
+@function calculate-luminance($color) {
+  // Extract the RGB components of the color
+  $r: red($color) / 255;
+  $g: green($color) / 255;
+  $b: blue($color) / 255;
+
+  // Apply gamma correction
+  $r: if($r <= 0.03928, $r / 12.92, pow(($r + 0.055) / 1.055, 2.4));
+  $g: if($g <= 0.03928, $g / 12.92, pow(($g + 0.055) / 1.055, 2.4));
+  $b: if($b <= 0.03928, $b / 12.92, pow(($b + 0.055) / 1.055, 2.4));
+
+  // Calculate the luminance
+  @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
+}
+
+@function best-foreground-color($background-color) {
+  $luminance: calculate-luminance($background-color);
+
+  // Return white for dark backgrounds and black for light backgrounds
+  @return if($luminance > 0.179, #000000, #ffffff);
+}
+
+
+
+
+
+
+
+
 // override bootstrap variables
 $primary: #3d3b40;
 $secondary: #525ceb;
-// @include color-mode(dark) {
-//   $primary: #525CEB;
-// }
+$warning: #ffeb00;
+
 // $font-size-base: 0.9375rem;
 $font-family-sans-serif: Montserrat, sans-serif;
 
-[data-bs-theme="dark"] {
-  $primary: #ffeb00;
-  --bs-primary: #ffeb00;
-}
+
 // import bootstrap scss
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+// Output CSS with runtime variables where necessary
+// @include color-mode(dark) {
+//   // Define Sass variables for your colors
+//   $dark-primary-rgb: red($dark-primary), green($dark-primary), blue($dark-primary);
+
+//   --bs-primary: #{$dark-primary};
+//   --bs-primary-rgb: #{$dark-primary-rgb};
+
+//   .btn-primary {
+//     --bs-btn-bg: var(--bs-primary);
+//     --bs-btn-color: #{best-foreground-color($dark-primary)};
+//     --bs-btn-hover-color: #{best-foreground-color($dark-primary)};
+//     --bs-btn-active-color: #{best-foreground-color($dark-primary)};
+//     --bs-btn-border-color: rgba(#{$dark-primary-rgb}, 0.25);
+//     --bs-btn-hover-bg: #{darken($dark-primary, 5%)};
+//     --bs-btn-hover-border-color: rgba(#{$dark-primary-rgb}, 0.25);
+//     --bs-btn-active-bg: #{darken($dark-primary, 10%)};
+//     --bs-btn-active-border-color: rgba(#{$dark-primary-rgb}, 0.5);
+//     --bs-btn-focus-border-color: rgba(#{$dark-primary-rgb}, 0.5);
+//     --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.2);
+//   }
+
+//   .text-bg-primary {
+//     color: #{best-foreground-color($dark-primary)} !important;
+//     background-color: $dark-primary !important;
+//   }
+
+//   .bg-primary {
+//     background-color: $dark-primary !important;
+//   }
+// }

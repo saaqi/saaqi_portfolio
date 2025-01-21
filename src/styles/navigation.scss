@@ -53,7 +53,6 @@
     margin-bottom: 0.5em;
     border-radius: 5em;
     border: 1px solid rgba(var(--bs-primary-rgb), 0.3);
-    background-color: rgba(var(--bs-light-rgb), 0.9);
     transition: v.$transition;
     height: 3.5em;
     width: 100%;
@@ -71,13 +70,13 @@
       width: 100%;
     }
 
-    &:hover,
-    &:focus,
-    &.active {
-      color: var(--bs-light);
-      background-color: var(--bs-primary);
-      border-color: #333;
-    }
+    // &:hover,
+    // &:focus,
+    // &.active {
+    //   color: var(--bs-light);
+    //   background-color: var(--bs-primary);
+    //   border-color: #333;
+    // }
 
     &:hover span {
       display: block;
@@ -109,7 +108,8 @@
   position: fixed;
   top: 12px;
   z-index: 1050;
-  background-color: rgba(var(--bs-light-rgb), 0.5);
+  color: var(--bs-body-color);
+  background-color: rgba(var(--bs-bg-body-rgb), 0.5);
 
   svg.icon {
     transition: transform ease-in-out 0.3s;
@@ -132,7 +132,7 @@
   .header {
     display: none;
     width: 20em;
-    background: var(--bs-light);
+    background: var(--bs-body-bg);
     left: -20em;
   }
   .mobile-nav-active {
@@ -148,7 +148,7 @@
   }
   .mobile-nav-active .main-container::before {
     // backdrop-filter: blur(1px);
-    background: rgba(var(--bs-primary-rgb), 0.5);
+    background: rgba(var(--bs-dark-rgb), 0.6);
     content: "";
     height: 100vh;
     left: 0;

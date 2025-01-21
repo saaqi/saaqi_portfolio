@@ -1,6 +1,24 @@
 // Import Styles -
 import "../styles/sectionAbout.scss"
 
+
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'bg-primary': 'bg-warning',
+    'text-bg-primary': 'text-bg-warning',
+    'text-primary': 'text-warning',
+  },
+  [".count-box", '.progress-bar-wrap']
+)
+handleDarkMode(
+  {
+    'border-primary': 'border-warning-subtle'
+  },
+  ".stats"
+)
+
 /**
  * Skills animation
 */

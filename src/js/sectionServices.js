@@ -12,6 +12,17 @@ draggableContainer('services-container')
 
 import services from '../data/services.json'
 
+
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    "btn-outline-secondary": "btn-outline-warning",
+    "btn-outline-primary": "btn-outline-light",
+  },
+  ".serviceCard"
+)
+
 const servicesLists = selectorID => {
   const serviceList = services.map((sr, index) => {
     const {

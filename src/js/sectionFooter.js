@@ -1,3 +1,6 @@
+// Import Styles
+import "../styles/sectionFooter.scss"
+
 // Import the socialMediaLists function from the functions directory
 import socialMediaLists from "./functions/socialMediaLists"
 

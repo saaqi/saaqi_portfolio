@@ -13,6 +13,16 @@ draggableContainer('portfolio-container')
 // Import Projects Data
 import projects from '../data/projects.json'
 
+
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'btn-outline-primary': 'btn-outline-light'
+  },
+  ".portfolioCard"
+)
+
 // Import Portfolio Media Folder
 const portfolioMedia = import.meta.glob('../assets/portfolio/*', { eager: true });
 

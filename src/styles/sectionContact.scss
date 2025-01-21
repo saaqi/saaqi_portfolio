@@ -21,14 +21,18 @@
   font-size: 14px;
 }
 
-
 .form-control {
-  border-color: var(--bs-primary-border-subtle);
+  border-color: var(--bs-dark-border-subtle);
+}
+
+html[data-bs-theme=dark] {
+  .form-control {
+    border-color: var(--bs-light-border-subtle);
+  }
 }
 
 .form-control:focus {
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
-  border-color: var(--bs-primary);
   transition: v.$transition;
 }
 
