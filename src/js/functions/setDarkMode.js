@@ -1,9 +1,4 @@
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2024 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-
+// Usage: import { setDarkMode } from './functions/setDarkMode.js';
 export const setDarkMode = () => {
   'use strict'
 
@@ -48,13 +43,12 @@ export const setDarkMode = () => {
   })
 
 
-
+  // Dark Mode Switcher
   const htmlElement = document.documentElement;
   const switchElement = document.querySelector('.darkModeSwitcher');
   if (switchElement) {
-    // Set the default theme to dark if no setting is found in local storage
-    const currentTheme = localStorage.getItem('theme') || 'light'
-    htmlElement.setAttribute('data-bs-theme', currentTheme);
+    const currentTheme = getStoredTheme() || 'light';
+    // htmlElement.setAttribute('data-bs-theme', currentTheme);
     switchElement.checked = currentTheme === 'dark'
     switchElement.addEventListener('change', function () {
       if (this.checked) {
