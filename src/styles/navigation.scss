@@ -52,7 +52,6 @@
     padding: 1em;
     margin-bottom: 0.5em;
     border-radius: 5em;
-    border: 1px solid rgba(var(--bs-primary-rgb), 0.3);
     transition: v.$transition;
     height: 3.5em;
     width: 100%;
@@ -69,14 +68,6 @@
     &:hover {
       width: 100%;
     }
-
-    // &:hover,
-    // &:focus,
-    // &.active {
-    //   color: var(--bs-light);
-    //   background-color: var(--bs-primary);
-    //   border-color: #333;
-    // }
 
     &:hover span {
       display: block;
@@ -108,8 +99,7 @@
   position: fixed;
   top: 12px;
   z-index: 1050;
-  color: var(--bs-body-color);
-  background-color: rgba(var(--bs-bg-body-rgb), 0.5);
+  background-color: rgba(var(--bs-body-bg-rgb), 0.5);
 
   svg.icon {
     transition: transform ease-in-out 0.3s;

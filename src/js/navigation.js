@@ -4,6 +4,17 @@ import svgSprite from "../assets/icons.svg"
 
 import navigationLinks from '../data/navigationLinks.json'
 
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'btn-outline-primary': 'btn-outline-warning',
+    'border-primary-subtle': 'border-warning-subtle'
+  },
+  ".header"
+)
+
+
 const navLinksInsert = () => {
   const navLinks = navigationLinks.map(ln => {
     const {
@@ -14,7 +25,7 @@ const navLinksInsert = () => {
 
     const output =
       `<li>
-        <a href="${link}" class="nav-link btn btn-outline-primary shadow-sm scrollto" title="${text}">
+        <a href="${link}" class="btn btn-outline-primary border-primary-subtle shadow-sm scrollto" title="${text}">
           <svg class="icon ${icon}"><use xlink:href="${svgSprite+'#'+icon}"></use></svg>
           <span class="nav-text">${text}</span>
         </a>

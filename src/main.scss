@@ -62,7 +62,7 @@ b {
   display: block;
   width: 240px;
   height: 1px;
-  background: var(--bs-primary-border-subtle);
+  background: var(--bs-body-color);
   bottom: 1px;
   left: calc(50% - 120px);
 }
@@ -73,7 +73,7 @@ b {
   display: block;
   width: 80px;
   height: 3px;
-  background: var(--bs-primary);
+  background: var(--bs-body-color);
   bottom: 0;
   left: calc(50% - 40px);
 }
