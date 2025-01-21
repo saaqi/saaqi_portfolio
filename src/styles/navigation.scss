@@ -137,8 +137,8 @@
     display: block;
   }
   .mobile-nav-active .main-container::before {
-    // backdrop-filter: blur(1px);
-    background: rgba(var(--bs-dark-rgb), 0.6);
+    // backdrop-filter: blur(2px);
+    background: rgba(var(--bs-dark-rgb), 0.9);
     content: "";
     height: 100vh;
     left: 0;

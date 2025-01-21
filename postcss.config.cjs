@@ -23,7 +23,7 @@ module.exports = {
         );
       },
       keyframes: true, // remove unsed keyframe rules
-      variables: true, // remove unused variables as well
+      // variables: true, // remove unused variables as well
     }),
 
     IN_PRODUCTION && require("autoprefixer"),

@@ -1,20 +1,16 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.home {
+  background-image: url('../assets/lined_paper.webp');
+  background-repeat: repeat;
+  min-height: 100svh;
+}
+
 html[data-bs-theme="dark"] {
   .home {
     background: var(--bs-dark);
   }
-}
-
-:not([data-bs-theme="dark"]) {
-  .home {
-    background-image: url('../assets/lined_paper.webp');
-  }
-}
-.home {
-  background-repeat: repeat;
-  min-height: 100svh;
 }
 
 .hero-buttons {
