@@ -111,11 +111,6 @@ export const setDarkMode = switchSelector => {
       }
     }
 
-    // Update switch states
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-      updateSwitchAttributes()
-    })
-
     const currentTheme = htmlElement.getAttribute('data-bs-theme')
     const isDarkMode = currentTheme === 'dark'
     switchElement.checked = isDarkMode

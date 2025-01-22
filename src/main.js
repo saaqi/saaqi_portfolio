@@ -6,8 +6,14 @@ import "./main.scss"
 /* ## Import JS
 --------------------------------------------- */
 // import "./js/icons" // Using External SVG Sprite for better browser cache
+
+// Dark Mode Setup
 import { setDarkMode } from './js/functions/handleDarkMode'
 setDarkMode('.darkModeSwitcher')
+// Update switch states
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  setDarkMode('.darkModeSwitcher')
+})
 
 import "./js/navigation"
 import "./js/updateTitles"
