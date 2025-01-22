@@ -9,10 +9,10 @@ import "./main.scss"
 
 // Dark Mode Setup
 import { setDarkMode } from './js/functions/handleDarkMode'
-setDarkMode('.darkModeSwitcher')
+setDarkMode('.darkModeSwitcher', '.autoModeButton')
 // Update switch states
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-  setDarkMode('.darkModeSwitcher')
+  setDarkMode('.darkModeSwitcher', '.autoModeButton')
 })
 
 import "./js/navigation"

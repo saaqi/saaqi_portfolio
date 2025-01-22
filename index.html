@@ -44,10 +44,18 @@
       <div class="keyboard"></div>
     </div>
   </div>
-  <div class="themeSwitcher d-flex">
-    <div class="switchContainer">
-      <!-- <button type="button" class="btn btn-outline-primary rounded-circle btn-icon">0</button> -->
-      <input type="checkbox" class="darkModeSwitcher form-check-input m-0" id="darkModeSwitch" title="Dark Mode Switcher">
+  <div class="themeSwitcher">
+    <div class="switchContainer d-flex align-items-center gap-2">
+      <button
+        type="button"
+        class="autoModeButton btn rounded-circle btn-icon p-1 border-0"
+        title="Automatically Select Device Prefered Color Scheme"
+      >
+        <svg class="icon half-circle-icon">
+          <use xlink:href="/src/assets/icons.svg#half-circle-icon"></use>
+        </svg>
+      </button>
+      <input type="checkbox" class="darkModeSwitcher form-check-input m-0" id="darkModeSwitch" title="Enable or Disable Dark Mode">
     </div>
   </div>
   <!-- Header Start -->

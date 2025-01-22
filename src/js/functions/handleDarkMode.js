@@ -52,8 +52,7 @@ export const handleDarkMode = (classReplacements, parentSelector = null) => {
 
 
 
-// Usage: import { setDarkMode } from './functions/setDarkMode.js';
-export const setDarkMode = switchSelector => {
+export const setDarkMode = (switchSelector, buttonSelector) => {
   'use strict'
 
   const getStoredTheme = () => localStorage.getItem('theme')
@@ -85,43 +84,83 @@ export const setDarkMode = switchSelector => {
   })
 
   window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          setStoredTheme(theme)
-          setTheme(theme)
-        })
+    document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const theme = toggle.getAttribute('data-bs-theme-value')
+        setStoredTheme(theme)
+        setTheme(theme)
       })
+    })
   })
 
 
   // Dark Mode Switcher
   const htmlElement = document.documentElement
+
   const switchElement = document.querySelector(switchSelector)
+  const buttonElement = document.querySelector(buttonSelector)
 
-  if (switchElement) {
-    const updateSwitchAttributes = (isChecked) => {
-      if (isChecked) {
-        switchElement.setAttribute('checked', 'checked')
-        switchElement.setAttribute('aria-checked', 'true')
-      } else {
-        switchElement.removeAttribute('checked')
-        switchElement.setAttribute('aria-checked', 'false')
-      }
+  const updateSwitchAttributes = (isChecked) => {
+    if (isChecked) {
+      switchElement.setAttribute('checked', 'checked')
+      switchElement.setAttribute('aria-checked', 'true')
+      switchElement.checked = true
+    } else {
+      switchElement.removeAttribute('checked')
+      switchElement.setAttribute('aria-checked', 'false')
+      switchElement.checked = false
     }
-
-    const currentTheme = htmlElement.getAttribute('data-bs-theme')
-    const isDarkMode = currentTheme === 'dark'
-    switchElement.checked = isDarkMode
-    updateSwitchAttributes(isDarkMode)
-
-    switchElement.addEventListener('change', function () {
-      const theme = this.checked ? 'dark' : 'light'
-      htmlElement.setAttribute('data-bs-theme', theme)
-      localStorage.setItem('theme', theme)
-      updateSwitchAttributes(this.checked)
-    })
   }
+
+  const updateButtonClasses = () => {
+    if (getStoredTheme() === 'dark') {
+      buttonElement.classList.add('btn-outline-primary')
+      buttonElement.classList.remove('btn-outline-warning')
+    } else {
+      buttonElement.classList.add('btn-outline-warning')
+      buttonElement.classList.remove('btn-outline-primary')
+    }
+  }
+
+  const initializeSwitch = () => {
+    if (switchElement) {
+      const currentTheme = htmlElement.getAttribute('data-bs-theme')
+      const isDarkMode = currentTheme === 'dark'
+      switchElement.checked = isDarkMode
+      updateSwitchAttributes(isDarkMode)
+
+      switchElement.addEventListener('change', function () {
+        const theme = this.checked ? 'dark' : 'light'
+        htmlElement.setAttribute('data-bs-theme', theme)
+        setStoredTheme(theme)
+        updateSwitchAttributes(this.checked)
+        if (buttonElement) {
+          buttonElement.classList.remove('active')
+          updateButtonClasses()
+        }
+      })
+    }
+  }
+  initializeSwitch()
+
+  const initializeButton = () => {
+    if (buttonElement) {
+      if (getStoredTheme() === 'auto') {
+        buttonElement.classList.add('active')
+      }
+      updateButtonClasses()
+
+      buttonElement.addEventListener('click', () => {
+        setStoredTheme('auto')
+        htmlElement.setAttribute('data-bs-theme', `${getPreferredTheme() === 'dark' ? 'dark' : 'light'}`)
+        buttonElement.classList.add('active')
+        updateButtonClasses()
+        if (switchElement) {
+          updateSwitchAttributes(getStoredTheme() === 'dark')
+        }
+      })
+    }
+  }
+  initializeButton()
 
 }
