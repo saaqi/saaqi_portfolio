@@ -185,7 +185,7 @@ svg.icon {
 
 // Theme Switcher Styles
 .switchContainer {
-  padding: .4em;
+  padding: .4em .6em;
   border-radius: 2rem;
   background-color: var(--bs-body-color);
   position: absolute;
@@ -211,10 +211,10 @@ svg.icon {
 
 .darkModeSwitcher::before {
   content: "";
-  width: .8em;
-  height: .8em;
+  width: .75em;
+  height: .75em;
   position: absolute;
-  top: calc(50% - 0.4em);
+  top: calc(50% - (0.75em / 2));
   left: .1em;
   background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
   background-size: 205%;

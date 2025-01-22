@@ -8,6 +8,16 @@ import socialMediaLists from "./functions/socialMediaLists"
 socialMediaLists('footer-social-links', true)
 
 
+// Handle Dark Mode Changess
+import { handleDarkMode } from "./functions/handleDarkMode"
+handleDarkMode(
+  {
+    'btn-outline-secondary': 'btn-outline-light',
+    'text-secondary': 'text-light'
+  }, '#topLink'
+)
+
+
 /**
  * Back to top button
  */
