@@ -97,8 +97,8 @@ export const setDarkMode = switchSelector => {
 
 
   // Dark Mode Switcher
-  const htmlElement = document.documentElement;
-  const switchElement = document.querySelector(switchSelector);
+  const htmlElement = document.documentElement
+  const switchElement = document.querySelector(switchSelector)
 
   if (switchElement) {
     const updateSwitchAttributes = (isChecked) => {
@@ -111,7 +111,12 @@ export const setDarkMode = switchSelector => {
       }
     }
 
-    const currentTheme = htmlElement.getAttribute('data-bs-theme');
+    // Update switch state 
+    const observer = new MutationObserver(() => {
+      updateSwitchAttributes()
+    })
+
+    const currentTheme = htmlElement.getAttribute('data-bs-theme')
     const isDarkMode = currentTheme === 'dark'
     switchElement.checked = isDarkMode
     updateSwitchAttributes(isDarkMode)

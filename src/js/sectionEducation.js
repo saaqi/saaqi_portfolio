@@ -17,9 +17,10 @@ import { handleDarkMode } from "./functions/handleDarkMode"
 handleDarkMode(
   {
     'btn-outline-primary': 'btn-outline-light',
-    'text-secondary': 'text-warning'
+    'text-secondary': 'text-warning',
+    'text-primary': 'text-warning'
   },
-  ".certificateCard"
+  ['.certificateCard', '.draggableOuterContainer']
 )
 
 
