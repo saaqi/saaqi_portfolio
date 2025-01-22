@@ -6,7 +6,7 @@ import "./main.scss"
 /* ## Import JS
 --------------------------------------------- */
 // import "./js/icons" // Using External SVG Sprite for better browser cache
-import { setDarkMode } from './js/functions/setDarkMode'
+import { setDarkMode } from './js/functions/handleDarkMode'
 setDarkMode('.darkModeSwitcher')
 
 import "./js/navigation"

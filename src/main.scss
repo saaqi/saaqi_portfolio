@@ -106,7 +106,7 @@ a.top-link {
   right: 10px;
   transition: all ease-in-out 0.3s;
   visibility: hidden;
-  z-index: 4;
+  z-index: 2;
 
   svg.icon {
     height: 25px;
@@ -178,4 +178,58 @@ svg.icon {
     height: 0.9em;
     width: 0.9em;
   }
+}
+
+
+
+
+// Theme Switcher Styles
+.switchContainer {
+  padding: .4em;
+  border-radius: 2rem;
+  background-color: var(--bs-body-color);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.darkModeSwitcher {
+  appearance: none;
+  width: 2em;
+  height: 1em;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  transition: 0.4s;
+  border-radius: 99em !important;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+}
+
+.darkModeSwitcher::before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  position: absolute;
+  top: calc(50% - 0.4em);
+  left: .1em;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: .5s;
+}
+
+.darkModeSwitcher:checked::before {
+  left: calc(100% - .9em);
+  background-position: 0;
+}
+
+.darkModeSwitcher:checked {
+  background-position: 100%;
 }
