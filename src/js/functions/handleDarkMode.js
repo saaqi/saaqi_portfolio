@@ -111,8 +111,8 @@ export const setDarkMode = switchSelector => {
       }
     }
 
-    // Update switch state 
-    const observer = new MutationObserver(() => {
+    // Update switch states
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
       updateSwitchAttributes()
     })
 
