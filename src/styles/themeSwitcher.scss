@@ -1,0 +1,71 @@
+// Theme Switcher Styles
+.switchContainer {
+  padding: 0.4em 0.6em;
+  border-radius: 2rem;
+  background-color: var(--bs-body-color);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.darkModeSwitcher {
+  appearance: none;
+  width: 2em;
+  height: 1em;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  transition: 0.4s;
+  border-radius: 99em !important;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+}
+
+.darkModeSwitcher::before {
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  position: absolute;
+  top: calc(50% - (0.75em / 2));
+  left: 0.1em;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.5s;
+}
+
+.darkModeSwitcher:checked::before {
+  left: calc(100% - 0.9em);
+  background-position: 0;
+}
+
+.darkModeSwitcher:checked {
+  background-position: 100%;
+}
+
+.autoModeButton {
+  svg.icon {
+    background-color: none;
+    --icon-fill: var(--bs-body-bg);
+  }
+  &.active,
+  &:hover {
+    background-color: var(--bs-warning);
+    svg.icon {
+      --icon-fill: var(--bs-body-color);
+    }
+  }
+}
+
+html[data-bs-theme=dark] {
+  .autoModeButton.active,
+  .autoModeButton:hover {
+    background-color: var(--bs-secondary);
+  }
+}
