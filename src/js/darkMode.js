@@ -1,17 +1,17 @@
 // Import Styles
 import "../styles/themeSwitcher.scss"
 
-// Setup DarkMode Settings
-const setDarkMode = (switchSelector, buttonSelector) => {
+
+// Initial Dark Mode Setup ---
+const initialTheme = () => {
   'use strict'
 
   const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
 
   const getPreferredTheme = () => {
     const storedTheme = getStoredTheme()
     if (storedTheme) return storedTheme
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    else return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
 
   const setTheme = theme => {
@@ -24,83 +24,65 @@ const setDarkMode = (switchSelector, buttonSelector) => {
     }
   }
   setTheme(getPreferredTheme())
+}
+initialTheme()
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  initialTheme()
+})
 
 
 
-
-
-
-
-  // Dark Mode Switcher
+// Dark Mode Switcher and Auto Button Setups ---
+const setDarkMode = (switchSelector, buttonSelector) => {
   const htmlElement = document.documentElement
-
-  // Dark Mode Switch
   const switchElement = document.querySelector(switchSelector)
-  const isDarkMode = htmlElement.getAttribute('data-bs-theme') === 'dark'
-  const updateSwitchAttributes = (isChecked) => {
-    if (isChecked) {
+  const buttonElement = document.querySelector(buttonSelector)
+  const isDark = htmlElement.getAttribute('data-bs-theme') === 'dark'
+  const isLight = htmlElement.getAttribute('data-bs-theme') === 'light'
+  const isAuto = localStorage.getItem('theme') === 'auto'
+
+  const initialState = () => {
+    if (isDark && switchElement && buttonElement) {
       switchElement.checked = true
       switchElement.setAttribute('checked', 'checked')
       switchElement.setAttribute('aria-checked', 'true')
-    } else {
+      buttonElement.classList.remove('active')
+    } else if (isLight && switchElement && buttonElement) {
       switchElement.checked = false
       switchElement.removeAttribute('checked')
       switchElement.setAttribute('aria-checked', 'false')
+      buttonElement.classList.remove('active')
     }
+    if (isAuto && buttonElement) buttonElement.classList.add('active')
   }
-  updateSwitchAttributes(isDarkMode)
-
-  const initializeSwitch = () => {
-    if (switchElement) {
-      switchElement.addEventListener('change', function() {
-        const theme = this.checked ? 'dark' : 'light'
-        htmlElement.setAttribute('data-bs-theme', theme)
-        setStoredTheme(theme)
-        updateSwitchAttributes(this.checked)
-        if (buttonElement) {
-          updateButtonClasses()
-          buttonElement.classList.remove('active')
-        }
-      })
-    }
-  }
-  initializeSwitch()
+  initialState()
 
 
-
-
-
-  // Auto Mode Button
-  const buttonElement = document.querySelector(buttonSelector)
-  const themeSet = getStoredTheme() === 'auto' ? true : false
-  const updateButtonClasses = () => {
-    themeSet ? buttonElement.classList.add('active') : buttonElement.classList.remove('active')
-  }
-
-  const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  const initializeButton = () => {
+  const changeStates = () => {
+    // Auto Mode Button
     if (buttonElement) {
-      updateButtonClasses()
-      buttonElement.addEventListener('click', () => {
-        if (switchElement) {
-          deviceTheme === 'dark' ? switchElement.checked = true : switchElement.checked = false
-        }
-        setStoredTheme('auto')
-        htmlElement.setAttribute('data-bs-theme', `${deviceTheme === 'dark' ? 'dark' : 'light'}`)
-        updateButtonClasses()
+      buttonElement.addEventListener('click', function () {
+        const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        localStorage.setItem('theme', 'auto')
+        htmlElement.setAttribute('data-bs-theme', theme)
         buttonElement.classList.add('active')
+        if (switchElement) switchElement.checked = theme === 'dark'
+      })
+    }
+    if (switchElement) {
+      switchElement.addEventListener('change', function () {
+        const theme = this.checked ? 'dark' : 'light'
+        localStorage.setItem('theme', theme)
+        htmlElement.setAttribute('data-bs-theme', theme)
+        this.setAttribute('aria-checked', this.checked)
+        this.checked ? this.setAttribute('checked', 'checked') : this.removeAttribute('checked')
+        buttonElement.classList.remove('active')
       })
     }
   }
-  initializeButton()
+  changeStates()
 }
-
-
-
-
-// Initial Dark Mode Setup ---
 setDarkMode('.darkModeSwitcher', '.autoModeButton')
-// Update switch states ---
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
   setDarkMode('.darkModeSwitcher', '.autoModeButton')
 })
