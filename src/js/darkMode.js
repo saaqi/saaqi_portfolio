@@ -25,14 +25,6 @@ const setDarkMode = (switchSelector, buttonSelector) => {
   }
   setTheme(getPreferredTheme())
 
-  // Initial Dark Mode Setup ---
-  setDarkMode('.darkModeSwitcher', '.autoModeButton')
-  // Update switch states ---
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    setDarkMode('.darkModeSwitcher', '.autoModeButton')
-  })
-
-
 
 
 
@@ -102,3 +94,13 @@ const setDarkMode = (switchSelector, buttonSelector) => {
   }
   initializeButton()
 }
+
+
+
+
+// Initial Dark Mode Setup ---
+setDarkMode('.darkModeSwitcher', '.autoModeButton')
+// Update switch states ---
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  setDarkMode('.darkModeSwitcher', '.autoModeButton')
+})
