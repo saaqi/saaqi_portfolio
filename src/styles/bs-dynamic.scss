@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+// override bootstrap variables
+$primary: #0B192C;
+$secondary: #2B3F97;
+$warning: #ffeb00;
+
+// $font-size-base: 0.9375rem;
+$font-family-sans-serif: Montserrat, sans-serif;
+
+
+// import bootstrap scss
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
 // Function to calculate the luminance of a color
 // @function calculate-luminance($color) {
 //   // Extract the RGB components of the color
@@ -22,22 +38,3 @@
 //   // Return white for dark backgrounds and black for light backgrounds
 //   @return if($luminance > 0.179, #000000, #ffffff);
 // }
-
-
-
-
-
-
-
-
-// override bootstrap variables
-$primary: #3d3b40;
-$secondary: #2B3F97;
-$warning: #ffeb00;
-
-// $font-size-base: 0.9375rem;
-$font-family-sans-serif: Montserrat, sans-serif;
-
-
-// import bootstrap scss
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";

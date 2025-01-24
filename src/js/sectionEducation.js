@@ -58,14 +58,13 @@ const certificatesList = (selectorID) => {
           <div class="card-body d-flex flex-column h-100">
             <svg class="icon award-icon h2 text-secondary"><use xlink:href="${svgSprite}#award-icon"></use></svg>
             <h3 class="h4 card-title fw-semibold mb-3">${title}</h3>
-            <div class="card-subtitle mb-2 text-muted">
+            <div class="card-subtitle mb-2">
               <svg class="icon award-icon small "><use xlink:href="${svgSprite}#calendar-icon"></use></svg>
               Issued: ${date}
               <div class="d-flex gap-1 my-2">
                 <div class="d-flex align-items-center gap-1">
                   <svg class="icon certificate-icon small"><use xlink:href="${svgSprite}#certificate-icon"></use></svg>
-                  <span class="me-1">From:</span>
-                  ${issuerList}
+                  <span class="me-1">From:</span> ${issuerList}
                 </div>
               </div>
             </div>
@@ -76,7 +75,7 @@ const certificatesList = (selectorID) => {
           <div class="card-body text-center">
             <svg class="icon certificate-icon small"><use xlink:href="${svgSprite}#certificate-icon"></use></svg>
             Verify Now:
-            <a href="https://coursera.org/verify/professional-cert/${id}" title="Download ${title}" target="_blank" rel="noopener noreferrer">
+            <a href="https://coursera.org/verify/professional-cert/${id}" title="Verify ${title}" class="text-body fw-medium" target="_blank" rel="noopener noreferrer">
               ${id}
             </a>
           </div>

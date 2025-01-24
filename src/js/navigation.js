@@ -25,9 +25,9 @@ const navLinksInsert = () => {
 
     const output =
       `<li>
-        <a href="${link}" class="btn btn-outline-primary border-primary-subtle shadow-sm scrollto" title="${text}">
+        <a href="${link}" class="link-nav btn btn-outline-primary border-primary-subtle shadow-sm scrollto" title="${text}">
           <svg class="icon ${icon}"><use xlink:href="${svgSprite+'#'+icon}"></use></svg>
-          <span class="nav-text">${text}</span>
+          <span class="text-nav">${text}</span>
         </a>
       </li>`.replace(/\s+/g, ' ');
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const body = document.querySelector("body");
 const toggleButton = document.querySelector(".mobile-nav-toggle")
 const toggleButtonIcon = document.querySelector(".mobile-nav-toggle svg.icon use")
-const toggleNavVisibility = document.querySelector(".main-navigation")
+const toggleNavVisibility = document.querySelector(".navbar")
 
 // Mobile nav toggle button
 if (toggleButton) {

@@ -31,10 +31,7 @@ export const handleDarkMode = (classReplacements, parentSelector = null) => {
     updateClassesForTheme()
 
     // Observe changes to the `data-bs-theme` attribute
-    const observer = new MutationObserver(() => {
-      updateClassesForTheme()
-    })
-
+    const observer = new MutationObserver(() => { updateClassesForTheme() })
     observer.observe(document.documentElement, {
       attributes: true, // Observe attribute changes
       attributeFilter: ["data-bs-theme"], // Only watch `data-bs-theme`

@@ -61,7 +61,7 @@
       font-size: calc(3.5em / 2);
     }
 
-    span {
+    span.text-nav {
       padding-left: 0.8em;
     }
 
@@ -69,7 +69,7 @@
       width: 100%;
     }
 
-    &:hover span {
+    &:hover span.text-nav {
       display: block;
     }
   }
@@ -84,7 +84,7 @@
         margin: 0 auto;
       }
 
-      span {
+      span.text-nav {
         display: none;
       }
     }
@@ -137,8 +137,9 @@
       box-shadow: 2px 0 4px rgba(#333, 0.3);
     }
   }
-  .main-navigation.nav-visibility {
+  .navbar.nav-visibility {
     visibility: hidden;
+    display: none;
   }
   .mobile-nav-toggle {
     display: block;
