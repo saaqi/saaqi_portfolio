@@ -5,7 +5,7 @@ import "../styles/sectionFooter.scss"
 import socialMediaLists from "./functions/socialMediaLists"
 
 // Attach socialMediaLists to 'footer-social-links' with btn style
-socialMediaLists('footer-social-links', true)
+socialMediaLists('footer-social-links', true, 'warning')
 
 /**
  * Back to top button
