@@ -33,9 +33,9 @@ const servicesLists = selectorID => {
     } = sr
 
     // Generate icons HTML by mapping over the icons array
-    const iconsHTML = icons.map(icon => `
-      <svg class="icon ${icon}"><use xlink:href="${svgSprite + '#' + icon}"></use></svg>
-    `).join('')
+    const iconsHTML = icons.map(icon =>
+      `<svg class="icon ${icon}"><use xlink:href="${svgSprite + '#' + icon}"></use></svg>`
+    ).join('')
 
     const output =
       `<div class="draggableItem">
@@ -46,7 +46,7 @@ const servicesLists = selectorID => {
             <p class="card-text">${copy}</p>
           </div>
           <div class="card-footer">
-          ${ more && `<div class="btn-group w-100">`}
+          ${more && `<div class="btn-group w-100">`}
             <a href="#contact" class="btn btn-outline-secondary w-50 btn-icon d-flex align-items-center justify-content-center gap-1 scrollto" title="Hire Me!">
               <svg class="icon handshake-icon"><use xlink:href="${svgSprite}#handshake-icon"></use></svg> Hire Me!
             </a>
@@ -54,7 +54,7 @@ const servicesLists = selectorID => {
             `<button type="button" class="btn btn-outline-primary w-50 btn-icon d-flex align-items-center justify-content-center gap-1" data-bs-toggle="modal" data-bs-target="#${`service-` + index}" title="Get More Info">
               <svg class="icon content-icon"><use xlink:href="${svgSprite}#content-icon"></use></svg> Info
             </button>`}
-          ${ more && `</div>`}
+          ${more && `</div>`}
           </div>
         </div>
         ${more &&
