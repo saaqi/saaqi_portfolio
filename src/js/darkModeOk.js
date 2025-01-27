@@ -5,26 +5,13 @@ import "../styles/themeSwitcher.scss"
 const setDarkMode = (switchSelector, buttonSelector) => {
   'use strict'
 
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+  !localStorage.getItem('theme') && localStorage.setItem('theme', 'auto')
+  const storedTheme = localStorage.getItem('theme')
+  const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  const htmlElement = document.documentElement
 
-  const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme) return storedTheme
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
-
-  const setTheme = theme => {
-    if (theme === 'auto') {
-      document.documentElement.setAttribute(
-        'data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-      )
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
-    }
-  }
-  setTheme(getPreferredTheme())
-
+  const currTheme = storedTheme === 'auto' ? deviceTheme : storedTheme
+  htmlElement.setAttribute('data-bs-theme', currTheme)
 
 
 
@@ -32,7 +19,8 @@ const setDarkMode = (switchSelector, buttonSelector) => {
 
 
   // Dark Mode Switcher
-  const htmlElement = document.documentElement
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
 
   // Dark Mode Switch
   const switchElement = document.querySelector(switchSelector)
@@ -55,7 +43,7 @@ const setDarkMode = (switchSelector, buttonSelector) => {
       switchElement.addEventListener('change', function () {
         const theme = this.checked ? 'dark' : 'light'
         htmlElement.setAttribute('data-bs-theme', theme)
-        setStoredTheme(theme)
+        localStorage.setItem('theme', theme)
         updateSwitchAttributes(this.checked)
         if (buttonElement) {
           updateButtonClasses()
@@ -72,12 +60,10 @@ const setDarkMode = (switchSelector, buttonSelector) => {
 
   // Auto Mode Button
   const buttonElement = document.querySelector(buttonSelector)
-  const themeSet = getStoredTheme() === 'auto' ? true : false
+  const themeSet = storedTheme === 'auto' ? true : false
   const updateButtonClasses = () => {
     themeSet ? buttonElement.classList.add('active') : buttonElement.classList.remove('active')
   }
-
-  const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   const initializeButton = () => {
     if (buttonElement) {
       updateButtonClasses()
@@ -85,7 +71,7 @@ const setDarkMode = (switchSelector, buttonSelector) => {
         if (switchElement) {
           deviceTheme === 'dark' ? switchElement.checked = true : switchElement.checked = false
         }
-        setStoredTheme('auto')
+        localStorage.setItem('theme', 'auto')
         htmlElement.setAttribute('data-bs-theme', `${deviceTheme === 'dark' ? 'dark' : 'light'}`)
         updateButtonClasses()
         buttonElement.classList.add('active')

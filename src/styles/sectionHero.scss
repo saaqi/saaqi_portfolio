@@ -7,7 +7,7 @@
   min-height: 100svh;
 }
 
-html[data-bs-theme="dark"] {
+html[data-bs-theme=dark] {
   .home {
     background-image: url('../assets/twinkle_twinkle.png');
   }
