@@ -23,11 +23,20 @@ const darkModeSetup = (switchSelector, buttonSelector) => {
   const isAuto = localStorage.getItem('theme') === 'auto'
 
   // Initial States
-  isDark && switchElement && (switchElement.checked = true)
-  isDark && switchElement && switchElement.setAttribute('checked', 'checked')
-  isDark && switchElement && switchElement.setAttribute('aria-checked', 'true')
-  isAuto && buttonElement && buttonElement.classList.add('active')
-  isAuto && buttonElement && buttonElement.setAttribute('aria-pressed', 'true')
+  if (isDark && switchElement) {
+    switchElement.checked = true
+    switchElement.setAttribute('checked', 'checked')
+    switchElement.setAttribute('aria-checked', 'true')
+  } else if (switchElement) {
+    switchElement.checked = false
+    switchElement.removeAttribute('checked')
+    switchElement.setAttribute('aria-checked', 'false')
+  }
+  if (isAuto && buttonElement) {
+    buttonElement.classList.add('active')
+    buttonElement.setAttribute('aria-pressed', 'true')
+  }
+
 
   // Change States based on user input
   if (buttonElement) {

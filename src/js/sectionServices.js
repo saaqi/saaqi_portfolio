@@ -19,6 +19,7 @@ handleDarkMode(
   {
     "btn-outline-secondary": "btn-outline-warning",
     "btn-outline-primary": "btn-outline-light",
+    "btn-outline-danger": "btn-outline-warning"
   },
   ".serviceCard"
 )
@@ -46,7 +47,7 @@ const servicesLists = selectorID => {
             <p class="card-text">${copy}</p>
           </div>
           <div class="card-footer">
-          ${more && `<div class="btn-group w-100">`}
+            <div class="btn-group w-100">
             <a href="#contact" class="btn btn-outline-secondary w-50 btn-icon d-flex align-items-center justify-content-center gap-1 scrollto" title="Hire Me!">
               <svg class="icon handshake-icon"><use xlink:href="${svgSprite}#handshake-icon"></use></svg> Hire Me!
             </a>
@@ -54,26 +55,26 @@ const servicesLists = selectorID => {
             `<button type="button" class="btn btn-outline-primary w-50 btn-icon d-flex align-items-center justify-content-center gap-1" data-bs-toggle="modal" data-bs-target="#${`service-` + index}" title="Get More Info">
               <svg class="icon content-icon"><use xlink:href="${svgSprite}#content-icon"></use></svg> Info
             </button>`}
-          ${more && `</div>`}
-          </div>
-        </div>
-        ${more &&
-        `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`label-service-` + index}" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="modal-title fs-5" id="${`label-service-` + index}">${title}</div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">${more}</div>
-              <div class="modal-footer py-1">
-                <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
-                  <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
-                </button>
-              </div>
             </div>
           </div>
-        </div>`}
+          ${more &&
+          `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`label-service-` + index}" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title fs-5" id="${`label-service-` + index}">${title}</div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">${more}</div>
+                <div class="modal-footer py-1">
+                  <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
+                    <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>`}
+        </div>
       </div>`.replace(/\s+/g, ' ');
 
     return output
