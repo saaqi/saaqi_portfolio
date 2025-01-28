@@ -11,10 +11,7 @@
       { "text": "Android App Development", "icon": "playstore" },
       { "text": "Cross-Platform Development", "icon": "globe" }
     ],
-    "issuer": [
-      "Meta",
-      "Coursera"
-    ]
+    "issuer": ["Meta", "Coursera"]
   },
   {
     "title": "Meta Front-End Developer Certificate",
@@ -22,27 +19,13 @@
     "id": "9CCJ5KFCJ45F",
     "date": "May, 2024",
     "skills": [
-      {"text": "React", "icon": "react"},
+      { "text": "React", "icon": "react" },
       { "text": "HTML", "icon": "html" },
       { "text": "JavaScript", "icon": "javascript" },
       { "text": "UI/UX Design", "icon": "pen-ruler" },
       { "text": "Cascading Style Sheets (CSS)", "icon": "css" }
     ],
     "issuer": ["Meta", "Coursera"]
-  },
-  {
-    "title": "Google Cybersecurity Certificate",
-    "description": "I am a <b>Google-certified cybersecurity professional</b> skilled in <b>Python, Linux, SQL, SIEM tools, and Intrusion Detection Systems (IDS)</b> to protect networks and data from threats effectively.",
-    "id": "G7Z2FUBMV8U9",
-    "date": "August, 2023",
-    "skills": [
-      { "text": "SQL", "icon": "database" },
-      { "text": "SIEM Tools", "icon": "screwdriver-wrench" },
-      { "text": "Cybersecurity", "icon": "shield" },
-      { "text": "Linux Systems", "icon": "linux" },
-      { "text": "Intrusion Detection Systems (IDS)", "icon": "user-sercret" }
-    ],
-    "issuer": ["Google", "Coursera"]
   },
   {
     "title": "Google UX Design Certificate",
@@ -55,6 +38,34 @@
       { "text": "UX Research", "icon": "pen-ruler" },
       { "text": "Figma, Adobe XD", "icon": "pen-ruler" },
       { "text": "User Experience (UX)", "icon": "pen-ruler" }
+    ],
+    "issuer": ["Google", "Coursera"]
+  },
+  {
+    "title": "Google Data Analytics",
+    "description": "I am a Google-certified <b>Data Analytics Professional</b> with expertise in <b>spreadsheets, SQL, Tableau, R</b> and data-driven <b>problem solving.</b>",
+    "id": "WD6KGMH7CJA7",
+    "date": "January, 2025",
+    "skills": [
+      { "text": "R Programming", "icon": "r-project" },
+      { "text": "SQL Databases", "icon": "database" },
+      { "text": "Data Analytics", "icon": "chart" },
+      { "text": "Spreadsheets", "icon": "table" },
+      { "text": "Tableau", "icon": "tableau" }
+    ],
+    "issuer": ["Google", "Coursera"]
+  },
+  {
+    "title": "Google Cybersecurity Certificate",
+    "description": "I am a <b>Google-certified cybersecurity professional</b> skilled in <b>Python, Linux, SQL, SIEM tools, and Intrusion Detection Systems (IDS)</b> to protect networks and data from threats effectively.",
+    "id": "G7Z2FUBMV8U9",
+    "date": "August, 2023",
+    "skills": [
+      { "text": "SIEM Tools", "icon": "screwdriver-wrench" },
+      { "text": "SQL Database", "icon": "database" },
+      { "text": "Cybersecurity", "icon": "shield" },
+      { "text": "Linux Systems", "icon": "linux" },
+      { "text": "Intrusion Detection Systems (IDS)", "icon": "user-secret" }
     ],
     "issuer": ["Google", "Coursera"]
   },

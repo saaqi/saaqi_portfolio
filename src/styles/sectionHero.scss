@@ -7,9 +7,17 @@
   min-height: 100svh;
 }
 
+.hero-heading {
+  color: var(--bs-primary);
+}
+
 html[data-bs-theme=dark] {
   .home {
     background-image: url('../assets/repeated-square-dark.webp');
+  }
+
+  .hero-heading {
+  color: var(--bs-warning);
   }
 }
 

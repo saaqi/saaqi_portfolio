@@ -6,7 +6,6 @@ handleDarkMode(
   {
     "btn-primary": "btn-light",
     "btn-secondary": "btn-warning",
-    "text-primary": "text-warning"
   },
   ".section.home"
 )

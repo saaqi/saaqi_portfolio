@@ -67,7 +67,7 @@ const servicesLists = selectorID => {
               </div>
               <div class="modal-body">${more}</div>
               <div class="modal-footer py-1">
-                <button type="button" class="btn btn-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
                   <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
                 </button>
               </div>
