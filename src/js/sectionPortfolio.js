@@ -85,7 +85,7 @@ const projectsList = selectorID => {
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0" style="scrollbar-width: none; overflow-y: hidden;">
-                  <embed src="${caseStudyPdf}" type="application/pdf" width="100%" height="100%" />
+                  <embed src="${caseStudyPdf}" type="application/pdf" style="width: 100%; height: 100%;" />
                 </div>
                 <div class="modal-footer py-1">
                   <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">

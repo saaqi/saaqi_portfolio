@@ -26,11 +26,9 @@ const darkModeSetup = (switchSelector, buttonSelector) => {
   if (isDark && switchElement) {
     switchElement.checked = true
     switchElement.setAttribute('checked', 'checked')
-    switchElement.setAttribute('aria-checked', 'true')
   } else if (switchElement) {
     switchElement.checked = false
     switchElement.removeAttribute('checked')
-    switchElement.setAttribute('aria-checked', 'false')
   }
   if (isAuto && buttonElement) {
     buttonElement.classList.add('active')
@@ -53,7 +51,6 @@ const darkModeSetup = (switchSelector, buttonSelector) => {
       const theme = this.checked ? 'dark' : 'light'
       localStorage.setItem('theme', theme)
       htmlElement.setAttribute('data-bs-theme', theme)
-      this.setAttribute('aria-checked', this.checked)
       this.checked ? this.setAttribute('checked', 'checked') : this.removeAttribute('checked')
       buttonElement && buttonElement.classList.remove('active')
       buttonElement && buttonElement.setAttribute('aria-pressed', 'false')
