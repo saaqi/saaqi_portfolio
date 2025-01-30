@@ -55,7 +55,7 @@ export const statCountersLists = selectorID => {
   const parentSelector = document.getElementById(selectorID);
   parentSelector && (parentSelector.innerHTML = skillStatList.join(""))
 }
-statCountersLists('stats-counters')
+statCountersLists('statsCounters')
 
 function countWhenVisible(element, targetCount, speed) {
   let hasCounted = false
@@ -128,7 +128,7 @@ export const skillStatsLists = selectorID => {
   const parentSelector = document.getElementById(selectorID);
   parentSelector && (parentSelector.innerHTML = skillStatList.join(""))
 }
-skillStatsLists('skill-level-bars')
+skillStatsLists('skillLevelBars')
 
 const progressBars = document.querySelectorAll(".progress-bar")
 const animateWhenVisible = new IntersectionObserver(

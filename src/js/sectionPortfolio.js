@@ -8,7 +8,7 @@ import 'bootstrap/js/dist/modal.js'
 import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
-draggableContainer('portfolio-container')
+draggableContainer('portfolioContainer')
 
 // Import Projects Data
 import projects from '../data/projects.json'
@@ -106,4 +106,4 @@ const projectsList = selectorID => {
   parentSelector && (parentSelector.innerHTML = projectList.join(""))
 }
 
-projectsList('portfolio-container')
+projectsList('portfolioContainer')

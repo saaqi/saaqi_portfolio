@@ -8,7 +8,7 @@ import 'bootstrap/js/dist/modal.js'
 import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
-draggableContainer('services-container')
+draggableContainer('servicesContainer')
 
 import services from '../data/services.json'
 
@@ -17,11 +17,16 @@ import services from '../data/services.json'
 import { handleDarkMode } from "./functions/handleDarkMode"
 handleDarkMode(
   {
-    "btn-outline-secondary": "btn-outline-warning",
     "btn-outline-primary": "btn-outline-light",
+    "btn-outline-secondary": "btn-outline-warning",
+  },
+  ".servicesContainer .serviceCard"
+)
+handleDarkMode(
+  {
     "btn-outline-danger": "btn-outline-warning"
   },
-  ".serviceCard"
+  ".servicesContainer .modal-footer"
 )
 
 const servicesLists = selectorID => {
@@ -57,24 +62,24 @@ const servicesLists = selectorID => {
             </button>`}
             </div>
           </div>
-          ${more &&
-          `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`label-service-` + index}" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="modal-title fs-5" id="${`label-service-` + index}">${title}</div>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">${more}</div>
-                <div class="modal-footer py-1">
-                  <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
-                    <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
-                  </button>
-                </div>
+        </div>
+        ${more &&
+        `<div class="modal fade" id="${`service-` + index}" tabindex="-1" aria-labelledby="${`label-service-` + index}" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title fs-5" id="${`label-service-` + index}">${title}</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">${more}</div>
+              <div class="modal-footer py-1">
+                <button type="button" class="btn btn-outline-danger py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal">
+                  <svg class="icon close-icon fs-4"><use xlink:href="${svgSprite}#close-icon"></use></svg> Close
+                </button>
               </div>
             </div>
-          </div>`}
-        </div>
+          </div>
+        </div>`}
       </div>`.replace(/\s+/g, ' ');
 
     return output
@@ -84,4 +89,4 @@ const servicesLists = selectorID => {
   const parentSelector = document.getElementById(selectorID);
   parentSelector && (parentSelector.innerHTML = serviceList.join(""))
 }
-servicesLists('services-container')
+servicesLists('servicesContainer')

@@ -8,7 +8,7 @@ import 'bootstrap/js/dist/modal.js'
 import "../styles/draggable.scss"
 
 import draggableContainer from "./functions/draggableContainer.js"
-draggableContainer('certificates-container')
+draggableContainer('certificatesContainer')
 
 import certificates from '../data/certificates.json'
 
@@ -17,10 +17,9 @@ import { handleDarkMode } from "./functions/handleDarkMode"
 handleDarkMode(
   {
     'btn-outline-primary': 'btn-outline-light',
-    'text-secondary': 'text-warning',
-    'text-primary': 'text-warning'
+    'text-secondary': 'text-warning'
   },
-  ['.certificateCard', '.draggableOuterContainer']
+  '.certificatesContainer'
 )
 
 
@@ -91,4 +90,4 @@ const certificatesList = (selectorID) => {
   const parentSelector = document.getElementById(selectorID);
   parentSelector && (parentSelector.innerHTML = certificateList.join(""))
 }
-certificatesList('certificates-container')
+certificatesList('certificatesContainer')

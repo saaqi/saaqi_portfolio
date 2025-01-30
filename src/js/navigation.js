@@ -34,7 +34,7 @@ const navLinksInsert = () => {
     return output
 
   })
-  const mainNavContainer = document.getElementById('main-navigation')
+  const mainNavContainer = document.getElementById('mainNavigation')
   if (mainNavContainer) mainNavContainer.innerHTML = navLinks.join("")
 }
 navLinksInsert()
